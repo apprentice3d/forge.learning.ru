@@ -47,7 +47,7 @@
         function (hook, vm) {
           window.DocsifyCopyCodePlugin.init(),
           hook.beforeEach(function (html) {
-            var email = 'Questions on this tutorial? [Ask on Stackoverflow](https://stackoverflow.com/questions/ask?tags=[autodesk-forge]) or [email us](mailto:forge.help@autodesk.com?subject=About tutorial page /' + vm.route.file + ')\n'
+            var email = 'Вопросы по этому руководству? [Спросите на Stackoverflow](https://stackoverflow.com/questions/ask?tags=[autodesk-forge]) или [напишите нам](mailto:forge.help@autodesk.com?subject=About tutorial page /' + vm.route.file + ')\n'
             return html
               + '\n\n----\n'
               + email
