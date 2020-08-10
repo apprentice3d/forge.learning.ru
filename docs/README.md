@@ -1,28 +1,30 @@
-# Learn Autodesk Forge 
+# Учим Autodesk Forge 
 
-Learn the basics of authentication, data management, file translation, and model rendering, with our quickstart guides.
+Учим азы аутентификации, управлении данных, конверсии файлов и визуализации моделей, используя тематические руководства.
 
-## What is it?
+## Что это такое?
 
-Forge enables companies to leverage design and engineering data to develop custom software applications and connected workflows for manufacturing, media/entertainment, architecture, engineering, and construction.
+Forge позволяет компаниям использовать проектные и инженерные данные для разработки специализированных программных приложений и наладка рабочих процессов в области производства, архитектуры, проектирования, строительства и.т.д.
 
-- **View 3D models directly in your browser**: The Viewer allows you to embed, interact with, and retrieve meta data about design files in over 50 formats right in your browser, without having to install extra software.
-- **Centrally manage data**: The Data Management API allows you to access your data across A360, Fusion, and the Object Storage Service.
-- **Convert your design files to formats that unlock their potential**: Use the Model Derivative API to prepare files for the Viewer, extract geometries, retrieve metadata, and more, from over 50 different industry-standard formats.
+- **Просмотр 3Д моделей прямо в браузере**: Forge Viewer позволяет встраивать, взаимодействовать и извлекать метаданные из более чем 50 форматах 3д файлах, прямо в вашем браузере и без необходимости установки дополнительного программного обеспечения.
+- **Централизованное управление данными**: Data Management API (программный интерфейс по управлению данными) позволяет вам получать доступ к вашим данным через A360, Fusion и ОСС (Object Storage Service - службу хранилища объектов).
+- **Конвертируете дизаин файлы в формат расскрывающий их потенциал**: Используя Model Derivative API (программный интерфейс по созданию и использовании производной модели), возможна подготовка файлов (более чем 50 различных стандартных отраслевых форматов) для дальнейшего просмотра файла в браузере, извлеченя геометрии, извлечение метаданных и многое.
 
-## What's in this tutorial?
 
-- [Before you start coding](account/): create and activate your account.
-- [Tools](environment/tools/): development tools you need to create a webapp that uses Autodesk Forge.
-- [OAuth](oauth/): a few words about security and authentication.
-- Step-by-step tutorials for: 
-  - [View your models](tutorials/viewmodels): upload & show 3D models on the web.
-  - [View BIM 360 & Fusion models](tutorials/viewhubmodels): access & show BIM 360 and Fusion models on your own webapp.
-  - [Modify your models](tutorials/modifymodels): update data on DWG, IPT, RVT and MAX files on the cloud.
-- [Run & debug](environment/rundebug/readme.md): executing the code locally and tips & tricks.
-- [Viewer extension](tutorials/extensions.md): add buttons and panels to Viewer.
-- [Deployment](deployment/): **AWS**, **Azure**, **Heroku** and **AppHarbor** step-by-step deployment.
+## Что в этом руководстве?
 
-Ready to get started? 
+- [Предподготовка](account/): создание и активация учетного счета.
+- [Инструменты](environment/tools/): инструменты разработки которые помогут вам в создание веб программ использующие Фордж сервисы.
+- [Аутентифицация (OAuth)](oauth/): несколько слов о безопасности и аутентификации.
+- Пошаговые руководства по: 
+  - [Визуализация моделей](tutorials/viewmodels): загрузка и визуализация 3д моделей в браузере.
+  - [Просмотр BIM 360 & Fusion моделей](tutorials/viewhubmodels): доступ и визуализация BIM 360 и Fusion моделй в собственной веб апликации.
+  - [Модификация моделей](tutorials/modifymodels): обновление данных в DWG, IPT, RVT и MAX файлов, используя облачное решение.
+- [Работа и Отладка](environment/rundebug/readme.md): местное выполнение кода и советы по разработке и отладке.
+- [Расширения для Viewer](tutorials/extensions.md): добавление кнопок и панелей в Viewer.
 
-Next: [Before you start coding](account/)
+- [Развертка](deployment/): Пошаговое развертка в **AWS**, **Azure**, **Heroku** и **AppHarbor**.
+
+Готовы начать? 
+
+Next: [Предподготовка](account/)

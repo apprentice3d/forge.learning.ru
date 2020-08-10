@@ -1,5 +1,5 @@
 - [Главная страница](/?id=learn-autodesk-forge)
-- [Before you start coding](account/)
+- [Преподготовка](account/)
 - [Инструменты](environment/tools/)
 - [Аутентификация(OAuth)](oauth/)
 - [Визуализация моделей](tutorials/viewmodels.md)
