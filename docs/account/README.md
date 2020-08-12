@@ -28,4 +28,4 @@ Once you set up an application, you will see a Client ID and Client Secret in yo
 
 You are now good to go!
 
-Next: [Tools](environment/tools/)
+Далее: [Tools](environment/tools/)
