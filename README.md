@@ -1,6 +1,6 @@
 # Learn Forge
 
-### To view tutorials, please visit [learnforge.autodesk.io](http://learnforge.autodesk.io). 
+### To view tutorials, please visit [learnforgeru.autodesk.io](https://learnforgeru.netlify.app/). 
 
 This repository is for creating the tutorials.
 
