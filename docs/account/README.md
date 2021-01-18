@@ -8,9 +8,9 @@
 
 ![](/_media/forge/dev_portal_home.png)
 
-## Activate subscription
+## Приобретение подписки
 
-Before using any of the paid APIs, like **Model Derivative**, you need to activate your trial. On the top-right, you'll see your name. Click to expand the menu and go to **My Subscription**. On the page that opens, click on **START FREE TRIAL**. That's it.
+Обратите внимание, что при первой авторизации на сайте, вы автоматически получаете доступ к бесплатному пробному периоду (Trial), который длится 90 дней и включает в себя приветственный пакет из 100 cloud credits. При этом вы получаете полный доступ ко всем компонентам платформы Forge (включая платные, например,**Model Derivative**).
 
 ![](_media/account/activate_sub.png)
 
