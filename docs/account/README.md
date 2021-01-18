@@ -1,10 +1,10 @@
-# Autodesk Account ТЕСТ
+# Аккаунт Autodesk
 
-Your Autodesk Forge account is your main identity.
+Для использования платформы Autodesk Forge вам нужно создать аккаунт Forge. 
 
-## Creating your Forge account
+## Создание аккаунта Forge
 
-Go to [Forge Developer Portal](https://developer.autodesk.com/), click the “SIGN UP” button to create an account or "SIGN IN" to use an existing account. If you create a new account, be sure to click the link in the verification email that will be sent to you.
+Перейдите на сайт платформы [Autodesk Forge](https://forge.autodesk.com/), нажмите “SIGN UP” для создания нового аккаунта или "SIGN IN" для входа в уже существующий. Если вы создаете новый аккаунт, не забудьте подтвердить вашу электронную почту, пройдя по отправленной вам ссылке. 
 
 ![](/_media/forge/dev_portal_home.png)
 
