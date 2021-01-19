@@ -1,6 +1,6 @@
 # Аккаунт Autodesk
 
-Для использования платформы Autodesk Forge вам нужно создать аккаунт Forge. 
+Для использования платформы Autodesk Forge вам нужно создать аккаунт на сайте Forge https://forge.autodesk.com/. 
 
 ## Создание аккаунта Forge
 
@@ -14,9 +14,9 @@
 
 ![](_media/account/activate_sub.png)
 
-## Create an app
+## Создание приложения
 
-On the top-right, you'll see your name. Click to expand the menu and go to **My Apps**. Click the “CREATE APP” button.
+Наведите курсор на правый верхний угол страницы - вы увидите ваше имя и меню вашего аккаунта. Перейдите в раздел **My Apps** (рус. мои приложения) и нажмите на “CREATE APP” (рус. создать приложение). 
 
 Select APIs you are going to use (you can safely select all for now). Enter your application name and description, then enter a callback URL: `http://localhost:3000/api/forge/callback/oauth` (this tutorial will not use this callback, but that's the URL used on other Autodesk Forge samples)
 
