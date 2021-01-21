@@ -10,7 +10,7 @@
 
 ## Приобретение подписки
 
-Обратите внимание, что при первой авторизации на сайте, вы автоматически получаете доступ к бесплатному пробному периоду (Trial), который длится 90 дней и включает в себя приветственный пакет из 100 cloud credits. При этом вы получаете полный доступ ко всем компонентам платформы Forge (включая платные, например,**Model Derivative**).
+Обратите внимание, что при первой авторизации на сайте, вы автоматически получаете доступ к бесплатному пробному периоду (Trial), который длится 90 дней и включает в себя приветственный пакет из 100 cloud credits. При этом вы получаете полный доступ ко всем компонентам платформы Forge (включая платные, например, **Model Derivative**).
 
 ![](_media/account/activate_sub.png)
 
@@ -18,14 +18,14 @@
 
 Наведите курсор на правый верхний угол страницы - вы увидите ваше имя и меню вашего аккаунта. Перейдите в раздел **My Apps** (рус. мои приложения) и нажмите на “CREATE APP” (рус. создать приложение). 
 
-Select APIs you are going to use (you can safely select all for now). Enter your application name and description, then enter a callback URL: `http://localhost:3000/api/forge/callback/oauth` (this tutorial will not use this callback, but that's the URL used on other Autodesk Forge samples)
+Выберите API, которые вы планируете использовать для создания вашего веб-сервиса (вы можете выбрать все). Введите название вашего приложения, его описание и callback URL (рус. ссылка обратного вызова: `http://localhost:3000/api/forge/callback/oauth` (в этом руководстве мы не используем эту ссылку обратного вызова, но она используется в других примерах кода Autodesk Forge). 
 
-Once you set up an application, you will see a Client ID and Client Secret in your newly created app page. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
+Как только вы подготовите ваше приложение, вы получите Client ID и Client Secret, которые появятся на странице созданного приложения. in your newly created app page. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
 
 ![](_media/account/create_app.gif)
 
 !> **DO NOT** share your Client Secret, this should be kept confidential.
 
-You are now good to go!
+Поздравляем, настройка вашего аккаунта завершена!
 
-Далее: [Tools](environment/tools/)
+Далее: [Веб-технологии](environment/tools/)
