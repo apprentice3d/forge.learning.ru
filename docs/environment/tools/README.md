@@ -1,6 +1,6 @@
-# Tools
+# Веб-технологии
 
-This section shows how to prepare your machine to use **Autodesk Forge** or any other cloud APIs. If you already have an IDE of preference, you can skip to [Authentication](oauth/).
+В этом разделе вы узнаете, как подготовить ваш компьютер к использованию **Autodesk Forge** или любых других облачных API. Если у вас уже есть интегрированная среда разработки (англ. IDE, Integrated Development Environment), то сразу переходите в раздел [Аутентификация](oauth/).
 
-Choose your language: [Node.js](environment/tools/nodejs) | [.NET Framework](environment/tools/net) | [.NET Core](environment/tools/netcore) | [Go](environment/tools/go) | [PHP](environment/tools/php) | [Java](environment/tools/java)
+Выберите язык программирования: [Node.js](environment/tools/nodejs) | [.NET Framework](environment/tools/net) | [.NET Core](environment/tools/netcore) | [Go](environment/tools/go) | [PHP](environment/tools/php) | [Java](environment/tools/java)
 
