@@ -1,6 +1,6 @@
 # Аккаунт Autodesk
 
-Для использования платформы Autodesk Forge вам нужно создать аккаунт на сайте Forge https://forge.autodesk.com/. 
+Для использования платформы Autodesk Forge вам нужно создать аккаунт на сайте платформы https://forge.autodesk.com. 
 
 ## Создание аккаунта Forge
 
@@ -21,13 +21,13 @@
 
 Наведите курсор на правый верхний угол страницы - вы увидите ваше имя и меню вашего аккаунта. Перейдите в раздел **My Apps** (рус. мои приложения) и нажмите на “CREATE APP” (рус. создать приложение). 
 
-Выберите API, которые вы планируете использовать для создания вашего веб-сервиса (вы можете выбрать все). Введите название вашего приложения, его описание и callback URL (рус. ссылка обратного вызова: `http://localhost:3000/api/forge/callback/oauth` (в этом руководстве мы не используем эту ссылку обратного вызова, но она используется в других примерах кода Autodesk Forge). 
+Выберите API, которые вы планируете использовать для создания вашего веб-сервиса (на этом этапе вы можете выбрать все компоненты). Введите название вашего приложения, его описание и callback URL (рус. ссылка обратного вызова): `http://localhost:3000/api/forge/callback/oauth` (в этом руководстве мы не используем эту callback URL, но она используется в других примерах кода Autodesk Forge). 
 
-Как только вы подготовите ваше приложение, вы получите Client ID и Client Secret, которые появятся на странице созданного приложения. in your newly created app page. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
+ Как только вы подготовите ваше приложение, вы получите Client ID и Client Secret, которые появятся на странице созданного приложения. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
 
 ![](_media/account/create_app.gif)
 
-!> **DO NOT** share your Client Secret, this should be kept confidential.
+!> **НИКОГДА** не делитесь вашим Client Secret, это конфиденциальные данные. 
 
 Поздравляем, настройка вашего аккаунта завершена!
 
