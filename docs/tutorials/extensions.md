@@ -1,11 +1,11 @@
-# Viewer extensions
+# Расширения для Viewer
 
-Extensions provide a mechanism to write custom code that interacts with the **Viewer**. Each extension should register itself with the extension manager, providing a unique string ID which is then used to load or unload the extension during runtime. [Learn more](https://forge.autodesk.com/en/docs/viewer/v7/reference/Extensions/).
+Расширения позволяют  программистам написать собственный код и тем самым добавить дополнительные функции в **Forge Viewer**. Каждое расширение должно быть зарегестировано в панели управления расширениями (англ. extension manager) и иметь уникальный идентификатор, который используется для загрузки или выгрузки расширения во время его выполнения. [Learn more](https://forge.autodesk.com/en/docs/viewer/v7/reference/Extensions/).
 
-This tutorial will guide you creating an extension for Viewer. 
+Этот раздел содержит пошаговое руководство по созданию расширения дял Viewer. This tutorial will guide you creating an extension for Viewer. 
 
-> For this tutorial you need an app with Viewer, for instance the [View your models](tutorials/viewmodels.md) or the [View BIM 360 & Fusion models](tutorials/viewhubmodels.md) tutorial. The Viewer is the same regardless where the file is hosted.
+> Для выполнения этого руководства вам понадобится приложение с Viewer, например, [View your models](tutorials/viewmodels.md) или iew BIM 360 & Fusion models](tutorials/viewhubmodels.md) tutorial. Viewer во всех этим примерах одинаковый. 
 
-Ready to start coding?
+Готовы начать?
 
-Next: [Basic skeleton](viewer/extensions/skeleton.md)
+Далееsic skeleton](viewer/extensions/skeleton.md)
