@@ -4,8 +4,8 @@
 
 Этот раздел содержит пошаговое руководство по созданию расширения дял Viewer. This tutorial will guide you creating an extension for Viewer. 
 
-> Для выполнения этого руководства вам понадобится приложение с Viewer, например, [View your models](tutorials/viewmodels.md) или iew BIM 360 & Fusion models](tutorials/viewhubmodels.md) tutorial. Viewer во всех этим примерах одинаковый. 
+> Для выполнения этого руководства вам понадобится приложение с Viewer, например, [View your models](tutorials/viewmodels.md) или [View BIM 360 & Fusion models](tutorials/viewhubmodels.md) tutorial. Viewer во всех этим примерах одинаковый. 
 
 Готовы начать?
 
-Далееsic skeleton](viewer/extensions/skeleton.md)
+Далее: [Basic skeleton](viewer/extensions/skeleton.md)
