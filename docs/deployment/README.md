@@ -18,7 +18,7 @@ Azure поддерживает множество сред и языков пр�
 
 **App Service**
 
-_ Create powerful cloud apps using a fully managed platform: Quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance._ [Learn more](https://azure.microsoft.com/en-us/services/app-service/).
+_ Создавайте мощные облачные приложения с полностью управляемой платформой: быстро создавайте, развертывайте и масштабируйте веб-приложения и мобильные приложения, работающие на любой платформе. Соответствуйте строгим требованиям к производительности, масштабируемости и безопасности при использовании полностью управляемой платформы для обслуживания инфраструктуры._ [Узнайте больше](https://azure.microsoft.com/en-us/services/app-service/).
 
 Выберите язык программирования:  [Node.js](deployment/azure/node) | [.NET Framework or Core](deployment/azure/net)
 
