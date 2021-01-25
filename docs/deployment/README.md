@@ -1,10 +1,10 @@
-# Deployment
+# Развёртывание
 
-This is when your app goes live! There are several options out there, let's focus of a few.
+Настал момент запустить ваше приложение! Для этого есть несколько способов, давайте обсудим некоторые из них.
 
-## Amazon Web Services
+## Amazon Web Services 
 
-Amazon Web Services (AWS) supports many different environments and programming languages, here are a few options:
+Amazon Web Services (AWS) поддерживает разные среды и языки программирования, например: 
 
 **Elastic Beanstalk**
 
