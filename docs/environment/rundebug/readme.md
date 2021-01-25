@@ -1,11 +1,11 @@
-# Running locally & Debugging
+# Запуск и проверка кода
 
-Which tutorial are you following?
+С каким руководством вы работаете? 
 
-- [View your models](environment/rundebug/2legged.md)
-
-
-- [View BIM 360 & Fusion models](environment/rundebug/3legged.md)
+- [Визуализация моделей](environment/rundebug/2legged.md)
 
 
-- [Modify your models](environment/rundebug/2legged_da.md)
+- [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](environment/rundebug/3legged.md)
+
+
+- [Редактирование моделей в вебе](environment/rundebug/2legged_da.md)
