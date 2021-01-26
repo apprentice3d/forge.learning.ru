@@ -24,4 +24,4 @@
 
 Готовы писать программный код?
 
-Далее: [Create a server](environment/setup/2legged)
+Далее: [Создание сервера](environment/setup/2legged)
