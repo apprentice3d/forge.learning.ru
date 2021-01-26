@@ -1,19 +1,19 @@
-# View your models
+# Визуализация моделей
 
-This tutorial will guide you through creating a webapp with the following UI: a list of your buckets and objects on the left, and a 3D viewer to view them on the right.
+В этом руководстве мы расскажем, как создать веб-приложение с подобным интерфейсом (англ. UI, User Interface): список вашим бакетов (англ. bucket) и объектов слева, а 3D-модель справа.
 
 ![](_media/tutorials/run_sample_viewmodels.gif)
 
-To view your model, you need the following steps:
+Чтобы визуализировать вашу модель в браузере, вам нужно:
 
-1. [Create a server](environment/setup/2legged) << First time developer? You should start here
-2. [Authenticate](oauth/2legged/)
-3. [Upload to OSS](datamanagement/oss/)
-4. [Translate the file](modelderivative/translate/)
-5. [Show on Viewer](viewer/2legged/)
+1. [Создать сервер](environment/setup/2legged) << Вы начинающий разработчик? Начните с этого шага
+2. [Пройти авторизацию](oauth/2legged/)
+3. [Загрузить модель в OSS (object storage server)](datamanagement/oss/)
+4. [Конвертировать файл](modelderivative/translate/)
+5. [Отобразить файл во Viewer](viewer/2legged/)
 
 
-If you want to download the project ready to use, visit the following repos:
+Если вы хотите загрузить готовый проект, посмотрите следующие примеры: 
 
 - [Node.js](https://github.com/Autodesk-Forge/learn.forge.viewmodels/tree/nodejs)
 - [.NET Framework](https://github.com/Autodesk-Forge/learn.forge.viewmodels/tree/net)
@@ -22,6 +22,6 @@ If you want to download the project ready to use, visit the following repos:
 - [PHP](https://github.com/Autodesk-Forge/learn.forge.viewmodels/tree/php)
 - [Java](https://github.com/Autodesk-Forge/learn.forge.viewmodels/tree/java)
 
-Ready to start coding?
+Готовы писать программный код?
 
-Next: [Create a server](environment/setup/2legged)
+Далее: [Create a server](environment/setup/2legged)
