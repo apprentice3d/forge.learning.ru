@@ -1,24 +1,24 @@
-# View BIM 360 & Fusion models
+# Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360
 
-This tutorial will guide you creating a webapp with the following UI: on the left a list of **Hubs**, **Projects**, **Folders**, **Items** (files) and respective **Versions**, on the right a 3D viewer to view them.
+В этом руководстве мы расскажем, как создать веб-приложение со следующим интерфейсом (англ. UI, User Interface): список ваших **Hubs**, **Projects**, **Folders**, **Items** (файлов) и соответсвующие **Versions** слева, а 3D-модель справа.
 
 ![](_media/tutorials/run_sample_viewhubmodels.gif)
 
-To view your model, you need the following steps:
+Чтобы визуализировать вашу модель в браузере, вам нужно:
 
-1. [Create a server](environment/setup/3legged) << First time developer? You should start here
-2. [Authorize](oauth/3legged/)
-3. [List hubs & projects](datamanagement/hubs/readme)
-4. [User information](oauth/user/readme)
-5. [Show on Viewer](viewer/3legged/readme)
+1. [Создать сервер](environment/setup/3legged) << Вы начинающий разработчик? Начните с этого шага
+2. [Пройти авторизацию](oauth/3legged/)
+3. [Перечислить репозитории данных (англ. hubs) и проекты](datamanagement/hubs/readme)
+4. [Ввести информацию пользователя](oauth/user/readme)
+5. [Отобразить файл во Viewer](viewer/3legged/readme)
 
 
-If you want to download the project ready to use, visit the following repos:
+Если вы хотите загрузить готовый проект, посмотрите следующие примеры:
 
 - [Node.js](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/nodejs)
 - [.NET Framework](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/net)
 - [.NET Core](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/netcore)
 
-Ready to start coding?
+Готовы писать программный код?
 
-Next: [Create a server](environment/setup/3legged)
+Далее: [Создание сервера](environment/setup/3legged)
