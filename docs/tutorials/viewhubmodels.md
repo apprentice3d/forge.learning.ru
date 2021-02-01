@@ -8,8 +8,8 @@
 
 1. [Создать сервер](environment/setup/3legged) << Вы начинающий разработчик? Начните с этого шага
 2. [Пройти авторизацию](oauth/3legged/)
-3. [Перечислить репозитории данных (англ. hubs) и проекты](datamanagement/hubs/readme)
-4. [Ввести информацию пользователя](oauth/user/readme)
+3. [Указать репозитории данных (англ. hubs) и проекты](datamanagement/hubs/readme)
+4. [Обработать информацию профиля пользователя](oauth/user/readme)
 5. [Отобразить файл во Viewer](viewer/3legged/readme)
 
 
