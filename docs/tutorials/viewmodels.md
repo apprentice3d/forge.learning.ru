@@ -8,7 +8,7 @@
 
 1. [Создать сервер](environment/setup/2legged) << Вы начинающий разработчик? Начните с этого шага
 2. [Пройти авторизацию](oauth/2legged/)
-3. [Загрузить модель в OSS (object storage server)](datamanagement/oss/)
+3. [Загрузить модель в OSS (object storage service)](datamanagement/oss/)
 4. [Конвертировать файл](modelderivative/translate/)
 5. [Отобразить файл во Viewer](viewer/2legged/)
 
