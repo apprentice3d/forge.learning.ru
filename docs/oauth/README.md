@@ -1,10 +1,10 @@
-# OAuth
+# Аутенфикация (OAuth)
 
-OAuth, specifically OAuth2, is the open standard used across the Forge Platform for token-based authentication and authorization.
+Аутенфикация (OAuth), specifically OAuth2, is the open standard used across the Forge Platform for token-based authentication and authorization.
 
 ## 2-legged vs 3-legged
 
-Learn more about the [2-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-2-legged-token/) used in the [View your models](tutorials/viewmodels) tutorial, and the [3-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-3-legged-token/) used in the [View BIM 360 & Fusion models](tutorials/viewhubmodels) tutorial.
+Узнайте больше про получение 2-Legged токена для OAuth Autodesk Forge [2-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-2-legged-token/), который используется в руководстве [View your models](tutorials/viewmodels), и про получение 3-Legged токена [3-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-3-legged-token/), который используется в руководстве [View BIM 360 & Fusion models](tutorials/viewhubmodels).
 
 ## Scopes
 
