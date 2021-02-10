@@ -2,20 +2,20 @@
 
 Аутенфикация (OAuth), specifically OAuth2, is the open standard used across the Forge Platform for token-based authentication and authorization.
 
-## 2-legged vs 3-legged
+## Двухфакторная (англ. 2-legged) vs Трёхфакторная (англ. 3-legged)
 
-Узнайте больше про получение 2-Legged токена для OAuth Autodesk Forge [2-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-2-legged-token/), который используется в руководстве [View your models](tutorials/viewmodels), и про получение 3-Legged токена [3-legged workflow](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-3-legged-token/), который используется в руководстве [View BIM 360 & Fusion models](tutorials/viewhubmodels).
+Узнайте больше про получение [2-legged токена](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-2-legged-token/) для OAuth Autodesk Forge, который используется в руководстве [Визуализация моделей](tutorials/viewmodels), и про получение [3-legged токена](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/get-3-legged-token/), который используется в руководстве [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels).
 
-## Scopes
+## Область действия (англ. scopes)
 
-A scope is a permission that is set on a token, a context in which that token may act. For example, a token with _data:read_ scope is permitted to read data within the Forge ecosystem and can be used on those endpoints that require that scope. Tokens without that scope would be denied access to such endpoints. (Individual endpoint reference pages list the required scopes.)
+Область действия - это разрешение, установленное для токена, границы, в которых этот токен может действовать. Например, токен с областью  _data:read_ может считывать данные в экосистеме Forge и использоваться на тех конечных точках (англ. endpoints), которым требуется эта область. Токенам без области действия будет отказано в доступе к таким конечным точкам. (На справочных страницах отдельных конечных точек перечислены требуемые области.)
 
-Scopes serve two principal functions:
+Области применения выполняют две основные функции:
 
-- **Privacy and Control**: In a three-legged context, they act as a mechanism for requesting and securing permission to act on an end user’s behalf in specified ways.
-- **Security**: In both two- and three-legged contexts, they ensure that if you lose control of your token, it cannot be misused to access resources for which it was not intended.
+- **Конфиденциальность и контроль**: При трёхфакторной аутенфикации они действуют как механизм для запроса и обеспечения разрешения действовать от имени конечного пользователя определенными способами.
+- **Безопасность**: При двух- и трёхфакторной аутенфикации они гарантируют, что при потере контроля над своим токеном его нельзя будет неправильно использовать для доступа к ресурсам, для которых он не предназначен.
 
-[Learn more](https://developer.autodesk.com/en/docs/oauth/v2/overview/scopes/)
+[Узнайте больше](https://developer.autodesk.com/en/docs/oauth/v2/overview/scopes/)
 
 ## Public and Internal tokens
 
