@@ -1,6 +1,6 @@
 # Аутентификация (OAuth)
 
-Аутентификация(OAuth), specifically OAuth2, is the open standard used across the Forge Platform for token-based authentication and authorization.
+Аутентификация(OAuth), в частности, OAuth2, - это открытый стандарт, используемый на платформе Forge для аутентификации и авторизации на основе токенов. is the open standard used across the Forge Platform for token-based authentication and authorization.
 
 ## Двухфакторная (англ. 2-legged) vs Трёхфакторная (англ. 3-legged)
 
@@ -12,23 +12,22 @@
 
 Области применения выполняют две основные функции:
 
-- **Конфиденциальность и контроль**: При трёхфакторной аутентификации они действуют как механизм для запроса и обеспечения разрешения действовать от имени конечного пользователя определенными способами.
-- **Безопасность**: При двух- и трёхфакторной аутентификации они гарантируют, что при потере контроля над своим токеном его нельзя будет неправильно использовать для доступа к ресурсам, для которых он не предназначен.
+- **Конфиденциальность и контроль**: При трёхфакторной аутентификации они действуют как механизм для запроса и получения согласия конечного пользователя для доступа к ресурсам Forge. 
+- **Безопасность**: При двух- и трёхфакторной аутентификации они гарантируют, что при потере вами контроля над своим токеном его нельзя будет использовать неправильно для доступа к ресурсам, для которых он не предназначен.
 
 [Узнайте больше](https://developer.autodesk.com/en/docs/oauth/v2/overview/scopes/)
 
-## Public and Internal tokens
+## Открытый и внутренний токены Public and Internal tokens
 
-This tutorial will use 2 types of access tokens: public and internal. The **public** token is used for the Forge Viewer which runs and requires an access token on the client. There is a special scope for this scenario: **viewables:read**. 
+Это руководство будет использовать 2 типа ключей: открытый и внутренний. **Открытый** токен используется для Forge Viewer, который для работы требует токен доступа на стороне клиента. Для этого сценария есть отдельная область действия **viewables:read**. 
 
-Now on the server-side we need write access, so the **internal** token will use **bucket:create**, **bucket:read**, **data:read**, **data:create**, and **data:write** scopes.
+Со стороны сервера нам нужно доступ 'write', поэтому **внутренний** токен будет использовать следующие области действия: **bucket:create**, **bucket:read**, **data:read**, **data:create** и **data:write**.
 
-> Don't know which tutorial to follow? 
+> Не знаете, с какого руководства начать? Don't know which tutorial to follow? 
 > 
-> Answer this: where are the files you want to access and view? 
-> 
-> If on your computer or in some other place, then **View your models**. If the models are on any BIM 360 (Team, Design or Docs) or Fusion Team, then **View BIM 360 & Fusion models**.
+> Ответьте на этот вопрос: где находятся файлы, к которым вы хотите запросить и просмотреть?
+> Если они на вашем компьютере или в другом месте, тогда выбирайте **Визуализация моделей**. Если модели находятся в репозиториях веб-сервисов BIM 360 (Team, Design or Docs) или Fusion Team, тогда выбирайте **Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360**.
 >
-> If you want to modify models, then say no more, check the **Modify your models** tutorial.
+> Если вы хотите изменять модели в вебе, тогда вам прямой путь к руководству **Редактирование моделей в вебе**.
 
-Next: [View your models](tutorials/viewmodels) or [View BIM 360 & Fusion models](tutorials/viewhubmodels) or [Modify your models](tutorials/modifymodels)
+Далее: [Визуализация моделей](tutorials/viewmodels) или [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels) или [Редактирование моделей в вебе](tutorials/modifymodels)
