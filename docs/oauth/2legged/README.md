@@ -1,10 +1,10 @@
-# OAuth 2-legged
+# Двухфакторная (англ. 2-legged) аутентификация
 
-In formal OAuth terminology, accomplishing **two-legged** authentication on the Forge Platform requires that you use the “Client Credentials” grant type.
+В формальной терминологии OAuth, для выполнения **двухфакторной** аутентификации на платформе Forge необходимо использовать тип разрешения «Client Credentials».
 
-This means that your app directly communicates with the Forge Platform for authentication and access to resources. If it’s a web app, the end user is not directly aware of any of these server-to-server communications, as none of it is passed through the web browser. [Learn more](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics/).
+Это означает, что ваше приложение напрямую взаимодействует с платформой Forge для аутентификации и доступа к ресурсам. Если это веб-приложение, конечный пользователь не знает о взаимодействии серверов, поскольку ни одно из них не проходит через веб-браузер. [Узнайте больше](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics/).
 
-Authentication is required for accessing any resource on Forge. A **2-legged** token grants access to your application information.
+Для получения доступа к любым данным платформы Forge требуется аутентификация. **2-legged** токен предоставляет доступ к данным вашего приложения.
 
-Choose your language: [Node.js](oauth/2legged/nodejs) | [.NET Framework](oauth/2legged/net) | [.NET Core](oauth/2legged/netcore) | [Go](oauth/2legged/go) | [PHP](oauth/2legged/php) | [Java](oauth/2legged/java)
+Выберите язык: [Node.js](oauth/2legged/nodejs) | [.NET Framework](oauth/2legged/net) | [.NET Core](oauth/2legged/netcore) | [Go](oauth/2legged/go) | [PHP](oauth/2legged/php) | [Java](oauth/2legged/java)
 
