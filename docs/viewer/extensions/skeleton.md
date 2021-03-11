@@ -1,10 +1,10 @@
-# Extension Skeleton
+# Каркас расширения
 
-This step of the tutorial describes the basic skeleton of an extension with a toolbar button, which triggers a code inside `.onClick` function. You may skip to [Handling Selection](viewer/extensions/selection) for a real sample.
+Эта часть руководства описывает базовый каркас расширения с кнопкой на панели инструментов, которая запускает код внутри функции`.onClick`. Вы можете перейти сразу на пример [Handling Selection](viewer/extensions/selection).
 
-## Create the extension
+## Создания расширения
 
-Let's get started, each extension should be a JavaScript file and implement, at least, the `.load` and `.unload` functions. Create a file in the UI folder **/js/myawesomeextension.js** and copy the following content. 
+Давайте начнем! Каждое расширение должно быть файлом JavaScript и реализовывать, по крайней мере, функции `.load` и` .unload`. Создайте файл в папке UI **/js/myawesomeextension.js** и скопируйте код ниже. 
 
 ```javascript
 class MyAwesomeExtension extends Autodesk.Viewing.Extension {
@@ -53,11 +53,11 @@ class MyAwesomeExtension extends Autodesk.Viewing.Extension {
 Autodesk.Viewing.theExtensionManager.registerExtension('MyAwesomeExtension', MyAwesomeExtension);
 ```
 
-!> Note that the code above contains a place holder with `Execute an action here` comment, which should be replaced with your custom code.
+!> Обратите внимание, что приведенный выше код содержит комментарий `Execute an action here`, который следует заменить вашим пользовательским кодом.
 
-## Toolbar CSS
+## Панель инструментов CSS
 
-The toolbar button uses a **CSS** styling (see call to `.addClass` on the code). At the **/css/main.css** add the following:
+Панель инструментов использует форматирование **CSS**  (см. вызов функции `.addClass` в коде). В **/css/main.css** добавьте:
 
 ```css
 .myAwesomeExtensionIcon {
@@ -68,37 +68,37 @@ The toolbar button uses a **CSS** styling (see call to `.addClass` on the code).
 }
 ```
 
-!> The `background-image` URL should be adjusted for an existing file on your project. Viewer uses 24px images.
+!> URL `background-image` должен быть скорректирован для существующего файла в вашем проекте. Viewer использует картинки размером 24px.
 
-## Load the extension
+## Загрузка расширения
 
-The extension skeleton is ready, now open the **/index.html** file and add the following line (which loads the file):
+Каркас расширения готов, теперь откройте файл **/index.html** и, для загрузки файла, введите: 
 
 ```html
 <script src="/js/myawesomeextension.js"></script>
 ```
 
-Note :-   Make sure while loading the extensions <scripts> code, load it below the ForgeViewer.js 
+Важно :-   Make sure while loading the extensions <scripts> code, load it below the ForgeViewer.js Убедитесь, что при загрузке кода расширений <scripts>, вы загружаете его под ForgeViewer.js
 
 ![](_media/forge/extension_example.png)
 
 
 
-Finally we need to tell the Viewer to load the extension, in the **/www/js/ForgeViewer.js** find the following line:
+Наконец, нам нужно задать команду Viewer загрузить расширение, в ** / www / js / ForgeViewer.js ** найдите следующую строку:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'));
 ```
 
-And replace with:
+И замените её на:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['MyAwesomeExtension'] });
 ```
 
-At this point the extension should load and the toolbar button will show, but it doesn't execute anything (remember there is just a place holder comment on `.onClick` function). This is the basic skeleton you can use to create your extensions. 
+At this point the extension should load and the toolbar button will show, but it doesn't execute anything (remember there is just a place holder comment on `.onClick` function). This is the basic skeleton you can use to create your extensions. На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать (помните, что мы не написали код для функции `.onClick`). Это базовый каркас, который вы можете использовать для создания своих расширений.
 
-!> When creating your own extensions, make sure to rename it, names must be unique. 
+!> При создании вашего собственного расширения не забудьте его переименовать - названия должны быть уникальными. 
 
 
-Next: [Handling selection](viewer/extensions/selection)
+Далее: [Handling selection](viewer/extensions/selection)
