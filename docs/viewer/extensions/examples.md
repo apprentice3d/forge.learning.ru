@@ -1,22 +1,21 @@
-# Examples
+# Примеры
 
-We have built self contained extensions for viewer, which are easily reusable, and can be found here:
+Мы создали автономные расширения для Viewer, которые вы с легкостью можете использовать повторно:
 
 - [GitHub Repo](https://github.com/Autodesk-Forge/forge-extensions)
 - [Demo Link](https://forge-extensions.autodesk.io/)
 
-Here are a few more examples of extensions based on this skeleton approach:
+Here are a few more examples of extensions based on this skeleton approach: Вот еще несколько примеров расширений, основанных на этом каркасном подходе:
 
-- [Change color](https://forge.autodesk.com/blog/happy-easter-setthemingcolor-model-material): add 3 toolbar buttons to change colors of selected elements on the model.
-
-The extension can comunicate with server to implement more complex features, just like any other JavaScript code. The following samples demonstrate it:
+- [Change color](https://forge.autodesk.com/blog/happy-easter-setthemingcolor-model-material): добавляет 3 кнопки на панель инструментов для изменения цвета выбранных элементов модели.
+Расширение может взаимодействовать с сервером для реализации более сложных функций, как и любой другой код JavaScript. Следующие примеры демонстрируют это:
 
 **Node.js**
 
-- [Share Viewer state](https://forge.autodesk.com/blog/share-viewer-state-websockets): uses websocket to share state between 2+ instances of the Viewer.
+- [Share Viewer state](https://forge.autodesk.com/blog/share-viewer-state-websockets): uses websocket to share state between 2+ instances of the Viewer. использует websocket для обмена состоянием между 2+ экземплярами Viewer.
 
 **.NET**
 
-- [Custom properties](https://forge.autodesk.com/blog/custom-properties-viewer-net-lambda-dynamodb): stores custom properties on a database (AWS DynamoDB) and uses a .NET WebAPI code to serve via REST endpoints. 
+- [Custom properties](https://forge.autodesk.com/blog/custom-properties-viewer-net-lambda-dynamodb): stores custom properties on a database (AWS DynamoDB) and uses a .NET WebAPI code to serve via REST endpoints. хранит настраиваемые свойства в базе данных (AWS DynamoDB) и использует код .NET WebAPI для обслуживания через конечные точки REST.
 
-Next: [Deployment](deployment/)
+Далее: [Развертывание](deployment/)
