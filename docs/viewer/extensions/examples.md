@@ -5,10 +5,10 @@
 - [GitHub Repo](https://github.com/Autodesk-Forge/forge-extensions)
 - [Demo Link](https://forge-extensions.autodesk.io/)
 
-Here are a few more examples of extensions based on this skeleton approach: Вот еще несколько примеров расширений, основанных на этом каркасном подходе:
+Вот еще несколько примеров расширений, основанных на каркасном подходе:
 
 - [Change color](https://forge.autodesk.com/blog/happy-easter-setthemingcolor-model-material): добавляет 3 кнопки на панель инструментов для изменения цвета выбранных элементов модели.
-Расширение может взаимодействовать с сервером для реализации более сложных функций, как и любой другой код JavaScript. Следующие примеры демонстрируют это:
+Расширение может взаимодействовать с сервером для реализации более сложных функций, как и любой другой код JavaScript. Примеры ниже демонстрируют это:
 
 **Node.js**
 
