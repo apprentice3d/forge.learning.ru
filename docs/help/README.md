@@ -1,25 +1,25 @@
-# Support & Online resources
+#Поддержка и полезные онлайн-ресурсы
 
-## Online Resources
+## Онлайн-ресурсы
 
-**Documentation**
+**Документация**
 
- - [Developer Portal](https://developer.autodesk.com/) is the "source of truth" on Forge!
+ - [Сайт платформы Autodesk Forge](https://forge.autodesk.com/) 
 
-**Samples**
+**Примеры**
 
-- [Autodesk Forge](https://github.com/Autodesk-Forge/) on Github
+- [Autodesk Forge](https://github.com/Autodesk-Forge/) на Github
 
-**Blog**
+**Блог**
 
 - [Forge Blog](https://forge.autodesk.com/blog/)
 
-## Getting help
+## Техническая поддержка
 
-Questions? Stackoverflow! 
+Технические вопросы направляйте напрямую на Stackoverflow! 
 
 [General Forge](https://stackoverflow.com/questions/tagged/autodesk-forge)
 
-Used on this tutorial: [Data Management](https://stackoverflow.com/questions/tagged/autodesk-data-management) | [Model Derivative](https://stackoverflow.com/questions/tagged/autodesk-model-derivative) | [Viewer](https://stackoverflow.com/questions/tagged/autodesk-viewer) | [Design Automation](https://stackoverflow.com/questions/tagged/autodesk-designautomation)
+В этом руководстве использовались: [Data Management](https://stackoverflow.com/questions/tagged/autodesk-data-management) | [Model Derivative](https://stackoverflow.com/questions/tagged/autodesk-model-derivative) | [Viewer](https://stackoverflow.com/questions/tagged/autodesk-viewer) | [Design Automation](https://stackoverflow.com/questions/tagged/autodesk-designautomation)
 
-Other APIs: [Webhooks](https://stackoverflow.com/questions/tagged/autodesk-webhooks) | [BIM 360](https://stackoverflow.com/questions/tagged/autodesk-bim360)
+Другие APIs: [Webhooks](https://stackoverflow.com/questions/tagged/autodesk-webhooks) | [BIM 360](https://stackoverflow.com/questions/tagged/autodesk-bim360)
