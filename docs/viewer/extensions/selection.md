@@ -4,7 +4,6 @@
 
 ## Создание расширения
 
-As each extension should be a separeted JavaScript file, create a file in the UI folder **/js/handleselectionextension.js** and copy the following content (which is same as the basic skeleton, except with a different name): 
 Поскольку каждое расширение должно быть отдельным файлом JavaScript, создайте файл в папке UI ** / js / handleselectionextension.js ** и скопируйте следующий код (который совпадает с базовым каркасом, но имеет другое название):
 
 ```javascript
@@ -66,11 +65,11 @@ Autodesk.Viewing.theExtensionManager.registerExtension('HandleSelectionExtension
 }
 ```
 
-> You can use your own images or from a library, in this case let's use [Font Awesome](https://fontawesome.com/) icons in PNG format. Вы можете использовать свои собственные изображения или изображения из библиотеки, в этом случае используйте значки [Font Awesome] (https://fontawesome.com/) в формате PNG.
+> Вы можете использовать свои собственные изображения или изображения из библиотеки, в этом случае используйте значки [Font Awesome] (https://fontawesome.com/) в формате PNG.
 
 ## Загрузка расширения
 
-[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе **базовый каркас** (конечно, изменив название). For your reference, here are the 2 changes needed: include the `<script>` on **index.html** and include the extension on viewer creation: Для справки, необходимо внести 2 изменения: включить `<script>` в ** index.html ** и включить расширение при настройке Viewer:
+[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе **базовый каркас** (конечно, изменив название). Для справки, необходимо внести 2 изменения: включить `<script>` в ** index.html ** и включить расширение при настройке Viewer:
 
  Откройте файл **/index.html** и добавьте следующую строчку:
 
@@ -84,7 +83,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension('HandleSelectionExtension
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'));
 ```
 
-И замениье её на:
+И замените её на:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['HandleSelectionExtension'] });
@@ -100,7 +99,7 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 
 ## Добавление функции .onClick 
 
-Now it's time to replace the `Execute an action here` placeholder inside the `.onClick` function. For this sample, let's isolate the selection. Copy the following content to your extension **.js** file inside the `.onClick` function: Теперь пора заменить `Execute an action here` внутри функции` .onClick`. Для этого примера давайте будем скрывать выделенные элементы. Скопируйте следующий код в файл вашего расширения **.js** внутри функции `.onClick`:
+Теперь пора заменить `Execute an action here` внутри функции` .onClick`. Для этого примера давайте будем выделять элементы модели. Скопируйте следующий код в файл вашего расширения **.js** внутри функции `.onClick`:
 
 ```javascript
 // Get current selection
@@ -130,7 +129,7 @@ if (selection.length > 0) {
 
 ## Завершение
 
-На этом этапе расширение должно загрузиться и отобразить кнопку на панели инструментов. Выберите один или несколько объектов и нажмите кнопку, чтобы подтвердить, какие элементы нужно скрыть. Следующее видео демонстрирует то, как это должно выглядеть.
+На этом этапе расширение должно загрузиться и отобразить кнопку на панели инструментов. Выберите один или несколько объектов и нажмите кнопку, чтобы подтвердить, какие элементы нужно выделить. Следующее видео демонстрирует то, как это выглядит.
 
 ![](_media/javascript/js_isolate.gif)
 
