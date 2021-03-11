@@ -1,10 +1,11 @@
 # Selection
 
-This section uses the **basic skeleton** from previous section, but let's rename the **MyAwesomeExtension** to **HandleSelectionExtension**. 
+Этот раздел использует **базовый каркас** из предыдущего раздела, но давайте изменим название с **MyAwesomeExtension** на **HandleSelectionExtension**. 
 
-## Create the extension
+## Создание расширения
 
 As each extension should be a separeted JavaScript file, create a file in the UI folder **/js/handleselectionextension.js** and copy the following content (which is same as the basic skeleton, except with a different name): 
+Поскольку каждое расширение должно быть отдельным файлом JavaScript, создайте файл в папке UI ** / js / handleselectionextension.js ** и скопируйте следующий код (который совпадает с базовым каркасом, но имеет другое название):
 
 ```javascript
 class HandleSelectionExtension extends Autodesk.Viewing.Extension {
@@ -52,9 +53,9 @@ class HandleSelectionExtension extends Autodesk.Viewing.Extension {
 
 Autodesk.Viewing.theExtensionManager.registerExtension('HandleSelectionExtension', HandleSelectionExtension);
 ```
-## Toolbar CSS
+## Панель инструментов CSS
 
-Just like in the basic skeleton, the toolbar button uses a **CSS** styling. In the **/css/main.css** add the following:
+Как и в базовом каркасе, панель инструментов использует форматирование **CSS**. В **/css/main.css** добавьте:
 
 ```css
 .handleSelectionExtensionIcon {
@@ -65,41 +66,41 @@ Just like in the basic skeleton, the toolbar button uses a **CSS** styling. In t
 }
 ```
 
-> You can use your own images or from a library, in this case let's use [Font Awesome](https://fontawesome.com/) icons in PNG format.
+> You can use your own images or from a library, in this case let's use [Font Awesome](https://fontawesome.com/) icons in PNG format. Вы можете использовать свои собственные изображения или изображения из библиотеки, в этом случае используйте значки [Font Awesome] (https://fontawesome.com/) в формате PNG.
 
-## Load the extension
+## Загрузка расширения
 
-Finally, [load the extension](/viewer/extensions/skeleton?id=loading-the-extension) using the same code as the **basic skeleton** (of course, adjust the names). For your reference, here are the 2 changes needed: include the `<script>` on **index.html** and include the extension on viewer creation:
+[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе **базовый каркас** (конечно, изменив название). For your reference, here are the 2 changes needed: include the `<script>` on **index.html** and include the extension on viewer creation: Для справки, необходимо внести 2 изменения: включить `<script>` в ** index.html ** и включить расширение при настройке Viewer:
 
- Open the **/index.html** file and add the following line :
+ Откройте файл **/index.html** и добавьте следующую строчку:
 
 ```html
 <script src="/js/handleselectionextension.js"></script>
 ```
 
-In the **/www/js/ForgeViewer.js** find the following line:
+В **/www/js/ForgeViewer.js** найдите строку:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'));
 ```
 
-And replace with:
+И замениье её на:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['HandleSelectionExtension'] });
 ```
 
-Note :- If one extension is already loaded then HandleSelectionExtension can be added using **comma (',')**  in an array:
+Важно :- Если одно расширение уже загружено, тогда HandleSelectionExtension может быть добавлено с использованием **запятой (',')** в множестве:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions['MyAwesomeExtension','HandleSelectionExtension'] }); 
 ```
 
-At this point the extension should load with a toolbar icon, but it doesn't do anything.
+На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать.
 
-## Implement .onClick function
+## Добавление функции .onClick 
 
-Now it's time to replace the `Execute an action here` placeholder inside the `.onClick` function. For this sample, let's isolate the selection. Copy the following content to your extension **.js** file inside the `.onClick` function:
+Now it's time to replace the `Execute an action here` placeholder inside the `.onClick` function. For this sample, let's isolate the selection. Copy the following content to your extension **.js** file inside the `.onClick` function: Теперь пора заменить `Execute an action here` внутри функции` .onClick`. Для этого примера давайте будем скрывать выделенные элементы. Скопируйте следующий код в файл вашего расширения **.js** внутри функции `.onClick`:
 
 ```javascript
 // Get current selection
@@ -127,9 +128,9 @@ if (selection.length > 0) {
 }
 ```
 
-## Conclusion
+## Завершение
 
-At this point the extension should load and show a toolbar button. Select one or more object and click on the button, confirm which elements to isolate. The following video demonstrate its behaviour.
+На этом этапе расширение должно загрузиться и отобразить кнопку на панели инструментов. Выберите один или несколько объектов и нажмите кнопку, чтобы подтвердить, какие элементы нужно скрыть. Следующее видео демонстрирует то, как это должно выглядеть.
 
 ![](_media/javascript/js_isolate.gif)
 
