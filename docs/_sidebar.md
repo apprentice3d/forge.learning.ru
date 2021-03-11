@@ -31,4 +31,4 @@
   - [Подготовка данных](viewer/dashboard/panelbasics)
   - [Добавления графиков](viewer/dashboard/charts)
 - [Развертывание](deployment/)
-- [Поддержка и другие ресурсы](help/)
+- [Поддержка и полезные онлайн-ресурсы](help/)
