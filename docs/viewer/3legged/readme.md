@@ -1,5 +1,5 @@
 # Viewer
 
-The Viewer is a client-side library, based on pure `HTML5` and `JavaScript`. But there are a few tips for each server-side implementation: 
+Forge Viewer – это frontend библиотека, построенная с помощью `HTML5` и `JavaScript`. Тем не менее, у нас есть несколько советов по его реализации на стороне сервера: 
 
-Choose your language: [Node.js](viewer/3legged/nodejs) | [.NET Framework](viewer/3legged/net) | [.NET Core](viewer/3legged/netcore)
+Выберите язык: [Node.js](viewer/3legged/nodejs) | [.NET Framework](viewer/3legged/net) | [.NET Core](viewer/3legged/netcore)
