@@ -1,18 +1,18 @@
 # Data Management (OSS)
 
-In Forge OSS (Object Storage Service), files are stored as objects in buckets. Apart from giving your app the ability to download data from the broader Forge ecosystem, it also provides the functionality to manage your app’s own buckets and objects (including creation, listing, deleting, uploading, and downloading).
+В Forge OSS (Object Storage Service) файлы хранятся в виде объектов в бакетах (англ. buckets). Помимо предоставления вашему приложению возможности загружать данные из экосистемы Forge, OSS также предоставляет возможности для управления собственными бакетами и объектами вашего приложения (включая создание, перечисление, удаление, выгрузку и загрузку). 
 
-Each bucket also has a [retention policy](https://developer.autodesk.com/en/docs/data/v2/overview/retention-policy/) that determines object retention time:
+У каждого бакета есть  [политика хранения](https://developer.autodesk.com/en/docs/data/v2/overview/retention-policy/), которая определяет время хранения файлов:
 
- - **transient**: Cache-like storage that persists for only 24 hours, ideal for ephemeral objects. **For this tutorial, let's use this policy**.
- - **temporary**: Storage that persists for 30 days.
- - **persistent**: Storage that persists until it’s deleted.
+ - **краткосрочное**: Хранилище, которое сохраняет файлы всего 24 часа, идеально подходит для временных объектов. **В этом руководстве мы воспользуемся этой политикой**.
+ - **•	временное**: Хранилище, которое сохраняет файлы в течение 30 дней.
+ - **persistent**: Хранилище, которое сохраняет файлы до их удаления.
 
-In this section, let's create a few endpoints to create buckets, upload files, and list buckets & objects.
+В этом разделе мы создадим несколько конечных точек для создания бакетов, загрузки файлов и составления списка бакетов и объектов.
 
-> This tutorial code will prefix the bucket key with your Forge Client ID transparently, which should avoid duplicated names.
+> Код из этого руководства будет ставиться перед ключом бакета (англ. bucket key) с вашим Forge Client ID, чтобы избежать дублирования имен.
 
-!> Note that bucket keys must be of the form [-_.a-z0-9]{3,128}
+!> Обратите внимание, что ключ бакета должен иметь вид  [-_.a-z0-9]{3,128}
  
-Choose your language: [Node.js](datamanagement/oss/nodejs) | [.NET Framework](datamanagement/oss/net) | [.NET Core](datamanagement/oss/netcore) | [Go](datamanagement/oss/go) | [PHP](datamanagement/oss/php) | [Java](datamanagement/oss/java)
+Выберите язык: [Node.js](datamanagement/oss/nodejs) | [.NET Framework](datamanagement/oss/net) | [.NET Core](datamanagement/oss/netcore) | [Go](datamanagement/oss/go) | [PHP](datamanagement/oss/php) | [Java](datamanagement/oss/java)
 
