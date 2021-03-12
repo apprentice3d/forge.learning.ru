@@ -1,10 +1,10 @@
-# Docking Panel
+# Панель свойств
 
-This section uses the **basic skeleton** from previous section, but let's rename the **MyAwesomeExtension** to **ModelSummaryExtension**. 
+Этот раздел использует базовую структуру из предыдущего раздела, но давайте изменим название с **MyAwesomeExtension** на **ModelSummaryExtension**.
 
 ## Создание расширения
 
-Каждое расширение должно быть файлом JavaScript и реализовывать, по крайней мере, функции .load и .unload. Создайте файл в папке UI **/js/dockingpanelextension.js* и скопируйте код ниже. **/js/dockingpanelextension.js** and copy the following content (который совпадает с базовой структурой, но имеет другое название): 
+Каждое расширение должно быть файлом JavaScript и реализовывать, по крайней мере, функции .load и .unload. Создайте файл в папке UI **/js/dockingpanelextension.js** и скопируйте код ниже (который совпадает с базовой структурой, но имеет другое название): 
 
 ```javascript
 class ModelSummaryExtension extends Autodesk.Viewing.Extension {
@@ -100,9 +100,9 @@ getAllLeafComponents(callback) {
 }
 ```
 
-## Docking panel
+## Панель свойств
 
-The extension will show the results on a Viewer [property panel](https://forge.autodesk.com/en/docs/viewer/v7/reference/UI/PropertyPanel/). Copy the content to your extension **.js** file (anywhere on the file, outside other functions).
+Расширение отобразит результат во Viewer [property panel](https://forge.autodesk.com/en/docs/viewer/v7/reference/UI/PropertyPanel/). Скопируйте код в файл вашего расширения **.js** (где угодно в файле, отдельно от других функций).
 
 ```javascript
 class ModelSummaryPanel extends Autodesk.Viewing.UI.PropertyPanel {
@@ -113,13 +113,14 @@ class ModelSummaryPanel extends Autodesk.Viewing.UI.PropertyPanel {
 }
 ```
 
-## Implement .onClick function
+## Добавление функции .onClick
 
-Now it's time to replace the `Execute an action here` placeholder inside the `onClick` function. For this sample, let's first show the property panel, then enumerate leaf nodes, then get a specific set of properties for leaf nodes, finally count ocurrences of those properties and show results on the panel. 
+Теперь пора заменить `Execute an action here` внутри функции `onClick`. Для этого примера давайте будем выделять элементы модели. Скопируйте следующий код в файл вашего расширения .js внутри функции .onClick: Now it's time to replace the `Execute an action here` placeholder inside the `onClick` function. For this sample, let's first show the property panel, then enumerate leaf nodes, then get a specific set of properties for leaf nodes, finally count ocurrences of those properties and show results on the panel. 
+Давайте сначала отобрахим панель свойств, затем перечислим конечные узлы, затем получим определенный набор свойств для конечных узлов, и, наконец, подсчитаем вхождение этих свойств и отобразим результаты.
 
-!> In the code below you **MUST** adjust `filteredProps` to the property names that applies to your models. For instance, as **Material** exists on almost all models, you can try with `const filteredProps = ['Material'];`
+!> В коде ниже вам **НЕОБХОДИМО** настроить `filteredProps` под названия свойств, которые применяются к вашим моделям. to the property names that applies to your models. Например, т.к. **Material** есть практически на всех моделях, вы можете попробовать `const filteredProps = ['Material'];`
 
-Copy the following content to your extension **.js** file inside the `onClick` function of the extension's button:
+Copy the following content to your extension **.js** file inside the `onClick` function Скопируйте следующий код в файл вашего расширения **.js** внутри функции `onClick`. 
 
 ```javascript
 // Check if the panel is created or not
@@ -169,13 +170,13 @@ this.getAllLeafComponents((dbIds) => {
 });
 ```
 
-## Conclusion
+## Заключение
 
-At this point the extension should load and show a toolbar button. Click on the button and the panel should appear. The following video demonstrate its behaviour.
+На этом этапе расширение должно загрузиться и отобразить кнопку во Viewer. Нажмите на кнопку, чтобы получить панель свойств. Видео ниже демонстрирует то, как это выглядит.
 
 ![](_media/javascript/js_dockingpanel.gif)
 
-> As mentioned, you need to define the **filteredProps** appropriate for your models. The above video used `['Material', 'Design Status', 'Type Name'];` which works for both models.
+> Как уже было упомянуто, вам нужно определить **filteredProps** в соответсвии с вашими моделями. Видео выше использует `['Material', 'Design Status', 'Type Name'];`, все они работают для обеих моделей. 
 
 Ключевые функции:
 
