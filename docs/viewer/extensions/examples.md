@@ -3,7 +3,7 @@
 Мы создали автономные расширения для Viewer, которые вы с легкостью можете использовать повторно:
 
 - [GitHub Repo](https://github.com/Autodesk-Forge/forge-extensions)
-- [Demo Link](https://forge-extensions.autodesk.io/)
+- [Ссылка на демо](https://forge-extensions.autodesk.io/)
 
 Вот еще несколько примеров расширений, основанных на каркасном подходе:
 
