@@ -1,8 +1,8 @@
-# Add charts
+# Графики
 
-There are many libraries to create charts, for this sample let's use [Chart.js](https://www.chartjs.org/), very simple yet nice to use and with great visual.
+Существует множество библиотек для создания графиков, мы воспользуемся [Chart.js](https://www.chartjs.org/), очень простая библиотека с отличными возможностями для визуализации.
 
-At the **index.html** add the `<script>` and `<link>` stylesheet below for the [Chart.js CDN](https://cdnjs.com/libraries/Chart.js) libraries reference. This should go inside the `<head>` 
+В файл **index.html** добавьте `<script>` и `<link>` для библиотек [Chart.js CDN](https://cdnjs.com/libraries/Chart.js). Это должно находиться в блоке `<head>`. 
 
 ```html
 <!--Chart JS  packages-->
@@ -10,9 +10,9 @@ At the **index.html** add the `<script>` and `<link>` stylesheet below for the [
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" />
 ```
 
-## Bar chart
+## Гистограмма (англ. bar chart)
 
-Under `/js/dashboard/` folder create a new **PanelBarChart.js** file with the following content:
+В папке `/js/dashboard/` создайте новый файл **PanelBarChart.js** со следующим кодом:
 
 ```javascript
 class BarChart extends DashboardPanelChart {
@@ -63,9 +63,9 @@ class BarChart extends DashboardPanelChart {
 }
 ```
 
-## Pie Chart
+## Диаграмма (англ. pie chart)
 
-Under `/js/dashboard/` folder create a new **PanelPieChart.js** file with the following content:
+В папке `/js/dashboard/` создайте новый файл **PanelPieChart.js** со следующим кодом:
 
 ```javascript
 class PieChart extends DashboardPanelChart {
@@ -109,32 +109,32 @@ class PieChart extends DashboardPanelChart {
 }
 ```
 
-At the **index.html** add 2 `<script>` for these new files. This should go inside the `<head>` and after the **DashboardPanel.js**:
+В файл **index.html** добавьте 2 `<script>` для этих файлов. Это должно находиться в блоке `<head>`, после **DashboardPanel.js**:
 
 ```html
 <script src="js/Dashboard/PanelBarChart.js"></script>
 <script src="js/Dashboard/PanelPieChart.js"></script>
 ```
 
-Your dashboard is now ready to run! Launch the browser, go to `http://localhost3000` and select a model.
+Ваш dashboard готов! Откройте браузер, перейдите по ссылке `http://localhost3000` и выберите модель.
 
-# Troubleshooting
+# Устранение проблем
 
-The popup alert message with *This model does not contain a Material property for the PieChart* (or BarChar) simply indicates that the default **Material** property is not available on the current model, therefore the pie or bar chart cannot be created. The following message will appear.
+Всплывающее окно с надписью *This model does not contain a Material property for the PieChart* (или BarChar) означает, что свойство **Material** не доступно для данной модели, поэтому графики не могут быть созданы. Вы увидите следующее сообщение: 
 
 ![](_media/javascript/js_dashboard_propertymissing.png)
 
-To fix it, go to `Dashboard.js` (under `/js/dashboard/` folder), at lines 7 and 8 adjust the property name:
+Чтобы это исправить, перейдите в `Dashboard.js` (в папке `/js/dashboard/`), и измените названия свойств в строчках 7 и 8:
 
 ```javascript
 new BarChart('Material'),
 new PieChart('Material')
 ```
 
-**Don't know which property is available?**
+**Не знаете, какие свойства вам доступны?**
 
-When the selected property is not available, the code will output a list of all the properties available at the browser console. 
+Если выбранное свойство недоступно, код выведет список всех свойств, доступных в консоли браузера.
 
-> The browser console is essential for web development and debug. Learn more on how to use it for [Chrome](https://developers.google.com/web/tools/chrome-devtools/console/), [Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console), [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console) and [Safari](https://developer.apple.com/safari/tools/).
+> Консоль браузера необходима для веб-разработки и проверки кода. Узнайте больше о том, как её использовать для [Chrome](https://developers.google.com/web/tools/chrome-devtools/console/), [Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console), [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console) and [Safari](https://developer.apple.com/safari/tools/).
 
-Next: [Deployment](deployment/)
+Далее: [Deployment](deployment/)
