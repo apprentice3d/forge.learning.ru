@@ -1,15 +1,15 @@
-# Prepare the data
+# Подготовка данных 
 
-The Viewer contains a lot of data from the model, but we need to filter and adjust to our dashboard. The following class will help on that.
+Viewer содержит много данных из модели, но нам нужно их отфильтровать и настроить dashboard. Следующий класс поможет в этом.
 
-There are several ways to organize data, like [Arrays](https://www.w3schools.com/js/js_arrays.asp), for this sample let's use JavaScript object (as a hash table). In essence it would be something like:
+Существует несколько способов организовать данные, например, [Arrays](https://www.w3schools.com/js/js_arrays.asp), для этого примера мы будем использовать объект JavaScript (как hash table). По сути это будет что-то подобное:
 
 ```javascript
 var data = {};
 data['key'] = someValue;
 ```
 
-But we have multiple leves, like:
+У нас есть несколько уровней:
 
 ```javascript
 var data = {};
@@ -17,19 +17,19 @@ data['key'] = {};
 data['key']['subkey'] = someValue;
 ```
 
-Using that approach, let's store the property name, property value and an array of dbIds with that value. For instance:
+Используя этот подход, мы сохраняем имя свойства, значение свойства и массив dbIds с этим значением. Например:
 
 ```javascript
 data['Category']['Walls'] = [123, 456, 789];
 ```
 
-The following code will prepare that data.
+Этот код подготовит данные.
 
 ## DashboardPanel.js
 
-Let's reuse the [getAllLeafComponents](viewer/extensions/panel?id=enumerate-leaf-nodes) method (from the Viewer Extension tutorial) to find all the visible dbIds on the model, then use `getProperties` to get the information. That is raw data. 
+Давайтe снова используем метод [getAllLeafComponents](viewer/extensions/panel?id=enumerate-leaf-nodes) (из руководства "Расширения Viewer"), чтобы найти все видимые dbIds в модели, а затем `getProperties`, чтобы получить информацию to get the information. Это сырые данные 
 
-Under `/js/dashboard/` folder, create a new **DashboardPanel.js** with the following content:
+В папке `/js/dashboard/` создайте **DashboardPanel.js** со следующим кодом:
 
 ```javascript
 // Dashboard panel base
@@ -132,10 +132,10 @@ class ModelData {
 }
 ```
 
-At the **index.html** add a `<script>` for this new file. This should go inside the `<head>` and after the **Dashboard.js**:
+В файл **index.html** добавьте `<script>` для нового файла. Это должно находиться в блоке `<head>`, после **Dashboard.js**:
 
 ```html
 <script src="js/Dashboard/DashboardPanel.js"></script>  
 ```
 
-Next: [Add charts](viewer/dashboard/charts)
+Далее: [Добавление графиков](viewer/dashboard/charts)
