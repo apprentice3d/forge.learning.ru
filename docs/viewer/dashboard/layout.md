@@ -1,14 +1,14 @@
-# Adjust layout
+# Организация вашего веб-приложения
 
-This step of the tutorial uses the basic layout of your app, but adds an extra column for charts.
+This step of the tutorial uses the basic layout of your app, but adds an extra column for charts. На этом шаге руководства мы используем базовый макет вашего приложения, но при этом добавлям дополнительный столбец для диаграмм.
 
-Let's create a new `Dashboard` folder under `/js/` to place the new files.
+Давайте создадим папку `Dashboard` в `/js/`, чтобы разместить новый файлы.
 
 ## Dashboard.js
 
-This code will adjust the page layout, watch the **Viewer** and load the charts when the model date is loaded. It uses [JavaScript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
+Этот код отрегулирует внешний вид веб-страницы, откроет **Viewer** и отобразит графики, когда данные модели будут загружены. Он использует [JavaScript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
 
-Create a new **Dashboard.js** file under `/js/dashboard/` folder with the following content:
+Создайте новый файл **Dashboard.js** в папке `/js/dashboard/` со следующим кодом:
 
 ```javascript
 $(document).ready(function () {
@@ -59,16 +59,16 @@ class Dashboard {
 }
 ```
 
-At the **index.html** add a `<script>` for this new file. This should go inside the `<head>`:
-
+В **index.html** добавьте `<script>` для нового файла. Это должно находиться в блоке `<head>`:
+    
 ```html
 <!-- dashboard files -->
 <script src="js/Dashboard/Dashboard.js"></script>  
 ```
 
-## Adjust the main.css
+## Настройте основной файл .css
 
-Let's also add a couple extra CSS classes to help on the layout. Add the following to your `/css/main.css` file:
+Давайте также добавим пару дополнительных классов CSS, чтобы изменить внешний вид веб-приложения. Добавьте следующий код к вашему файлу `/css/main.css`:
 
 ```css
 #dashboard{
@@ -87,4 +87,4 @@ Let's also add a couple extra CSS classes to help on the layout. Add the followi
 }
 ```
 
-Next: [Panel basics](viewer/dashboard/panelbasics)
+Далее: [Panel basics](viewer/dashboard/panelbasics)
