@@ -78,13 +78,13 @@ Autodesk.Viewing.theExtensionManager.registerExtension('ModelSummaryExtension', 
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['ModelSummaryExtension'] });
 ```
 
-> Note how `extensions` is an array, so you can load multiple extensions! For instance, to load the previous selection sample and this, just use `['HandleSelectionExtension', 'ModelSummaryExtension']` instead! Cool, right?
+> Примечание: Расширения - это массив, поэтому вы можете загружать сразу несколько расширений! Например, предыдущий пример и этот, для этого вы просто используете `['HandleSelectionExtension', 'ModelSummaryExtension']`! Классно, да?
 
 На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать.
 
-## Enumerate leaf nodes
+## Перечисление конечных узлов
 
-The Viewer contains all elements on the model, including categories (e.g. families or part definition), so we need to enumerate the leaf nodes, meaning actual instances on the model. The following `getAllLeafComponents()` function should be added to our extension class. This is based on [this blog post](https://forge.autodesk.com/blog/enumerating-leaf-nodes-viewer). 
+Viewer содержит все элементы модели, включая категории (например, семейства или определение детали), поэтому нам нужно перечислить конечные узлы, т.е. фактические экземпляры класса в модели. Функция `getAllLeafComponents()` должна быть добавлены к классу нашего расширения. [См. наш блог](https://forge.autodesk.com/blog/enumerating-leaf-nodes-viewer). 
 
 ```javascript
 getAllLeafComponents(callback) {
