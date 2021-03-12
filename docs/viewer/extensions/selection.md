@@ -1,10 +1,10 @@
 # Selection
 
-Этот раздел использует **базовый каркас** из предыдущего раздела, но давайте изменим название с **MyAwesomeExtension** на **HandleSelectionExtension**. 
+Этот раздел использует **базовую структуру** из предыдущего раздела, но давайте изменим название с **MyAwesomeExtension** на **HandleSelectionExtension**. 
 
 ## Создание расширения
 
-Поскольку каждое расширение должно быть отдельным файлом JavaScript, создайте файл в папке UI ** / js / handleselectionextension.js ** и скопируйте следующий код (который совпадает с базовым каркасом, но имеет другое название):
+Поскольку каждое расширение должно быть отдельным файлом JavaScript, создайте файл в папке UI ** / js / handleselectionextension.js ** и скопируйте следующий код (который совпадает с базовой структурой, но имеет другое название):
 
 ```javascript
 class HandleSelectionExtension extends Autodesk.Viewing.Extension {
@@ -69,7 +69,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension('HandleSelectionExtension
 
 ## Загрузка расширения
 
-[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе **базовый каркас** (конечно, изменив название). Для справки, необходимо внести 2 изменения: включить `<script>` в ** index.html ** и включить расширение при настройке Viewer:
+[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе **базовая структура** (конечно, изменив название). Для справки, необходимо внести 2 изменения: включить `<script>` в ** index.html ** и включить расширение при настройке Viewer:
 
  Откройте файл **/index.html** и добавьте следующую строчку:
 
@@ -133,17 +133,17 @@ if (selection.length > 0) {
 
 ![](_media/javascript/js_isolate.gif)
 
-> The browser console is essential for web development and debug. Learn more on how to use it for [Chrome](https://developers.google.com/web/tools/chrome-devtools/console/), [Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console), [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console) and [Safari](https://developer.apple.com/safari/tools/).
+> Консоль браузера необходима для веб-разработки и проверки кода. Узнайте больше о том, как её использовать для [Chrome](https://developers.google.com/web/tools/chrome-devtools/console/), [Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console), [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console) и [Safari](https://developer.apple.com/safari/tools/).
 
-Key learning points:
+Ключевые функции:
 
-- **.getSelection()** returns an array of **dbId** from the model, and **.clearSelection()**
-- **.getProperties()** is an asynchronous method that returns all properties for a given dbId via callback, which is widelly used on Viewer, [learn more about callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-- **.isolate()** method makes all other elements transparent ("ghosted")
+- **.getSelection()** возвращает массив **dbId** и **.clearSelection()**
+- **.getProperties()** это асинхронный метод, который возвращает все свойства для данного dbId через обратный вызов (англ. callback), который широко используется в Viewer, [подробнее о callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+- **.isolate()** метод, делает все остальные элементы прозрачными ("ghosted")
 
-Additional learning points:
+Дополнительные функции:
 
-- **.forEach()** to iterate through a collection, this is a JavaScript feature, [learn more](https://www.w3schools.com/jsref/jsref_forEach.asp)
-- **.push()** to to include items on an array, [learn more](https://www.w3schools.com/jsref/jsref_push.asp)
+- **.forEach()** для перебора коллекции, это функция JavaScript, [learn more](https://www.w3schools.com/jsref/jsref_forEach.asp)
+- **.push()** для добавления элементов в массив, [learn more](https://www.w3schools.com/jsref/jsref_push.asp)
 
-Next: [Docking panel](viewer/extensions/panel)
+Далее: [Docking panel](viewer/extensions/panel)
