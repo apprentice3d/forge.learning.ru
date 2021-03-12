@@ -2,9 +2,9 @@
 
 This section uses the **basic skeleton** from previous section, but let's rename the **MyAwesomeExtension** to **ModelSummaryExtension**. 
 
-## Create the extension
+## Создание расширения
 
-As each extension should be a separeted JavaScript file, create a file in the UI folder **/js/dockingpanelextension.js** and copy the following content (which is same as the basic skeleton, except with a different name): 
+Каждое расширение должно быть файлом JavaScript и реализовывать, по крайней мере, функции .load и .unload. Создайте файл в папке UI **/js/dockingpanelextension.js* и скопируйте код ниже. **/js/dockingpanelextension.js** and copy the following content (который совпадает с базовой структурой, но имеет другое название): 
 
 ```javascript
 class ModelSummaryExtension extends Autodesk.Viewing.Extension {
@@ -53,9 +53,9 @@ class ModelSummaryExtension extends Autodesk.Viewing.Extension {
 Autodesk.Viewing.theExtensionManager.registerExtension('ModelSummaryExtension', ModelSummaryExtension);
 ```
 
-## Toolbar CSS
+## Панель инструментов CSS
 
-Just like in the basic skeleton, the toolbar button uses a **CSS** styling (see call to `.addClass` on the code). In the **/css/main.css** add the following:
+Как и в базовой структуре, панель инструментов использует форматирование CSS (см. вызов функции `.addClass` в коде). В /css/main.css добавьте: 
 
 ```css
 .modelSummaryExtensionIcon {
@@ -66,9 +66,9 @@ Just like in the basic skeleton, the toolbar button uses a **CSS** styling (see 
 }
 ```
 
-## Load the extension
+## Загрузка расширения
 
-Finally, [load the extension](/viewer/extensions/skeleton?id=loading-the-extension) using the same code as the **basic skeleton** (of course, adjust the names). For your reference, here are the 2 changes needed: include the `<script>` on **index.html** and include the extension on viewer creation:
+[Загрузите расширение](/viewer/extensions/skeleton?id=loading-the-extension), используя тот же код, как и в разделе базовая структура (конечно, изменив название). Для справки, необходимо внести 2 изменения: включить `<script>` в **index.html** и включить расширение при настройке Viewer: 
 
 ```html
 <script src="/js/dockingpanelextension.js"></script>
@@ -80,7 +80,7 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 
 > Note how `extensions` is an array, so you can load multiple extensions! For instance, to load the previous selection sample and this, just use `['HandleSelectionExtension', 'ModelSummaryExtension']` instead! Cool, right?
 
-At this point the extension should load with a toolbar icon, but it doesn't do anything.
+На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать.
 
 ## Enumerate leaf nodes
 
