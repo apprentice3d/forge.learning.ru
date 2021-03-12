@@ -177,14 +177,14 @@ At this point the extension should load and show a toolbar button. Click on the 
 
 > As mentioned, you need to define the **filteredProps** appropriate for your models. The above video used `['Material', 'Design Status', 'Type Name'];` which works for both models.
 
-Key learning points:
+Ключевые функции:
 
-- **.getObjectTree()** gives access to the model hierarchy and with **.getChildCount()** and **.enumNodeChildren()** is possible to recursively iterate the tree
-- **.getBulkProperties()** is an asynchronous method that returns a specific set of properties for an array of dbIds via callback, which is widelly used on Viewer, [learn more about callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-- **.addProperty()** panel method adds properties (name, value) on a category
+- **.getObjectTree()** даёт доступ к структуре модели, а с **.getChildCount()** и **.enumNodeChildren()** можно повторно перебирать дерево объекта
+- **.getBulkProperties()** это асинхронный метод, который возвращает определенный набор свойств для массива dbIds через обратный вызов, который широко используется в Viewer, [подробнее о callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+- **.addProperty()** панельный метод добавляет свойства (имя, значение) в категорию
 
-Additional learning points:
+Дополнительные функции:
 
-- **.forEach()** to iterate through a collection, this is a JavaScript feature, [learn more](https://www.w3schools.com/jsref/jsref_forEach.asp)
+- **.forEach()** для перебора коллекции, это функция JavaScript, [узнайте больше](https://www.w3schools.com/jsref/jsref_forEach.asp)
 
-Next: [Examples](viewer/extensions/examples)
+Далее: [Примеры](viewer/extensions/examples)
