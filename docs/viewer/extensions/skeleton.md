@@ -1,6 +1,6 @@
-# Каркас расширения
+# Структура расширения
 
-Эта часть руководства описывает базовый каркас расширения с кнопкой на панели инструментов, которая запускает код внутри функции`.onClick`. Вы можете перейти сразу на пример [Handling Selection](viewer/extensions/selection).
+Эта часть руководства описывает базовую структуру расширения с кнопкой на панели инструментов, которая запускает код внутри функции`.onClick`. Вы можете перейти сразу на пример [Handling Selection](viewer/extensions/selection).
 
 ## Создания расширения
 
@@ -78,7 +78,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension('MyAwesomeExtension', MyA
 <script src="/js/myawesomeextension.js"></script>
 ```
 
-Важно :-   Make sure while loading the extensions <scripts> code, load it below the ForgeViewer.js Убедитесь, что при загрузке кода расширений <scripts>, вы загружаете его под ForgeViewer.js
+Важно :-   Убедитесь, что при загрузке кода расширений <scripts>, вы загружаете его под ForgeViewer.js
 
 ![](_media/forge/extension_example.png)
 
@@ -96,9 +96,9 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['MyAwesomeExtension'] });
 ```
 
-At this point the extension should load and the toolbar button will show, but it doesn't execute anything (remember there is just a place holder comment on `.onClick` function). This is the basic skeleton you can use to create your extensions. На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать (помните, что мы не написали код для функции `.onClick`). Это базовый каркас, который вы можете использовать для создания своих расширений.
+На этом этапе расширение должно загрузиться, и на панели инструментов появится кнопка, но она не будет работать (помните, что мы не написали код для функции `.onClick`). Это базовая структура, которую вы можете использовать для создания своих расширений.
 
 !> При создании вашего собственного расширения не забудьте его переименовать - названия должны быть уникальными. 
 
 
-Далее: [Handling selection](viewer/extensions/selection)
+Далее: [Выделение элементов](viewer/extensions/selection)
