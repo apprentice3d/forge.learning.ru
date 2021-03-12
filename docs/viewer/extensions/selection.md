@@ -54,7 +54,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension('HandleSelectionExtension
 ```
 ## Панель инструментов CSS
 
-Как и в базовом каркасе, панель инструментов использует форматирование **CSS**. В **/css/main.css** добавьте:
+Как и в базовой структуре, панель инструментов использует форматирование **CSS**. В **/css/main.css** добавьте:
 
 ```css
 .handleSelectionExtensionIcon {
