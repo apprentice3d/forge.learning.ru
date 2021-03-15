@@ -1,11 +1,11 @@
-# Your first dashboard
+# Ваш первый dashboard
 
-This tutorial will guide you reading data and creating some charts. 
+В этом руководстве вы узнаете, как создать графики для вашего веб-приложения. 
 
 ![](_media/tutorials/run_sample_dashboard.gif)
 
-> For this tutorial you need an app with Viewer, for instance the [View your models](tutorials/viewmodels.md) or the [View BIM 360 & Fusion models](tutorials/viewhubmodels.md) tutorial. The Viewer is the same regardless where the file is hosted.
+> Для этого руководства вам понадобится приложение с Forge Viewer, например, [Визуализация моделей](tutorials/viewmodels.md) или [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md) tutorial. Viewer во всех этих примерах идентичен.
 
-Ready to start coding?
+Готовы начать?
 
-Next: [Adjust layout](viewer/dashboard/layout.md)
+Далее: [Adjust layout](viewer/dashboard/layout.md)
