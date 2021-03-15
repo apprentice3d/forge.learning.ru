@@ -1,34 +1,34 @@
 # Node.js Forge App with Azure App Service
 
-This is to walk you through the steps to deploy a Node.js sample Forge App to Azure App Service as a Web App with the [Azure Web Portal](https://azure.microsoft.com/en-us/features/azure-portal/) and [Git](https://git-scm.com/).
+Этот раздел поможет вам развернуть приложения Node.js в Azure App Service как веб-приложение на [портале Azure](https://azure.microsoft.com/en-us/features/azure-portal/) или [Git](https://git-scm.com/). 
 
-For this tutorial, we will be using our ViewHubModels sample as described in [previous chapters](tutorials/viewhubmodels). You may retrieve the full sample from [our Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/nodejs). The same steps should also work for **View Models** tutorial code.
+В этом руководстве мы будем использовать пример ViewHubModels из [предыдущего раздела](tutorials/viewhubmodels). Полный пример вы найдете по ссылке [Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/nodejs). Те же инструкции должны работать и для примера **View Models**.
 
-Before you start, [sign in or sign up](https://signup.azure.com/) for [Microsoft Azure Computing Platform & Services](https://azure.microsoft.com/) and create a [trial account](https://azure.microsoft.com/en-us/free/?cdn=disable), it includes $200 credit and free for 12 months
+[Войдите в свой аккаунт Azure или создайте учётную запись](https://signup.azure.com/) для [Microsoft Azure Computing Platform & Services](https://azure.microsoft.com/) и получите доступ к [бесплатному пробному периоду](https://azure.microsoft.com/en-us/free/?cdn=disable), который длится 12 месяцев и включает $200 credit.
 
-## Prerequisites
+## Требования
 
-Most steps can be done via Web Portal, but [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) is required.
+Большинство шагов можно выполнить через Web Portal, тем не менее, вам потребуется [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Azure CLI - это интерфейс командной строки Azure для управления ресурсами Azure. 
 
-## Create an Azure Web App
+## Создайте веб-приложение Azure
 
-There are 2 ways to create an app: using the Web Portal and with CLI.
+Существует два способа создать приложение Azure: через Web Portal или с CLI.
 
-**1. Create an app with Web Portal**
+**1. Создание приложения с Web Portal**
 
-- Create a ```Resource Group``` and a ```Web App```
+- Создайте ```Resource Group``` или ```Web App```
 
   ![](_media/deployment/azure/create_web_app_1.png)
-- Set the ```Runtime Stack``` to ```NodeJs``` and click ```Create```
+- Настройте ```Runtime Stack``` на ```NodeJs``` и нажмите ```Create```
 
   ![](_media/deployment/azure/create_web_app_node.png)
-- It may take a while for the app to be created, once all done, navigate to the app to review its settings
+- Возможно, создание займёт время - как только оно завершится, проверьте настройки приложения. 
 
   ![](_media/deployment/azure/app_dashboard.png)
 
-**2. Create an App with Azure CLI**
+**2. Создание приложения с Azure CLI**
 
-- Create a ```Resource Group``` (or use existing) and a ```Web App``` with commands below:
+- Создайте```Resource Group``` (или используйте уже существующий) и ```Web App``` с коммандами ниже:
 
 ```bash
 # login with credentials explicitly or simply use 'azure login' to log in with a browser session or authorisation code
@@ -44,28 +44,28 @@ az appservice plan create --name myAppServicePlan --resource-group myResourceGro
 az webapp create --name <nameofyourapp> --plan myAppServicePlan --resource-group myResourceGroup
 ```
 
-# Deploy the App
+# Развертывание приложения
 
-For this tutorial, we are going with ```Local Git``` to deploy our code. This can done using the Web Portal and with CLI
+В этом руководстве мы будем использовать ```Local Git``` для развертывания кода. Мы можем сделать это через Web Portal и с CLI. 
 
-**1. Deploy using Web Portal**
+**1. Развертывание через Web Portal**
 
-- Navigate to the ```Deployment Center``` to set up deployment settings
+- Перейдите в ```Deployment Center```, чтобы отрегулировать настройки развертывания
 ![](_media/deployment/azure/deployment_settings_1.png)
 
-- Choose your build server
+- Выберите ваш сборочный сервер (англ. build server)
 ![](_media/deployment/azure/deployment_settings_kudu.png)
 
-- Set deployment source to ```Local Git```
+- Укажите источник развертывания - ```Local Git```
 ![](_media/deployment/azure/deployment_settings_localgit_1.png)
 
-- Click the highlighted button on right top to open the Azure CLI, run ```az webapp deployment user set --user-name $username --password $password``` to configure deployment credentials and record the resulting Git url
+- Нажмите выделенную кнопку справа вверху, чтобы открыть Azure CLI, запустите ```az webapp deployment user set --user-name $username --password $password```, чтобы настроить данные развертывания и записать полученный Git URL.
 ![](_media/deployment/azure/deployment_settings_azure.png)
 
-- Set up the environment variables with your Forge App credentials (```FORGE_CLIENT_ID``` and ```FORGE_CLIENT_SECRET```) and the callback url (following pattern ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
+- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` and ```FORGE_CLIENT_SECRET```) и Callback Url (придерживаясь структуры ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
 ![](_media/deployment/azure/portalAppSettings.png)
 
-**2. Deploy using CLI**
+**2. Развертывание с использованием CLI**
 
 ``` bash
 # Set the account-level deployment credentials
@@ -87,29 +87,29 @@ git remote add azure <giturlofyourapp>
 git push azure master # use 'git push azure <nameofyourbranch>:master' if you would like to push other local branches than master
 ```
 
-The app dashboard should look like:
+Dashboard приложения должен быть таким:
 
 ![](_media/deployment/azure/app_dashboard.png)
 
-Done! Open the app url to see our app in action.
+Готово! Нажмите на URL приложения, чтобы увидеть его в работе.
 
-**3. Other Deployment Options**
+**3. Другие варианты развертывания**
 - [Visual Code](https://azure.microsoft.com/en-us/blog/visual-studio-code-and-azure-app-service-a-perfect-fit/)/[Visual Studio](../node)
 - [VSTS](https://docs.microsoft.com/en-us/labs/devops/deployazurefunctionswithvsts/)
 - [Github](https://blogs.msdn.microsoft.com/benjaminperkins/2017/05/10/deploy-github-source-code-repositories-to-an-azure-app-service/)
 - [BitBucket](https://confluence.atlassian.com/bitbucket/deploy-to-microsoft-azure-900820699.html)
 - [FTP](https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp)
 
-# Demo Screencast
+# Демо-ролик
 
-Watch this screencast demonstrating the above steps on the Azure Portal and CLI (the screencast is based on Bash but the commands involved would have been identical on Windows CLI and [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell). And you can run Bash on Windows! See [this](http://mingw.org/wiki/msys) or [this](https://gitforwindows.org/) as part of Git or even try the [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
+Посмотрите это видео, демонстрирующе развертывание шаги по резвертыванию через Azure Portal и CLI (демо-ролик основан на Bash, но комманды будут такими же и для Windows CLI и [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell). И вы можете запустить Bash на Windows! Подробности [здесь](http://mingw.org/wiki/msys) или [здесь](https://gitforwindows.org/) (как часть Git) или попробуйте [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
 
 [viewNodejs](https://www.youtube.com/embed/h_b_te0Iza0 ':include :type=iframe width=100% height=400px')
 
-# Further Readings
-- Post deployment automation and testing with [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/javascript?view=vsts)
-- Try out [Application Insights](https://azure.microsoft.com/en-us/services/monitor/), [Cost Management](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview), [Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/18) and [many more Azure Cloud tools and features](https://azure.microsoft.com/en-us/services/)
-- What are [Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [Service Plans](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/),[Azure Templates](https://azure.microsoft.com/en-us/resources/templates/) and [Staging Environment](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)?
+# Материалы для ознакомления
+- Автоматизация и тестирование после развертывания с [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/javascript?view=vsts)
+- Попробуйте [Application Insights](https://azure.microsoft.com/en-us/services/monitor/), [Cost Management](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview), [Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/18) и [другие инструменты и функции Azure Cloud](https://azure.microsoft.com/en-us/services/)
+- Узнайте про [Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [Service Plans](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/),[Azure Templates](https://azure.microsoft.com/en-us/resources/templates/) и [Staging Environment](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)?
 - [Building Cloud-Native Applications with Node.js and Azure](https://azure.microsoft.com/en-us/resources/building-cloud-native-applications-with-node-js-and-azure/en-us/)
 - [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-azure-web-apps)
 - [Using Azure Web Site Logging and Diagnostics](https://azure.microsoft.com/en-us/resources/videos/azure-web-site-logging-and-diagnostics/)
