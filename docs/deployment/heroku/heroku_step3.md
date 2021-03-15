@@ -1,26 +1,26 @@
-> Heroku app names are unique, so try a different name if you get `Name is already taken` error on **create**.
+> Названия приложений Heroku должны быть уникальны, потому, если вы получаете ошибку `Name is already taken` при нажатии **create**, измените имя вашего приложения.
 
-Now your local **git** knows about the **remote** copy on Heroku. Push changes from your local to remote with:
+Сейчас ваш локальный **git** знает о **копии** в Heroku. Отправляйте изменения с локального **git** на копию с помощью:
 
 ```bash
 git push heroku master
 ```
 
-## Setup environment variables
+## Настройте переменные среды
 
-Is a best practice to have keys & secrets for local development and for production, so go to your apps on Forge Developer Portal and [create a new app](/account/?id=create-an-app), for instance, **forge sample production**. 
+Is a best practice to have keys & secrets for local development and for production, so go to your apps on Forge Developer Portal and [create a new app](/account/?id=create-an-app), for instance, **forge sample production**.  Лучше всего иметь Keys&Secrets для локальной разработки, поэтому перейдите к своим приложениям на сайте платформы Autodesk Forge и [создайте новое приложение](/account/?id=create-an-app), например, **forge sample production**.
 
-Sign in on [Heroku Dashboard](https://dashboard.heroku.com/) where you app should be listed. Go to **Settings** and create the **Config Vars** as shown on the video below:
+Войдите в учетную запись [Heroku Dashboard](https://dashboard.heroku.com/), где должно быть указано ваше приложение. Перейдите в **Settings** и создайте **Config Vars**, как показано на видео нижеw:
 
 ![](_media/deployment/heroku/env_vars.gif) 
 
-!> If you're create a 3-legged app (**View BIM 360 & Fusion models**) you also need to create the **FORGE_CALLBACK_URL** config var, th the value should be `https://YOUR_HEROKU_APP_NAME.herokuapp.com/api/forge/callback/oauth`. Remember to set the same value on Heroku and Forge Developer Portal! 
+!>Если вы создаете приложение, которое требует трёхфакторную аутентификацию (**Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360**), вам также нужно создать переменную **FORGE_CALLBACK_URL** - `https://YOUR_HEROKU_APP_NAME.herokuapp.com/api/forge/callback/oauth`. Помните, что Callback URL должна совпадать в вашем аккаунте Heroku и Autodesk Forge!
 
-Ready! You app should be live at your Heroku address, something like: **YourAppName.herokuapp.com**.
+Готово! Ваше приложение будет доступно по адресу Heroku, что-то похожее на: **YourAppName.herokuapp.com**.
 
-## Deploy changes
+## Разверните изменения
 
-When you have a new version of your project, login if needed, then just `commit` and `push` live:
+Когда у вас появится новая версия проекта, войдите в аккаунт и просто добавьте `commit` и `push` live:
 
 ```bash
 heroku login
