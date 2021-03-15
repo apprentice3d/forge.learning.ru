@@ -1,13 +1,13 @@
-# Tools (Java)
+# Веб-технологии (Java)
 
-Install [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to run your code. 
+Загрузите [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), чтобы запустить ваш код. 
 
-Install [Apache Tomcat](https://tomcat.apache.org/download-90.cgi) to launch the server. 
+Загрузите [Apache Tomcat](https://tomcat.apache.org/download-90.cgi), чтобы запустить ваш сервер. 
 
-> A good tutorial on how to setup your Tomcat server can be found [here.](https://crunchify.com/step-by-step-guide-to-setup-and-install-apache-tomcat-server-in-eclipse-development-environment-ide/) This tutorial is using Tomcat version 8 but it will apply for all newer versions as well. 
+> Вы найдете хорошее руководство по настройке сервера Tomcat [здесь](https://crunchify.com/step-by-step-guide-to-setup-and-install-apache-tomcat-server-in-eclipse-development-environment-ide/). Это руководство использует 8-ю версию Tomcat, тем не менее, оно подойдет и для более новых версий. 
 
-Now we need a JAVA IDE to write the code. In order to create a web application, this tutorial will use [Eclipse Java EE IDE for Web Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3) version Oxygen.2 Release (4.7.2). 
+Нам понадобится интегрированная среда разработки JAVA, чтобы написать код. Чтобы создать веб-приложение, мы будем использовать руководство [Eclipse Java EE IDE for Web Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3) version Oxygen.2 Release (4.7.2). 
 
-> For this tutorial, use all default install options.
+> For this tutorial, use all default install options. Для этого примера используйте параметры установки по умолчанию. 
 
-Next: [Authentication](oauth/)
+Далее: [Аутентификация](oauth/)
