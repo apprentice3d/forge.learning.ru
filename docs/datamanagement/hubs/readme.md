@@ -1,4 +1,4 @@
-# Репозитории данных (англ. hubs) и проекты (Data Management)
+# Репозитории данных (англ. hubs) и проекты
 
 [Data Management API](https://developer.autodesk.com/en/docs/data/v2/overview/) обеспечивает единый доступ к данным из BIM 360 Hub, Fusion Team (ранее известный как A360 Team), BIM 360 Docs и A360 Personal.
 
