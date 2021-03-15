@@ -1,4 +1,4 @@
-# Node.js Forge App with Azure App Service
+# Приложения Forge на Node.js с Azure App Service
 
 Этот раздел поможет вам развернуть приложения Node.js в Azure App Service как веб-приложение на [портале Azure](https://azure.microsoft.com/en-us/features/azure-portal/) или [Git](https://git-scm.com/). 
 
