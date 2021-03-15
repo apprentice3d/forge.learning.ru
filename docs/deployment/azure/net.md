@@ -25,7 +25,7 @@ This is to walk you through the steps to deploy a .NET sample Forge App to Azure
 - Проверьте build output в деталях развертывания. выходных данных сборки. Обратите внимание, что новый профиль был создан автоматически, поэтому в дальнейшем вы можете развернуть свое решение непосредственно в этом приложении, вам не нужно будет повторять эти шаги снова.
 ![](_media/deployment/azure/net_app_published_result.png)
 
-- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` и ```FORGE_CLIENT_SECRET```) и Callback Url (следующая структура ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
+- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` и ```FORGE_CLIENT_SECRET```) и Callback Url (придерживаясь структуры  ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
 ![](_media/deployment/azure/vsAppSettings.png)
 
 Готово! Нажмите на ```Site URL```, чтобы увидеть приложение в работе. 
