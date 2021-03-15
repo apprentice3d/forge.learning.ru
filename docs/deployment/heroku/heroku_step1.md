@@ -1,12 +1,12 @@
-First, create and activate your [Heroku account](https://www.heroku.com/).
+Сначала создайте и активируйте [аккаунт Heroku](https://www.heroku.com/).
 
-## Prerequisites
+## Требования
 
-Heroku manages app deployments with Git, the popular version control system. The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku.
+Heroku manages app deployments with Git, the popular version control system. The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku. Heroku управляет развертыванием приложений с помощью Git, популярной системы контроля версий. Интерфейс командной строки Heroku (англ. Command Line Interface, CLI) позволяет легко создавать приложения Heroku и управлять ими прямо из терминала - это важная часть использования Heroku.
 
-- [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+- [Загрузка Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Загрузка Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
-## Prepare your project
+## Подготовьте ваш проект
 
-On the **forgesample** project root folder create a `.gitignore` file and add the content that should not be controlled by **git**.
+В корневой папке проекта **forgesample** создайте файл `.gitignore` и добавьте содержание, которое не должно контролироваться **git**.
