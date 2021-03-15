@@ -25,7 +25,7 @@
 
 ## Visual Code (MacOS/Linux)
 
-В качестве альтернативного решения вы можете использовать [Visual Code](https://code.visualstudio.com/). Для жтого вам потребуется расширение **C#**. Обязательно установите [.NET Core 3.0 SDK and Runtime](https://dotnet.microsoft.com/download). 
+В качестве альтернативного решения вы можете использовать [Visual Code](https://code.visualstudio.com/). Для этого вам потребуется расширение **C#**. Обязательно установите [.NET Core 3.0 SDK and Runtime](https://dotnet.microsoft.com/download). 
 
 > Вам потребуется Visual Studio (на Windows), чтобы компилировать плагины для руководства **Редактирование моделей в вебе**. 
 
