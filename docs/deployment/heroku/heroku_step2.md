@@ -1,4 +1,4 @@
-Now initialize **git** for the folder and commit current files. On the terminal (menu **View** >> **Integrated terminal**) type (one line at a time):
+Теперь инициализируйте **git** для этой папки и зафиксируйте текущие файлы. for the folder and commit current files. В терминале (меню **View** >> **Integrated terminal**) введите (по одной строчке):
 
 ```bash
 git init
@@ -6,12 +6,12 @@ git add .
 git commit -m "v1"
 ```
 
-## Conect to Heroku
+## Подключитесь к Heroku
 
-Now time to deploy this `v1` of our sample. On the same terminal, sign in to your account:
+Теперь настоло время развернуть `v1` вашего примера. В том же терминале войдите в вашу учетную запись: 
 
 ```bash
 heroku login
 ```
 
-Then create the Heroku app and link with your local folder (one line at a time):
+Затем создайте приложение Heroku и свяжите его с локальной папкой (по одной строчке)):
