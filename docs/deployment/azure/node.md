@@ -107,7 +107,7 @@ Dashboard приложения должен быть таким:
 [viewNodejs](https://www.youtube.com/embed/h_b_te0Iza0 ':include :type=iframe width=100% height=400px')
 
 # Материалы для ознакомления
-- Автоматизация и тестирование после развертывания с [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/javascript?view=vsts)
+- Автоматизация и тестирование после развертывания через [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/javascript?view=vsts)
 - Попробуйте [Application Insights](https://azure.microsoft.com/en-us/services/monitor/), [Cost Management](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview), [Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/18) и [другие инструменты и функции Azure Cloud](https://azure.microsoft.com/en-us/services/)
 - Узнайте про [Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [Service Plans](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/),[Azure Templates](https://azure.microsoft.com/en-us/resources/templates/) и [Staging Environment](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)?
 - [Building Cloud-Native Applications with Node.js and Azure](https://azure.microsoft.com/en-us/resources/building-cloud-native-applications-with-node-js-and-azure/en-us/)
