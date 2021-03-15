@@ -1,16 +1,16 @@
 # Amazon Web Services (AWS)
 
-First, create and activate your [AWS account](https://aws.amazon.com/).
+Сначала создайте и активируйте [аккаунт AWS](https://aws.amazon.com/).
 
-## Prerequisites
+## Требования
 
-The AWS Toolkit for Visual Studio is an extension for Microsoft Visual Studio running on Microsoft Windows that makes it easier for developers to develop, debug, and deploy .NET applications using Amazon Web Services. With the AWS Toolkit for Visual Studio, you'll be able to get started faster and be more productive when building AWS applications.
+AWS Toolkit for Visual Studio представляет собой расширение для Microsoft Visual Studio в системе Microsoft Windows, облегчающее процесс разработки, отладки и развертывания приложений .NET с использованием Amazon Web Services.
 
-- [Install AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/)
+- [Загрузка AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/)
 
-## Prepare your project
+## Подготовьте ваш проект
 
-Elastic Beanstalk cannot override your `appSettings`, so we need to remove it before publish. In fact is quite easy by adding the following to your `web.release.config` file. The next section, **Step-by-step** includes a video explaining it.
+Elastic Beanstalk не может переопределить ваши `appSettings`, поэтому их нужно удалить до публикации. Это довольно просто, если добавить код ниже в ваш файл `web.release.config`. In fact is quite easy by adding the following to your `web.release.config` file. Следующий раздел **Пошаговое видео** содержит видео с подробным объяснением процесса.
 
 ```xml
 <appSettings>
@@ -19,8 +19,8 @@ Elastic Beanstalk cannot override your `appSettings`, so we need to remove it be
 </appSettings>
 ```
 
-## Step-by-step video
+## Пошаговое видео
 
-This is a 7 minutes video on how to deploy to AWS Elastic Beanstalk.
+Ниже вы найдете 7-минутное видео о развертывании на AWS Elastic Beanstalk.
 
-[Video](https://www.youtube.com/embed/49X4ROI6PWs ':include :type=iframe width=100% height=400px')
+[Видео](https://www.youtube.com/embed/49X4ROI6PWs ':include :type=iframe width=100% height=400px')
