@@ -1,62 +1,62 @@
-# .NET Forge App with Azure App Service
+# Приложения Forge на .NET с Azure App Service
 
-This is to walk you through the steps to deploy a .NET sample Forge App to Azure App Service as a Web App with [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
+This is to walk you through the steps to deploy a .NET sample Forge App to Azure App Service as a Web App with Этот раздел поможет вам развернуть приложения .NET в Azure App Service как веб-приложение с [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
 
-For this tutorial, we will be using our ViewHubModels sample as described in [previous chapters](tutorials/viewhubmodels). You may retrieve the full sample from [our Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/net). The same steps should also work for **View Models** tutorial code.
+В этом руководстве мы будем использовать пример ViewHubModels из [предыдущего раздела](tutorials/viewhubmodels). Полный пример вы найдете по ссылке [Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/net). Те же инструкции должны работать и для примера **View Models**.
 
-Before you start, [sign in or sign up](https://signup.azure.com/) for [Microsoft Azure Computing Platform & Services](https://azure.microsoft.com/) and create a [trial account](https://azure.microsoft.com/en-us/free/?cdn=disable), it includes $200 credit and free for 12 months
+[Войдите в свой аккаунт Azure или создайте учётную запись](https://signup.azure.com/) для [Microsoft Azure Computing Platform & Services](https://azure.microsoft.com/) и получите доступ к [бесплатному пробному периоду](https://azure.microsoft.com/en-us/free/?cdn=disable), который длится 12 месяцев и включает $200 credit. 
 
-## Prerequisites
+## Требования
 
-This tutorial requires [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
+Это руководство работает с [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
 
-# Create and Deploy to Azure
+# Создавайте и развертывайте на Azure
 
-- Open the sample project in Visual Studio. Right click on your project or select ```Build > Publish``` to start to publish to ```Azure App Service```
+- Откройте проект в Visual Studio. Нажмите правой кнопкой мыши на проект и выберите ```Build > Publish```, чтобы начать публикацию в ```Azure App Service```
 ![](_media/deployment/azure/create_web_app_net.png)
 
-- Sign in or create a Azure free account
+- Войдите в/создайте басплатную учетную запись Azure 
 ![](_media/deployment/azure/create_web_app_net_2.png)
 ![](_media/deployment/azure/create_web_app_net_3.png)
 
-- Set the ```Name``` and ```Plan``` accordingly, note the ```Name``` will have to be globally unique and should match the name specified in your callback url previously - this is going in to the URL of your app. Click ```Create``` to start the deployment
+- Настройте ```Name``` и ```Plan``` соответственно. Обратите внимание, что ```Name``` должно быть уникальным и совпадать с именем в вашем Callback Url - это входит в URL-адрес вашего приложения. Нажмите```Create```, чтобы начать развертывание. 
 ![](_media/deployment/azure/create_web_app_net_4.png)
 
-- Check the build output for deployment details. And note that a new profile has been automatically created so that going forward you can deploy your solution directly to this app and won't need to go through these steps again
+- Проверьте build output в деталях развертывания. выходных данных сборки. Обратите внимание, что новый профиль был создан автоматически, поэтому в дальнейшем вы можете развернуть свое решение непосредственно в этом приложении, вам не нужно будет повторять эти шаги снова.
 ![](_media/deployment/azure/net_app_published_result.png)
 
-- Set up the environment variables with your Forge App credentials (```FORGE_CLIENT_ID``` and ```FORGE_CLIENT_SECRET```) and the callback url (following pattern ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
+- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` и ```FORGE_CLIENT_SECRET```) и Callback Url (следующая структура ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
 ![](_media/deployment/azure/vsAppSettings.png)
 
-Done! Click on the ```Site URL``` to see the app in action
+Готово! Нажмите на ```Site URL```, чтобы увидеть приложение в работе. 
 
-# Alternative Approaches
+# Альтернативные подходы
 
-- You can create the app on the Azure Portal in your browser as well. Simply choose ```API App``` from the ```Marketplace``` when creating the App in your browser and select ```Existing App``` when publishing or creating the ```Deployment Profile``` in Visual Studio
+- Вы можете создать приложение на портале Azure Portal в вашем браузере. Просто выберите ```API App``` в ```Marketplace``` (при создании приложения в браузере) и ```Existing App```(при публикации или создании ```Deployment Profile``` в Visual Studio). 
 
   ![](_media/deployment/azure/app_dashboard.png)
-- Once we have the ```API App``` created, you can deploy from a local Git repo - see [here](deployment/azure/node) for details
+- Как только вы создадите ```API App```, вы сможете развернуть его ил локального репозитория Git repo - подробности [здесь](deployment/azure/node). 
 
-### Other Deployment Options
+### Другие варианты развертывания 
 - [Visual Code](https://azure.microsoft.com/en-us/blog/visual-studio-code-and-azure-app-service-a-perfect-fit/)/[Visual Studio](../node)
 - [VSTS](https://docs.microsoft.com/en-us/labs/devops/deployazurefunctionswithvsts/)
 - [Github](https://blogs.msdn.microsoft.com/benjaminperkins/2017/05/10/deploy-github-source-code-repositories-to-an-azure-app-service/)
 - [BitBucket](https://confluence.atlassian.com/bitbucket/deploy-to-microsoft-azure-900820699.html)
 - [FTP](https://docs.microsoft.com/en-us/azure/app-service/deploy-ftp)
 
-# Demo Screencast
+# Демо-ролик
 
-Watch this screencast demonstrating the deployment of our .NET sample in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (similar steps can be taken to deploy your Node.js app with Visual Studio)
+Посмотрите это видео, демонстрирующе развертывание нашего примера .NET в [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (те же инструкции подойдут для вашего приложения Node.js с Visual Studio)
 
-[videoNET](https://www.youtube.com/embed/dDg-fQ7SHAQ ':include :type=iframe width=100% height=400px')
+[Демо .NET](https://www.youtube.com/embed/dDg-fQ7SHAQ ':include :type=iframe width=100% height=400px')
 
-# Further Readings
+# Материалы для ознакомления
 <!--
-This will be live soon (as another version of the tutorial)
-- Adapt this sample app to the [.NET Core Framework](https://docs.microsoft.com/en-us/dotnet/core/) and deploy it as a [Azure Web App](deployment/azure/node)
+Это скоро будет доступно (как другая версия руководства)
+- Адаптируйте этот пример к [.NET Core Framework](https://docs.microsoft.com/en-us/dotnet/core/) и разверните его как [веб-приложение Azure](deployment/azure/node)
 -->
-- Try out [Application Insights](https://azure.microsoft.com/en-us/services/monitor/), [Cost Management](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview), [Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/18) and [many more Azure Cloud tools and features](https://azure.microsoft.com/en-us/services/)
-- What are [Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [Service Plans](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/),[Azure Templates](https://azure.microsoft.com/en-us/resources/templates/) and [Staging Environment](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)?
+- Попробуйте [Application Insights](https://azure.microsoft.com/en-us/services/monitor/), [Cost Management](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview), [Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/18) и [другие инструменты и функции Azure Cloud](https://azure.microsoft.com/en-us/services/)
+- Узнайте про [Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [Service Plans](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/),[Azure Templates](https://azure.microsoft.com/en-us/resources/templates/) и [Staging Environment](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
 - [Microsoft Azure Developer Camp: Build a Cloud-Native App](https://mva.microsoft.com/en-us/training-courses/microsoft-azure-developer-camp-build-a-cloud-native-app-8299)
 - [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-azure-web-apps)
 - [Using Azure Web Site Logging and Diagnostics](https://azure.microsoft.com/en-us/resources/videos/azure-web-site-logging-and-diagnostics/)
