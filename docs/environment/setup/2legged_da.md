@@ -1,21 +1,21 @@
-# Create a server
+# Создание сервера
 
-Your Client ID & Secret should be protected and keep confidential as all your files will be bound to your account. For a web application, keep it on your server. This section demonstrate how to prepare create a local development server.
+Ваши Forge Client ID & Secret должны быть защищены и оставаться конфиденциальными, т.к. все ваши файлы будут привязаны к вашему аккаунту Forge. Для веб-приложения – сохраните Client ID и Client Secret на своем сервере. В этом разделе показано, как создать локальный сервер для разработки.
 
-Please review [Tools](environment/tools/) section for required software.
+Перейдите в раздел [Веб-технологии](environment/tools/), чтобы узнать требования к программному обеспечению.
 
-### Prerequisites
+### Требования
 
 **ngrok**
 
-When Design Automation finishes modifying your model, it notifies back. As your machine is not exposed on the web, the [ngrok](https://ngrok.com/) tool create a temporary address to receive notifications. This tool is only required locally. 
+Когда Design Automation закончит изменение вашей модели, он пришлет уведомление об этом. В связи с тем, что ваш ПК не представлен в вебе, технология [ngrok](https://ngrok.com/) позволит создать временный адрес для получения уведомлений. Этот инструмент необходим только для локальной разработки. 
 
-After download, unzip it. Open the Windows **Command Line Prompt** (CMD) and navigate to the folder. Then run `ngrok http 3000 -host-header="localhost:3000"`. Copy the **forwarding** URL value (in the form of `http://1ab2c3d4.ngrok.com`)
+После загрузки разархивируйте его. Откройте **Коммандрую строку** (CMD) Windows и найдите папку. Затем запустите `ngrok http 3000 -host-header="localhost:3000"`. Скопируйте значение **forwarding** URL (в виде `http://1ab2c3d4.ngrok.com`)
 
 ![](/_media/designautomation/ngrok.gif)
 
-> If running on non-Windows (e.g. MacOS), open the **Terminal** instead and follow the same steps, but you need to prefix with `./`
+> Если вы работаете не с Windows (например, MacOS), откройте **Terminal** и повторите те же шаги, но добавив приставку `./`
 
-!> **Warning**: `ngrok` exposes your localhost server to the web while it is in use. Be sure to turn it off when your testing it done. Do not use this outside development environment
+!> **Предупреждение**: `ngrok` предоставляет доступ к вашему серверу localhost в Интернете. Обязательно выключите его, когда закончите тестирование, не используйте эту внешнюю среду разработки!
 
-Setup Project, choose your language: [Node.js](environment/setup/nodejs_da) | [.NET Core](environment/setup/netcore_da)
+Настройка проекта, выберитe язык: [Node.js](environment/setup/nodejs_da) | [.NET Core](environment/setup/netcore_da)
