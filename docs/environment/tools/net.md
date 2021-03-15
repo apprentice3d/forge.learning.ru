@@ -1,6 +1,6 @@
 # Веб-технологии (.NET Framework)
 
-The .NET engine is a built-in feature on Windows machines.
+Движок (англ. engine) .NET - это это встроенная функция у ПК Windows.
 
 ## Visual Studio Community 2019
 
