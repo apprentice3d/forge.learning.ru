@@ -1,24 +1,24 @@
-# Modify your models
+# Редактирование моделей в вебе
 
-This tutorial will guide you through creating a webapp that can upload an input file, change its `width` and `height` parameter and save the output file. The UI will let you define AppBundle & Activity (as an initial configuration) and execute Workitems, with a output result. 
+В этом руководстве мы расскажем, как создать веб-приложение, которое может загрузить вайл, изменить его параметры: `width` (рус. ширину) и `height`(рус. высоту) и сохранить получившийся файл. Вы сможете определить  AppBundle & Activity со стороны клиента (как первоначальный конфигуратор) и запустить Workitems с финальным результатом. 
 
-> Both input and output files are saved in OSS Buckets, you can use [View Models](tutorials/viewmodels) tutorial to view them.
+> И вводные данные, и финальный результат сохраняется в бакетах OSS , вы можете использовать руководство [Визуализация моделей](tutorials/viewmodels), чтобы их просмотреть. 
 
 ![](_media/tutorials/run_sample_modifymodels.gif)
 
-To modify your models, you need the following steps:
+Чтобы изменить параметры вашей модели в браузере, вам нужно:
 
-1. [Create a server](environment/setup/2legged_da) << First time developer? You should start here
-2. [Basic app UI](designautomation/html/)
-3. [Prepare a plugin](designautomation/appbundle/)
-4. [Define an activity](designautomation/activity/)
-5. [Execute workitem](designautomation/workitem/)
+1. [Создать сервер](environment/setup/2legged_da) << Вы начинающий разработчик? Начните с этого шага
+2. [Добавить базовый пользовательский интерфейс](designautomation/html/)
+3. [Подготовить плагин](designautomation/appbundle/)
+4. [Определить activity](designautomation/activity/)
+5. [Запустить workitem](designautomation/workitem/)
 
-If you want to download the project ready to use, visit the following repos:
+Если вы хотите загрузить готовый проект, посмотрите следующие примеры:
 
 - [.NET Core](https://github.com/Autodesk-Forge/learn.forge.designautomation)
 - [Node.js](https://github.com/Autodesk-Forge/learn.forge.designautomation/tree/nodejs)
 
-Ready to start coding?
+Готовы писать программный код?
 
-Next: [Create a server](environment/setup/2legged_da)
+Далее: [Create a server](environment/setup/2legged_da)
