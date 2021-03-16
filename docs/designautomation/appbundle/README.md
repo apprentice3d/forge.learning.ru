@@ -1,23 +1,22 @@
-# Prepare a plugin
+# Подготовьте плагин
 
-Design Automation uses .bundle just like the Autodesk App Store, meaning you need to create a `PackageContents.xml` and a ZIP with the `DLL` (and other required files). For detailed information on how to create them, please visit [Autodesk App Store Developer Center](https://www.autodesk.com/developer-network/app-store).
+Design Automation использует .bundle так же, как Autodesk App Store. Это означает, что вам нужно создать `PackageContents.xml` и ZIP-файл с` DLL` (и другими необходимыми файлами). Для получения подробной информации о том, как их создать, перейдите на сайт [Autodesk App Store Developer Center](https://www.autodesk.com/developer-network/app-store).
 
-At this section we will create a basic plugin that update `width` and `height` parameter and save the resulting file. Also the supporting files (`PackageContents.xml`) and the folder structure to place them. Finally create a .ZIP file ready to upload to Design Automation.
+At this section we will create a basic plugin that update `width` and `height` parameter and save the resulting file. Also the supporting files (`PackageContents.xml`) and the folder structure to place them. Finally create a .ZIP file ready to upload to Design Automation. В этом разделе мы создадим стандартный плагин, который обновит параметры `width` и `height` и сохранит полученный файл, а также вспомогательные файлы (`PackageContents.xml`) и структуру папок для их размещения. Создайте файл .ZIP, готовый для загрузки в Design Automation.
 
-### Prerequisites
+### Требования
 
-- **7zip**: use to create the .ZIP with bundle files, please install [from here](https://www.7-zip.org/). This tutorial assumes **7zip** is installed on the default folder: _C:\Program Files\7-Zip\7z.exe_.
+- **7zip**: используется для создания .ZIP с файлами bundle. Пожалуйста, установите [его здесь](https://www.7-zip.org/). В этом руководстве предполагается, что **7zip** по умолчанию загружается в папку _C:\Program Files\7-Zip\7z.exe_.
 
-### Additional prerequisites 
+### Дополнительные требования
 
-For the next session you can use the pre-build plugin. Or if you decide to build it, you will need:
+\Для следующего раздела вы можете использовать заранее подготовленный плагин. Если вы захотите создать его, вам потребуется:
+- **Visual Studio**: Visual Studio 2017 или более новая версия, пожалуйста, перейдите [по ссылке](https://visualstudio.microsoft.com/vs/).
 
-- **Visual Studio**: Visual Studio 2017 or newer is required, please visit [this link](https://visualstudio.microsoft.com/vs/).
-
-- **AutoCAD, Inventor, Revit or 3ds Max**: In order to develop, test and debug your Design Automation plugin: [AutoCAD](https://www.autodesk.com/products/autocad/overview) | [Inventor](https://www.autodesk.com/products/inventor/overview) | [Revit](https://www.autodesk.com/products/revit/overview) | [3ds Max](https://www.autodesk.com/products/3ds-max/overview).
+- **AutoCAD, Inventor, Revit и 3ds Max**: Для разработки, тестирования и отладки вашего плагина Design Automation: [AutoCAD](https://www.autodesk.com/products/autocad/overview) | [Inventor](https://www.autodesk.com/products/inventor/overview) | [Revit](https://www.autodesk.com/products/revit/overview) | [3ds Max](https://www.autodesk.com/products/3ds-max/overview).
 
 ***
 
-For the next step, choose the **Engine**, which is the Autodesk application where you plugin will run. You'll need the respective application installed in order to compile, debug and test locally.
+На следующем шаге выберите **Engine** (рус. движок), т.е. продукт Autodesk, в котором будет запускаться ваш плагин. Вам потребуется установить соответствующее приложение для локальной компиляции, отладки и тестирования.
 
-Choose the engine: [AutoCAD](/designautomation/appbundle/engines/autocad) | [Inventor](/designautomation/appbundle/engines/inventor) | [Revit](/designautomation/appbundle/engines/revit) | [3ds Max](/designautomation/appbundle/engines/max)
+Выберите движок: [AutoCAD](/designautomation/appbundle/engines/autocad) | [Inventor](/designautomation/appbundle/engines/inventor) | [Revit](/designautomation/appbundle/engines/revit) | [3ds Max](/designautomation/appbundle/engines/max)
