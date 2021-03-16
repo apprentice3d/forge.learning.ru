@@ -1,7 +1,7 @@
-# Define an Activity
+# Определите Activity
 
-Activity is the specification of an action that can be executed using a specified engine. It specifies the number of input and output files, and the AppBundle and entry-point to use.
+Activity - это спецификация действия, которое может быть выполнено с использованием указанного движка (англ. engine). Он определяет количество входных и выходных файлов, а также AppBundle и точку входа (англ. entry-point) для использования.
 
-In this tutorial sample, the activity has 2 inputs (file & JSON data) and 1 output (file).
+In this tutorial sample, the activity has 2 inputs (file & JSON data) and 1 output (file). В этом руководстве Activity имеет 2 inputs (файл и данные JSON) и 1 output файл.
 
-Choose your language: [Node.js](designautomation/activity/nodejs) | [.NET Core](designautomation/activity/netcore)
+Выберите язык: [Node.js](designautomation/activity/nodejs) | [.NET Core](designautomation/activity/netcore)
