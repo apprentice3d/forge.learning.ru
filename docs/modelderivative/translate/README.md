@@ -1,12 +1,12 @@
-# Translate the file
+# Конвертация файлов
 
-The Model Derivative API allows users to represent and share their designs in different formats, as well as to extract valuable metadata.
+Model Derivative API позволяет пользователям отображать и делиться своими проектами в 60+ форматах, а также извлекать ценные метаданные.
 
 ![](/_media/forge/md_diagram.png)
 
-Not sure if your files are compatible? Check the [supported translations](https://forge.autodesk.com/en/docs/model-derivative/v2/developers_guide/supported-translations/).
+Не уверены, подойдут ли ваши файлы? Загляните в список [поддерживаемых форматов](https://forge.autodesk.com/en/docs/model-derivative/v2/developers_guide/supported-translations/).
 
-In this section, let's call [POST Job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to start the translation process. Note that this endpoint is asynchronous and initiates a process that runs in the background, rather than keeping an open HTTP connection until completion.
+В это разделе мы вызовем [POST Job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/), чтобы начать процесс конвертации. Обратите внимание, что эта конечная точка является асинхронной и инициирует процесс, который выполняется в фоновом режиме, а не поддерживает открытое HTTP-соединение до завершения.
 
-Choose your language: [Node.js](modelderivative/translate/nodejs) | [.NET Framework](modelderivative/translate/net) | [.NET Core](modelderivative/translate/netcore) | [Go](modelderivative/translate/go) | [PHP](modelderivative/translate/php) | [Java](modelderivative/translate/java)
+Выберите язык: [Node.js](modelderivative/translate/nodejs) | [.NET Framework](modelderivative/translate/net) | [.NET Core](modelderivative/translate/netcore) | [Go](modelderivative/translate/go) | [PHP](modelderivative/translate/php) | [Java](modelderivative/translate/java)
 
