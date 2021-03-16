@@ -18,7 +18,7 @@ go get -u github.com/derekparker/delve/cmd/dlv
 
 После установки `delve` вы можете либо нажать F5, либо перейти в меню **Debug** >> **Start debugging**.
 
-!> For debug, make sure the `main.go` file is open on Visual Code before pessing **F5**, otherwise you may see an error (see [Troubleshooting](#troubleshooting)) Для отладки убедитесь, что файл `main.go` открыт в Visual Code перед нажатием **F5**, иначе вы можете увидеть ошибку (см. [Устранение ошибок](#troubleshooting))
+!> Для отладки убедитесь, что файл `main.go` открыт в Visual Code перед нажатием **F5**, иначе вы можете увидеть ошибку (см. [Устранение ошибок](#troubleshooting))
 
 Теперь вы увидите файл launch.json, созданный для вашей рабочей области, который будет содержать конфигурации для отладки. По умолчанию будет одна конфигурация, как показано ниже:
 
@@ -48,7 +48,7 @@ go get -u github.com/derekparker/delve/cmd/dlv
 
 Здесь не нужно ничего менять, так что просто сохраните его.
 
-Установите точки остановка (англ. breakpoints), и в `Code debug viewlet` (F5) нажмите зеленую кнопку `Start Debugging`, чтобы начать отладку.
+Установите точки останова (англ. breakpoints), и в `Code debug viewlet` (F5) нажмите зеленую кнопку `Start Debugging`, чтобы начать отладку.
 
 Перейдите в меню **Debug** и выберите **Start debugging**. Вкладка "Debug Console" должна появиться внизу, как показано ниже:
 
