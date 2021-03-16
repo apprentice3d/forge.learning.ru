@@ -1,11 +1,11 @@
-# Code for creating App Bundle (Node Js)
+# Код для создания App Bundle (Node Js)
 
 
-Inside `route/` folder create `DesignAutomation.js` file. In this file we will write all the endpoints.
+Внутри папки `route/` создайте файл `DesignAutomation.js`. В этом файле мы запишем все конечные точки.
 
 **1. Utils**
 
-Before creating endpoints, we will add Utils class consisting of all the utility functions like creating design automation SDK instance, uploading file and few more helpfull functions which are used in this sample.
+Перед созданием конечных точек мы добавим класс Utils, состоящий из всех служебных функций (таких как создание экземпляра SDK для автоматизации проектирования, загрузка файла и еще несколько полезных функций, которые используются в этом примере).
 
 ```javascript
 const _path = require('path');
@@ -190,7 +190,7 @@ class Utils {
 
 **2. App Bundle**
 
-Before creating activity, we need to define app bundle with plugin and selecting the appropriate engine. Copy & paste the following endpoint after the utils class:
+Перед созданием активности нам нужно определить app bundle с плагином и выбрать соответствующий движок. Скопируйте и вставьте следующую конечную точку после класса utils:
 
 ```javascript
 /// <summary>
@@ -335,8 +335,8 @@ router.post('/forge/designautomation/appbundles', async /*CreateAppBundle*/ (req
 module.exports = router;
 ```
 
-If you run the webapp now and click on **Configure** (top-right), you should see your AppBundle and a list of all available engines. **Buttons do not work yet**... let's move forward.
+Если вы запустите веб-приложение сейчас и нажмете Configure (вверху справа), вы должны увидеть свой AppBundle и список всех доступных движков. **Кнопки пока не работают** ... продолжим.
 
 ![](_media/designautomation/list_engines.png)
 
-Next: [Define an Activity](designautomation/activity/)
+Далее: [Определение Activity](designautomation/activity/)
