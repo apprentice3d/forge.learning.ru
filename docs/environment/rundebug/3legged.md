@@ -1,13 +1,13 @@
-# Running locally & Debugging
+# Локальный запуск и проверка кода
 
-Now that your app is ready, is time to run. This is where we can test and check for possible errors (via debug). And check for tips & tricks.
+Теперь, когда ваше приложение готово, пора его запустить. В этом разделе мы протестируем и проверим приложение на возможные ошибки (через debug). Обязательно почитайте наши советы.
 
-## Using the sample
+## Использование примера
 
-The next section will show you how to run your app. When it opens on the browser, click on the **Autodesk Sign In** button to enter your end-user credentials. On the list, navigate to the **Hubs**, **Projects**, **Folders**, **Items** (files) and respective **Versions** to view on the right-side. Above the tree you'll see the picture & name, and a **refresh** and **sign out** buttons.
+В следующем разделе показано, как запустить приложение. Когда оно откроется в браузере, нажмите **Autodesk Sign In**, чтобы ввести данные своей учетной записи. В списке перейдите к **Hubs**, **Projects**, **Folders**, **Items** (файлы) и соответсвующим **Versions**, чтобы отобразить их справа to view on the right-side. Над деревом вы увидите изображение и название, а также кнопки **refresh** и **sign out**.
 
 ![](_media/tutorials/run_sample_viewhubmodels.gif)
 
-Ready? Let's run it!
+Готовы? Давайте запускать!
 
-Choose your language: [Node.js](environment/rundebug/nodejs) | [.NET Framework](environment/rundebug/net) | [.NET Core](environment/rundebug/netcore)
+Выберите язык: [Node.js](environment/rundebug/nodejs) | [.NET Framework](environment/rundebug/net) | [.NET Core](environment/rundebug/netcore)
