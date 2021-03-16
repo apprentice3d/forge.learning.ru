@@ -1,5 +1,5 @@
-# Upload app bundle
+# Загрузите app bundle
 
-Now the ZIP bundle is ready, let's upload to Design Automation.
+Сейчас, когда ZIP bundle готов, можно загружать Design Automation.
 
-Choose your language: [Node.js](designautomation/appbundle/nodejs) | [.NET Core](designautomation/appbundle/netcore)
+Выберите язык: [Node.js](designautomation/appbundle/nodejs) | [.NET Core](designautomation/appbundle/netcore)
