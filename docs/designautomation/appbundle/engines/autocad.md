@@ -1,18 +1,18 @@
-# Prepare an AutoCAD bundle
+# Подготовка AutoCAD bundle
 
-This step will help you create a basic AutoCAD plugin for Design Automation. For more information, please visit [My First AutoCAD Plugin](https://knowledge.autodesk.com/support/autocad/learn-explore/caas/simplecontent/content/my-first-autocad-plug-overview.html) tutorial.
+В этом разделе мы создадим стандартный плагин AutoCAD для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First AutoCAD Plugin](https://knowledge.autodesk.com/support/autocad/learn-explore/caas/simplecontent/content/my-first-autocad-plug-overview.html) tutorial.
 
-> You may [download the Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateDWGParam.zip) into the `/public/bundles/` (Node.js) or `/forgeSample/wwwroot/bundles` (.NET Core) folder and [skip this section](designautomation/appbundle/common.md)
+> Вы можете [скачать Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateDWGParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
-## Create a new project
+## Создание нового проекта
 
-Right-click on the solution, the **Add** >> **New Project**. Select **Windows Desktop**, then **Class Library** and, finally, name it `UpdateDWGParam`. Then right-click on the project, go to **Manage NuGet Packages...**, under **Browser** you can search for **AutoCAD.NET** and install `AutoCAD.NET.Core` (which also installs `AutoCAD.NET.Model`). Then search and install `Newtonsoft.Json` (which is used to parse input data in JSON format).
+Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateDWGParam`. Затем щелкните проект правой кнопкой мыши, выберите **Manage NuGet Packages...**, в разделе **Browser** вы можете выполнить поиск  **AutoCAD.NET** и установить `AutoCAD.NET.Core`  (который также устанавливает `AutoCAD.NET.Model`). Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
 
-> Please select .NET Framework 4.7. If not listed, [please install the Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
+> Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
 ![](_media/designautomation/autocad/new_project.gif)
 
-As a result, the **package.config** should look like the following. This sample uses version 20, which should work on all available versions. You may adjust to a specific version. 
+В результате **package.config** должен выглядеть вот так. В этом примере используется версия 20, которая должна работать во всех доступных версиях. Вы можете отрегулировать под конкретную версию.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -23,11 +23,11 @@ As a result, the **package.config** should look like the following. This sample 
 </packages>
 ```
 
-The project should contain a `Class1.cs` class, let's rename the file to `Commands.cs` (for consistency). 
+В проекте должен быть класс `Class1.cs`, давайте изменим название файла на `Commands.cs` (для постоянства). 
 
 ## Commands.cs
 
-This is the main code that will run with AutoCAD. Copy the following content into `Commands.cs`. The class contains one custom AutoCAD command, `UpdateParam`, defined as a method with the same name. This command is called by Design Automation engine, as will be specified on the **Activity** (next step of this tutorial)
+Это основной код, который будет работать с AutoCAD. Скопируйте следующий контент в `Commands.cs`. Класс содержит одну настраиваемую команду AutoCAD, `UpdateParam`, определенную как метод с тем же именем. Эта команда вызывается движком Design Automation, как будет указано в **Activity** (следующий шаг этого руководства).
 
 ```csharp
 using Autodesk.AutoCAD.ApplicationServices.Core;
@@ -138,7 +138,7 @@ namespace UpdateDWGParam
 
 ## PackageContents.xml
 
-Create a folder named `UpdateDWGParam.bundle` and, inside, a file named `PackageContents.xml`, then copy the following content to it. Learn more at the [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). This file defines the new AutoCAD custom command `UpdateParam` that will be called when Design Automation executes.
+Создайте папку с названием `UpdateDWGParam.bundle` и, внутри этой папки, файл с названием `PackageContents.xml`, затем скопируйте туда код ниже. Узнайте больше [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). Этот файл определяет новую пользовательскую команду AutoCAD `UpdateParam`, которая будет вызываться при работе Design Automation. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -155,15 +155,15 @@ Create a folder named `UpdateDWGParam.bundle` and, inside, a file named `Package
 </ApplicationPackage>
 ```
 
-Finally, create a subfolder named `Contents` and leave it empty. At this point, the project should look like:
+Наконец, создайте подпапку `Contents` и оставьте её пустой. К этому моменту проект должен выглядеть так:
 
 ![](_media/designautomation/autocad/bundle_folders.png)
 
-## Post-build event
+## Событие после сборки (англ. Post-build event)
 
-> For Node.js it is required to adjust the AppBundle ZIP output folder.
+> Для Node.js необходимо настроить папку вывода ZIP AppBundle.
 
-Now we need to ZIP the .bundle folder. Right-click on the project, select **Properties**, then open **Build Events** and copy the following into **Post-build event command line** field, as shown on the image below.
+Теперь нам нужно заархивировать папку .bundle. Щелкните проект правой кнопкой мыши, выберите **Properties**, затем откройте **Build Events** и скопируйте код ниже в поле **Post-build event command line**, как показано на изображении ниже.
 
 ```
 xcopy /Y /F "$(TargetDir)*.dll" "$(ProjectDir)UpdateDWGParam.bundle\Contents\"
@@ -171,14 +171,14 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateDWGParam.zip"
 "C:\Program Files\7-Zip\7z.exe" a -tzip "$(ProjectDir)../forgesample/wwwroot/bundles/UpdateDWGParam.zip" "$(ProjectDir)UpdateDWGParam.bundle\" -xr0!*.pdb
 ```
 
-This will copy the DLL from /bin/debug/ into .bundle/Contents folder, then use [7zip](https://www.7-zip.org/) to create a zip, then finally copy the ZIP into /bundles folders of the webapp.
+Это скопирует DLL из /bin/debug/ в папку .bundle/Contents, затем используйте [7zip](https://www.7-zip.org/) для создания zip-архива, и затем, наконец, скопируйте ZIP-архив в /bundles. папки веб-приложения.
 
 ![](_media/designautomation/autocad/post_build.png)
 
-> Note how the **Post-build event** uses the project and folder names, so make sure you're using this names.
+> Note how the **Post-build event** uses the project and folder names, so make sure you're using this names. Обратите внимание, как **Post-build event** использует имена проекта и папки. Убедитесь, что вы используете эти имена.
 
-If you build the `UpdateDWGParam` project now you should see something like this on the **Output** window. Note the 2 folders and 3 files zipped. The zip file is created directly at the /wwwroot/bundles folder. This means you're doing great!
+Если вы сейчас собираете проект `UpdateDWGParam`, вы должны увидеть что-то подобное в окне **Output**. Обратите внимание на 2 заархивированные папки и 3 файла. ZIP-файл создается непосредственно в папке /wwwroot/bundles. Это означает, что у вас все отлично!
 
 ![](_media/designautomation/autocad/build_output.png)
 
-Next: [Upload the plugin](designautomation/appbundle/common)
+Далее: [Загрузка плагина](designautomation/appbundle/common)
