@@ -175,7 +175,7 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateDWGParam.zip"
 
 ![](_media/designautomation/autocad/post_build.png)
 
-> Note how the **Post-build event** uses the project and folder names, so make sure you're using this names. Обратите внимание, как **Post-build event** использует имена проекта и папки. Убедитесь, что вы используете эти имена.
+> Обратите внимание, как **Post-build event** использует имена проекта и папки. Убедитесь, что вы используете эти имена.
 
 Если вы сейчас собираете проект `UpdateDWGParam`, вы должны увидеть что-то подобное в окне **Output**. Обратите внимание на 2 заархивированные папки и 3 файла. ZIP-файл создается непосредственно в папке /wwwroot/bundles. Это означает, что у вас все отлично!
 
