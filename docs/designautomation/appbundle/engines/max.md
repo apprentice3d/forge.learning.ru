@@ -13,7 +13,7 @@
 
 Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateMAXParam`. Затем вам нужно будет сослаться на управляемую сборку Autodesk.Max.Dll (основной модуль 3ds Max .NET API). Этот модуль находится в папке 3dsmax.exe, и при обращении к нему не забудьте выключить флажок "Copy Local". Есть несколько других модулей, используемых для поддержки .NET API (см.[The 3ds Max .NET SDK](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max__net_sdk_html)), но для этого руководства мы будем использовать только Autodesk.Max.dll. Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
  
-> Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке, [please install the Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
+> Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
 ![](_media/designautomation/max/new_project.gif)
 
@@ -30,8 +30,7 @@
 
 ## Commands.cs
 
-Это основной код, который будет работать с  3ds Max. Скопируйте следующий код в  `Command.cs`. There are three classes to handle the Design Automation porcessing. First is the `InputParams` that will be used to interface with the JSON input data. Next is `ParameterChanger` class that is used to iterate the scene, and find all Casement Windows (but could be any object types as identified by the class ids). Finally the `RuntimeExecute` is used to take the input and drive the automation. Also note there is a specialized logging that will output information to the Design Automation console. See the LogTrace function. Note that the `ILogSys` 3ds Max managed class is used for this, and the flags used with the `LogEntry` API indicated are necessary for the output to show in the Design Automation console. 
-Есть три класса для обработки Design Automation. Во-первых, это `InputParams`, который будет использоваться для взаимодействия с входными данными JSON. Далее идет класс `ParameterChanger`, который используется для итерации сцены и поиска всех Casement Windows (может быть любыми типами объектов, определенными ID классов). Наконец, `RuntimeExecute` используется для ввода и управления автоматизацией. Обратите внимание, что существует специальный файл регистрации (англ logging), который выводит информацию в консоль Design Automation. См. функцию LogTrace. Обратите внимание, что для этого используется управляемый класс 3ds Max `ILogSys`, а флаги, используемые с указанным API `LogEntry`, необходимы для вывода на консоль Design Automation.
+Это основной код, который будет работать с  3ds Max. Скопируйте следующий код в  `Command.cs`. Есть три класса для обработки Design Automation. Во-первых, это `InputParams`, который будет использоваться для взаимодействия с входными данными JSON. Далее идет класс `ParameterChanger`, который используется для итерации сцены и поиска всех Casement Windows (может быть любыми типами объектов, определенными ID классов). Наконец, `RuntimeExecute` используется для ввода и управления автоматизацией. Обратите внимание, что существует специальный файл регистрации (англ logging), который выводит информацию в консоль Design Automation. См. функцию LogTrace. Обратите внимание, что для этого используется управляемый класс 3ds Max `ILogSys`, а флаги, используемые с указанным API `LogEntry`, необходимы для вывода на консоль Design Automation.
 
 ```csharp
 using System;
