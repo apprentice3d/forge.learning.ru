@@ -184,9 +184,8 @@ namespace Autodesk.Forge.Sample.DesignAutomation.Max
 
 ## PackageContents.xml
 
-Создайте папку с названием `UpdateMAXParam.bundle` и, внутри этой папки, файл с названием `PackageContents.xml`, затем скопируйте туда код ниже. Узнайте больше [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). Больше информации об упаковке ваших плагинов 3ds Max здесь [Packaging Plugins](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_writing_plug_ins_packaging_plugins_html).
+Создайте папку с названием `UpdateMAXParam.bundle` и, внутри этой папки, файл с названием `PackageContents.xml`, затем скопируйте туда код ниже. Узнайте больше: [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). Больше информации об упаковке ваших плагинов 3ds Max здесь [Packaging Plugins](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_writing_plug_ins_packaging_plugins_html).
 
-This file will tell 3ds Max the modules to load (in this case the .NET API plugin assembly we are creating, but can also include MAXScripts, Python, and/or C++ plugins.) Because the plugin is being loaded through this feature, you only need to worry about the instructions to trigger your automation job. Please note that a unique ID for both ProductCode and UpgradeCode are required for 3ds Max to correctly load your code. See above mentioned documentation for details.
 Этот файл сообщит 3ds Max о модулях, которые нужно загрузить (в данном случае создаваемая нами сборка плагина .NET API, но также может включать плагины MAXScripts, Python и/или C ++). Поскольку плагин загружается с помощью этой функции, вам нужно помнить об инструкциях, чтобы запустить вашу работу по автоматизации. Обратите внимание, что для правильной загрузки кода 3ds Max требуется уникальный ID для ProductCode и UpgradeCode. Подробности в документации выже.
 
 ```xml
