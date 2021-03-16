@@ -1,27 +1,26 @@
-# Running & Debugging (Go)
+# Запуск и проверка кода (Go)
 
-To start the server, just open the Visual Studio code integrated terminal by going to menu **View** > **Integrated Terminal**, 
-which should open on the root of your project, then run:
+Чтобы запустить сервер, просто откройте интегрированный терминал кода Visual Studio, выбрав меню **View** > **Integrated Terminal**, который должен открыться в корне вашего проекта, затем запустите:
 
 ```bash
     go run main.go
 ```
 
-Open your browser and go to `http://localhost:3000` to check the app.
+Откройте браузер и перейдите по адресу `http://localhost:3000`, чтобы проверить приложение.
 
-## Debug
+## Отладка
 
-For Visual Code, install [Delve](https://github.com/derekparker/delve), the golang debugger, by typing in on the **Integrated Terminal** (under menu **View**):
+Для Visual Code загрузите [Delve](https://github.com/derekparker/delve), отладчик golang, введя код ниже в **Integrated Terminal** (под **View**):
 
 ```bash
 go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-Once `delve` is installed, you can either press F5 or go to menu **Debug** >> **Start debugging**. 
+После установки `delve` вы можете либо нажать F5, либо перейти в меню **Debug** >> **Start debugging**.
 
-!> For debug, make sure the `main.go` file is open on Visual Code before pessing **F5**, otherwise you may see an error (see [Troubleshooting](#troubleshooting))
+!> For debug, make sure the `main.go` file is open on Visual Code before pessing **F5**, otherwise you may see an error (see [Troubleshooting](#troubleshooting)) Для отладки убедитесь, что файл `main.go` открыт в Visual Code перед нажатием **F5**, иначе вы можете увидеть ошибку (см. [Устранение ошибок](#troubleshooting))
 
-You will now see a launch.json file created for your workspace, which will contain the configurations for debugging. By default, there would be a single configuration as below:
+Теперь вы увидите файл launch.json, созданный для вашей рабочей области, который будет содержать конфигурации для отладки. По умолчанию будет одна конфигурация, как показано ниже:
 
 ```javascript
 {
@@ -47,17 +46,17 @@ You will now see a launch.json file created for your workspace, which will conta
 }
 ```
 
-There is nothing to be changed here, so save it and you are all set.
+Здесь не нужно ничего менять, так что просто сохраните его.
 
-Setup breakpoints and in `Code debug viewlet` (F5) press the green `Start Debugging` button to start debugging.
+Установите точки остановка (англ. breakpoints), и в `Code debug viewlet` (F5) нажмите зеленую кнопку `Start Debugging`, чтобы начать отладку.
 
-Go to menu **Debug** and select **Start debugging**. The "Debug Console" tab should appear on the bottom, as shown below:
+Перейдите в меню **Debug** и выберите **Start debugging**. Вкладка "Debug Console" должна появиться внизу, как показано ниже:
 
 ![](_media/go/vs_code_debug.png) 
 
-## Troubleshooting
+## Устранение проблем
 
-If by any chance, you receive an error like `Can not debug non-main package`, don't despair, just open the `main.go` from the route of your project and try again. 
+Если случайно вы получите сообщение об ошибке типа `Can not debug non-main package`, не отчаивайтесь! Просто откройте `main.go` из вашего проекта и попробуйте еще раз.
 
     NOTE: This is caused by `"program": "${fileDirname}"` line in configuration file, 
     based on which it will try to start your app using the location of your opened file, 
@@ -66,23 +65,22 @@ If by any chance, you receive an error like `Can not debug non-main package`, do
     This makes more sense when you will have apps generating several 
     executables (g.e. daemon and client).
 
-If by any chance, you receive an error like `could not launch process: exec "lldb-server"`, then for sure you are developing on OSX and you are missing the `command line developer tools`. To fix this, just follow these steps:
-    1. Open a new Terminal (do not use Visual Code Integrated Terminal)
-    2. Run xcode-select --install
-    3. When prompted, click on Install
+Если по какой-либо причине вы получите сообщение об ошибке типа `could not launch process: exec "lldb-server"`, то вы наверняка разрабатываете на OSX, и вам не хватает `command line developer tools`. Чтобы исправить это, просто выполните следующие действия:
+    1. Откройте новый Терминал (не используйте Visual Code Integrated Terminal)
+    2. Запустите xcode-select --install
+    3. При появлении запроса нажмите Install
 ![](_media/go/osx_setup_tools.png) 
 
 
-## Advanced settings
+## Расширенные настройки
 
-If you are interested in a terminal only debugging (hardcore debugging), have a look at following tutorials:
+If you are interested in a terminal only debugging (hardcore debugging), have a look at following tutorials: Если вас интересует только отладка терминала (хардкорная отладка), ознакомьтесь с этими руководствами:
 
-- the [way of GDB](https://golang.org/doc/gdb) - for debbuging golang applications using GDB;
-- the [way of LLDB](http://blog.ralch.com/tutorial/golang-debug-with-lldb/) - for debbuging golang applications using LLDB;
-
-
-For those that don't like setup anything, there is [Goland](https://www.jetbrains.com/go/) that includes all needed visual tools and should be familiar to those using JetBrains products.
+- [Way of GDB](https://golang.org/doc/gdb) - для отладки приложений golang с использованием GDB;
+- [Way of LLDB](http://blog.ralch.com/tutorial/golang-debug-with-lldb/) - для отладки приложений golang с использованием LLDB;
 
 
+Для тех, кто не любит ничего настраивать, есть [Goland](https://www.jetbrains.com/go/), который включает все необходимые визуальные инструменты и, скорее всего, знаком тем, кто использует продукты JetBrains.
 
-Next: [Viewer extension](tutorials/extensions)
+
+Далее: [Расширения для Viewer](tutorials/extensions)
