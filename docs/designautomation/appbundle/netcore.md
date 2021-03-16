@@ -204,7 +204,7 @@ app.UseEndpoints(routes =>
 });
 ```
 
-If you run the webapp now and click on **Configure** (top-right), you should see your AppBundle and a list of all available engines. **Buttons do not work yet**... let's move forward. Если вы запустите веб-приложение сейчас и нажмете **Configure** (вверху справа), вы должны увидеть свой AppBundle и список всех доступных движков. **Кнопки пока не работают** ... продолжим.
+Если вы запустите веб-приложение сейчас и нажмете **Configure** (вверху справа), вы должны увидеть свой AppBundle и список всех доступных движков. **Кнопки пока не работают** ... продолжим.
 
 ![](_media/designautomation/list_engines.png)
 
