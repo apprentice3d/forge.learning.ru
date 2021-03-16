@@ -1,35 +1,35 @@
-# Tools (PHP)
+# Веб-технологии (PHP)
 
-Install [PHP](http://php.net/downloads.php) engine to run your code. 
+Загрузите [PHP](http://php.net/downloads.php), чтобы запустить ваш код.
 
-Install [Composer](https://getcomposer.org/download/) to manage your dependency. 
+Загрузите [Composer](https://getcomposer.org/download/), чтобы управлять вашей зависимостью. 
 
->Note: If Composer command can not be recognized after installation, please move and rename composer.phar to folder /usr/local/bin/ with the following command: 
+>Примечание: Если команда Composer не может быть распознана после установки, переименуйте composer.phar и переместите её в папку /usr/local/bin/ с помощью следующей команды:
 
 >$ mv composer.phar /usr/local/bin/composer 
 
-> Check the detail at [Answer on StackOverflow](https://stackoverflow.com/questions/25018894/osx-bash-composer-command-not-found).
+> Подробности по ссылке [Answer on StackOverflow](https://stackoverflow.com/questions/25018894/osx-bash-composer-command-not-found).
   
- Install [xDebug](https://xdebug.org/index.php) which is an extension for PHP to assist with debugging and development, we will config this with **PHP Debug** later.
+ Загрузите [xDebug](https://xdebug.org/index.php) который является расширением PHP для помощи в отладке и разработке, позже мы настроим его с помощью **PHP Debug**. .
 
-Now we need an IDE to write the code. There are many options, this tutorial will use [Visual Studio Code](https://code.visualstudio.com/).
+Нам понадобится интегрированная среда разработки, чтобы написать код. Существует множество сценариев, в этом руководстве мы будем использовать [Visual Studio Code](https://code.visualstudio.com/).
 
-> For this tutorial, use all default install options.
+> В этом руководстве используйте параметры установки по умолчанию.
 
-Finally, install the extensions of **PHP Server** and **PHP Debug** for Visual Code, 
-- Go to Visual Code extension manager (left side, bottom icon)
-- Type `PHP` and select/install `PHP Debug` & `PHP Server` plugin.
+Наконец, загрузите расширения **PHP Server** и **PHP Debug** для Visual Code, 
+- Перейдите в Visual Code extension manager (слева внизу)
+- Введите `PHP` и выберите/установите плагин `PHP Debug` и `PHP Server`.
 
 ![](_media/php/vs_code_extension.png) 
 
-- **PHP Server** extension can help host/serve current workspace (or subfolder) with PHP easily.
-> If you have mulitple PHP versions installed, you can specify the location of your PHP executable by override the **phpserver.phpPath** in Visual Code **User Settings**. If empty, the extension will use the PHP executable which appears in the $PATH environment variable
+- Расширение **PHP Server** поможет легко разместить/обслужить текущую рабочую область (или подпапку) с помощью PHP.
+> Если у вас установлено несколько версий PHP, вы можете указать расположение исполняемого файла PHP, переопределив **phpserver.phpPath** в Visual Code **User Settings**. Если пусто, расширение будет использовать исполняемый файл PHP, который отображается в переменной среды $PATH.
  
 
-- **PHP Debug** extension is a debug adapter between Visual Code and XDebug. 
-> **PHP Debug** extension requires to configure with XDebug to make it work, please check the details at PHP Debug extension or a good [blog post about configuration](https://blogs.msdn.microsoft.com/nicktrog/2016/02/11/configuring-visual-studio-code-for-php-development/), and here is the brief steps:
-> 1. install PHP & xDebug as shown above.
-> 2. update your php.ini file with the following settings, make sure that zend_extension points to the correct location.
+- Расширение **PHP Debug** - это адаптер отладки между Visual Code и XDebug
+> Расширение **PHP Debug** требует настройки с помощью XDebug. Пожалуйста, узнайте подробности в расширении PHP Debug или в [блоге](https://blogs.msdn.microsoft.com/nicktrog/2016/02/11/configuring-visual-studio-code-for-php-development/), вот крактие инструкции:
+> 1. установите PHP и xDebug, как показано выше.
+> 2. обновите ваш файл php.ini со следующими настройками, убедитесь, что zend_extension указывает на правильное расположение. 
 
       [xdebug]
         zend_extension="<<path/to/xdebug>>"
@@ -39,4 +39,4 @@ Finally, install the extensions of **PHP Server** and **PHP Debug** for Visual C
         xdebug.remote_autostart=1
 
 
-Next: [Authentication](oauth/)
+Далее: [Аутентификация](oauth/)
