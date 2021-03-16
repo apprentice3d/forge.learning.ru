@@ -1,9 +1,9 @@
-# Running & Debugging (.NET Core)
+# Запуск и проверка кода (.NET Core)
 
-The .NET Core ASP.NET project that we created on Visual Studio is empty, therefore when we start it, nothing runs. As our **forgeSample** project now contains a starting page at `wwwroot/index.html` so we should see its contents upon launch.
+Проект .NET Core ASP.NET, который мы создали в Visual Studio, пуст, поэтому там ничего не запускается. Поскольку наш проект **forgeSample**теперь содержит стартовую страницу по адресу `wwwroot/index.html`, мы должны увидеть ее содержимое при запуске.
 
-Visual Studio should list all browsers available in the system for you pick one to start your project. Just select one and click on the "play" icon. The browser should open with your start page.
+Visual Studio должна распознать все браузеры на компьютере и перечислить их, чтобы запустить проект. Просто выберите один и щелкните на значок "play". В браузере должна открыться ваша стартовая страница.
 
 ![](_media/net/start_debug.png)
 
-Next: [Deployment](deployment/)
+Далее: [Развертывание](deployment/)
