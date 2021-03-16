@@ -1,9 +1,9 @@
-# Running & Debugging (NodeJS)
+# Запуск и проверка кода (NodeJS)
 
-Go to the **Debug** menu and select **Start debugging**. The "Debug Console" tab should appear on the bottom, as shown below:
+Перейдите в меню **Debug** и выберите **Start debugging**. Вкладка "Debug Console" должна появиться внизу, как показано ниже:
 
 ![](_media/nodejs/vs_code_debug.png) 
 
-Open your browser and go to [http://localhost:3000](http://localhost:3000).
+Откройте браузер и перейдите по адресу[http://localhost:3000](http://localhost:3000).
 
-Next: [Viewer extension](tutorials/extensions)
+Далее: [Расширения для Viewer](tutorials/extensions)
