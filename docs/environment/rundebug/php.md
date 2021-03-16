@@ -1,19 +1,19 @@
-# Running & Debugging (PHP)
+# Запуск и проверка кода (PHP)
 
-Make sure **PHP Server** & **PHP Debug** extensions are installed in Visual Code, if not, please check the [**Tools**](environment/tools/php) section first.
+Убедитесь, что расширения **PHP Server** & **PHP Debug** установлены в Visual Code. Если нет, пожалуйста, начните с раздела [**Веб-технологии**](environment/tools/php).
 
-## Start/Stop server
+## Запуск/Остановка сервера
 
-Open the Command Palette from VS Code, and run the command **Serve Project With PHP**, it will start PHP server at port 3000, and run **Stop PHP Server** command to stop the server.
+Откройте Command Palette из VS Code и запустите команду **Serve Project With PHP**, она запустит сервер PHP на порту 3000 и выполнит команду **Stop PHP Server**, чтобы остановить сервер.
 
 ![](_media/php/vs_code_debug.png) 
 
-Open your browser and go to `http://localhost:3000`
+Откройте браузер и перейдите по адресу `http://localhost:3000`
 
 
-## Debug
-To start debugging, and navigate to the **Debugging** tab in VS Code. Then press the little gear icon to generate the launch.json file for PHP, which will contain the configurations for debugging. By default, there would be a single configuration as below:
-
+## Отладка
+Чтобы начать отладку, перейдите на вкладку **Debugging**  в VS Code. Затем нажмите маленький значок шестеренки, чтобы сгенерировать файл launch.json для PHP, который будет содержать конфигурации для отладки. По умолчанию будет одна конфигурация, как показано ниже:
+ 
 ```javascript
     {
         "name": "Listen for XDebug",
@@ -22,12 +22,12 @@ To start debugging, and navigate to the **Debugging** tab in VS Code. Then press
         "port": 9000
     },
 ```
-You can set breakpoints in your source code by selecting a line and pressing F9, and start debugging with this configuration.
+Установите точки останова (англ. breakpoints) в исходном коде, выбрав строчку и нажав F9, и начните отладку с этой конфигурацией. 
 
-If you now hit the specific web page, VS Code will break into your source code at the specified breakpoint. You’ll then get information about variables, call stack, etc. in the left hand pane.
-
+Если вы сейчас перейдете на конкретную веб-страницу, VS Code взломает ваш исходный код в указанной точке останова. После этого на левой панели появится информация о переменных, стеке вызовов (англ. call stack) и т.д.
+ 
 
 ![](_media/php/vs_code_debug.gif) 
 
 
-Next: [Viewer extension](tutorials/extensions)
+Далее: [Расширения для Viewer](tutorials/extensions)
