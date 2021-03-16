@@ -1,7 +1,7 @@
 - [Главная страница](/?id=learn-autodesk-forge)
 - [Первые шаги](account/)
 - [Веб-технологии](environment/tools/)
-- [Аутентификация(OAuth)](oauth/)
+- [Аутентификация (OAuth)](oauth/)
 - [Визуализация моделей](tutorials/viewmodels.md)
   - [Создание сервера](environment/setup/2legged)
   - [Аутентификация](oauth/2legged/)
