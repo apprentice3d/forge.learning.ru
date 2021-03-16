@@ -12,7 +12,7 @@
 
 ## Создание нового проекта
 
-Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Search for **Inventor** templates, then **Plugin project** and, finally, name it `UpdateIPTParam`. Right-click on the project, go to **Manage NuGet Packages...**, under **Browse** you can select `Newtonsoft.Json` and update (this package is already in the solution, if not, install) Найдите шаблоны **Inventor**, затем **Plugin project** и, наконец, назовите его `UpdateIPTParam`. Щелкните проект правой кнопкой мыши, перейдите в **Manage NuGet Packages...**, в разделе **Browse** вы можете выбрать `Newtonsoft.Json` и обновить (этот пакет уже находится в решении, если нет - установите его)
+Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Найдите шаблоны **Inventor**, затем **Plugin project** и, наконец, назовите его `UpdateIPTParam`. Щелкните проект правой кнопкой мыши, перейдите в **Manage NuGet Packages...**, в разделе **Browse** вы можете выбрать `Newtonsoft.Json` и обновить (этот пакет уже находится в решении, если нет - установите его)
 
 > Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке,  [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
@@ -130,7 +130,7 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateIPTParam.zip"
 
 ![](_media/designautomation/inventor/post_build.png)
 
-Если вы сейчас собираете проект `UpdateDWGParam`, вы должны увидеть что-то подобное в окне **Output**. Обратите внимание на 2 заархивированные папки. ZIP-файл создается непосредственно в папке /wwwroot/bundles. Это означает, что у вас все отлично!
+Если вы сейчас собираете проект `UpdateIPTParam`, вы должны увидеть что-то подобное в окне **Output**. Обратите внимание на 2 заархивированные папки. ZIP-файл создается непосредственно в папке /wwwroot/bundles. Это означает, что у вас все отлично!
 
 ![](_media/designautomation/inventor/build_output.png)
 
