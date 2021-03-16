@@ -1,18 +1,18 @@
-# Prepare a Revit bundle
+# Подготовка Revit bundle
 
-This step will help you create a basic Revit plugin for Design Automation. For more information, please visit [My First Revit Plugin](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/simplecontent/content/my-first-revit-plug-overview.html) tutorial.
+В этом разделе мы создадим стандартный плагин Revit для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First Revit Plugin](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/simplecontent/content/my-first-revit-plug-overview.html).
 
-> You may [download the Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateRVTParam.zip) into the `/public/bundles/` (Node.js) or `/forgeSample/wwwroot/bundles` (.NET Core) folder and [skip this section](designautomation/appbundle/common.md)
+> Вы можете [скачать Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateRVTParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
-## Create a new project
+## Создание нового проекта
 
-Right-click on the solution, the **Add** >> **New Project**. Select **Windows Desktop**, then **Class Library** and, finally, name it `UpdateRVTParam`. 
+Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateRVTParam`. 
 
-> Please select .NET Framework 4.8. If not listed, [please install the Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
+> Пожалуйста, выберите .NET Framework 4.8. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
-Right-click on **References**, then **Add Reference** and **Browse** for `RevitAPI.dll` (by default under _C:\Program Files\Autodesk\Revit 201x\_ folder). Then right-click on this **RevitAPI** reference, go to **Properties**, then set **Copy Local** to **False**.
+Щелкните правой кнопкой мыши **References**, затем **Add Reference** и **Browse** для `RevitAPI.dll` (по умолчанию в папку _C:\Program Files\Autodesk\Revit 201x\_ ). кликните правой кнопкой мыши на **RevitAPI** reference, перейдите в **Properties** и настройте **Copy Local** как **False**.
 
-Then right-click on the project, go to **Manage NuGet Packages...**, under **Browser** you can search for **DesignAutomation.Revit** and install `Autodesk.Forge.DesignAutomation.Revit` (choose the appropriate Revit version you need). Then search and install `Newtonsoft.Json` (which is used to parse input data in JSON format). 
+Правой кнопкой мыши нажмите на проект, перейдите в **Manage NuGet Packages...**, в разделе **Browser** вы можете выполнить поиск **DesignAutomation.Revit** и установить `Autodesk.Forge.DesignAutomation.Revit` (выберите необходимую версию Revit). Затем найдите и загрузите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON). 
 
 ![](_media/designautomation/revit/new_project.gif)
 
@@ -25,15 +25,15 @@ Then right-click on the project, go to **Manage NuGet Packages...**, under **Bro
 </packages>
 ```
 
-The project should contain a `Class1.cs` class, let's rename the file to `Commands.cs` (for consistency). 
+В проекте должен быть класс `Class1.cs`, давайте изменим название файла на`Commands.cs` (для постоянства). 
 
-At this point, the project should look like the following:
+К этому моменту проект должен выглядеть вот так:
 
 ![](_media/designautomation/revit/project_files.png)
 
 ## Commands.cs
 
-This is the main code that will run with Revit. Copy the following content into `Commands.cs`. The main point of interest is the `DesignAutomationReadyEvent` event, triggered when the application is ready to run. The `HandleDesignAutomationReadyEvent` implements our custom code.
+Это основной код, который будет работать с  Revit. Скопируйте следующий код в`Commands.cs`. Основной интерес представляет здесь событие `DesignAutomationReadyEvent`, которое начинает работать, когда приложение готово к запуску. `HandleDesignAutomationReadyEvent` реализует наш собственный код.
 
 ```csharp
 using Autodesk.Revit.ApplicationServices;
@@ -129,7 +129,7 @@ namespace Autodesk.Forge.Sample.DesignAutomation.Revit
 
 ## PackageContents.xml
 
-Create a folder named `UpdateRVTParam.bundle` and, inside, a file named `PackageContents.xml`, then copy the following content to it. Learn more at the [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). This file tells Revit to load our `.addin` plugin.
+Создайте папку с названием `UpdateRVTParam.bundle` и, внутри этой папки, файл с названием `PackageContents.xml`,  затем скопируйте туда код ниже. Узнайте больше: [PackageContents.xml Format Reference](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/AutoCAD-Customization/files/GUID-BC76355D-682B-46ED-B9B7-66C95EEF2BD0-htm.html). Этот файл сообщит Revit, что нужно загрузить наш плагин `.addin`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -144,7 +144,7 @@ Create a folder named `UpdateRVTParam.bundle` and, inside, a file named `Package
 
 ## Autodesk.Forge.Sample.DesignAutomation.Revit.addin
 
-Under `UpdateRVTParam.bundle` folder create a subfolder named `Contents` and, inside this folder, a new file called `Autodesk.Forge.Sample.DesignAutomation.Revit.addin`. This tells Revit how to load the plugin.
+В папке `UpdateRVTParam.bundle` создайте подпапку с названием `Contents`  и, внутри этой папки, файл с названием `Autodesk.Forge.Sample.DesignAutomation.Revit.addin`. Это указывает Revit, как загружать плагин.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
@@ -163,15 +163,15 @@ Under `UpdateRVTParam.bundle` folder create a subfolder named `Contents` and, in
 </RevitAddIns>
 ```
 
-At this point, the project should look like:
+К этому моменту проект должен выглядеть вот так:
 
 ![](_media/designautomation/revit/bundle_folders.png)
 
-## Post-build event
+## Событие после сборки (англ. Post-build event)
 
-> For Node.js it is required to adjust the AppBundle ZIP output folder.
+> Для Node.js необходимо настроить папку вывода ZIP AppBundle.
 
-Now we need to ZIP the .bundle folder. Right-click on the project, select **Properties**, then open **Build Events** and copy the following into **Post-build event command line** field, as shown on the image below.
+Теперь нам нужно заархивировать папку .bundle. Щелкните проект правой кнопкой мыши, выберите **Properties**, затем откройте **Build Events** и скопируйте код ниже в поле **Post-build event command line**, как показано на изображении ниже.
 
 ```
 xcopy /Y /F "$(TargetDir)*.dll" "$(ProjectDir)UpdateRVTParam.bundle\Contents\"
@@ -179,16 +179,16 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateRVTParam.zip"
 "C:\Program Files\7-Zip\7z.exe" a -tzip "$(ProjectDir)../forgesample/wwwroot/bundles/UpdateRVTParam.zip" "$(ProjectDir)UpdateRVTParam.bundle\" -xr0!*.pdb
 ```
 
-This will copy the DLL from /bin/debug/ into .bundle/Contents folder, then use [7zip](https://www.7-zip.org/) to create a zip, then finally copy the ZIP into /bundles folders of the webapp.
+Это скопирует DLL из /bin/debug/ в папку .bundle/Contents, затем используйте [7zip](https://www.7-zip.org/) для создания zip-архива, и затем, наконец, скопируйте ZIP-архив в /bundles. папки веб-приложения.
 
 ![](_media/designautomation/revit/post_build.png)
 
-> Note how the **Post-build event** uses the project and folder names, so make sure you're using this names.
+> Обратите внимание, как**Post-build event** использует имена проекта и папки. Убедитесь, что вы используете эти имена.
 
-If you build the `UpdateRVTParam` project now you should see something like this on the **Output** window. Note the 2 folders and 3 files zipped. The zip file is created directly at the /wwwroot/bundles folder. This means you're doing great!
+Если вы работаете над проектом `UpdateRVTParam`, вы должны увидеть что-то подобное в окне **Output**. Обратите внимание на 2 заархивированные папки и 3 файла. ZIP-файл создается непосредственно в папке /wwwroot/bundles. Это означает, что у вас все отлично!
 
 ![](_media/designautomation/revit/build_output.png)
 
-!> If the build output shows more than **2 folder, 5 files** copied, please go back and ensure **RevitAPI** reference is set to **Copy Local**:**False**. You may need to remove all DLLs from `UpdateRVTParam.bundle/Contents/` folder
+!> Если после сборки output содержит скопированные **2 папки, 5 файлов**, вернитесь и убедитесь, что **RevitAPI** reference настроено таким образом: **Copy Local**:**False**. Возможно, вам придется удалить все DLL в папке `UpdateRVTParam.bundle/Contents/`.
 
-Next: [Upload the plugin](designautomation/appbundle/common)
+Далее: [Загрузка плагина](designautomation/appbundle/common)
