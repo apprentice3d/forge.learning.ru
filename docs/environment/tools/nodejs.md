@@ -1,9 +1,9 @@
-# Tools (Node.js)
+# Веб-технологии (Node.js)
 
-Install [Node.js](http://nodejs.org) engine to run your code. Install [NPM](https://www.npmjs.com/get-npm) dependency manager to install packages.
+Загрузите [Node.js](http://nodejs.org), чтобы запустить ваш код. Загрузите диспетчер зависимостей [NPM](https://www.npmjs.com/get-npm), для установки пакетов. 
 
-Now we need an IDE to write the code. There are many options, this tutorial will use [Visual Studio Code](https://code.visualstudio.com/).
+Нам понадобится интегрированная среда разработки, чтобы написать код. Существует множество сценариев, в этом руководстве мы будем использовать [Visual Studio Code](https://code.visualstudio.com/).
 
-> For this tutorial, use all default install options.
+> В этом руководстве используйте параметры установки по умолчанию.
 
-Next: [Authentication](oauth/)
+Далее: [Аутентификация](oauth/)
