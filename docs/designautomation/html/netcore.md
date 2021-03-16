@@ -1,10 +1,10 @@
-# Basic app UI
+# Стандартный пользовательский интерфейс (UI)
 
-Let's start with the UI (HTML and JavaScript) files. Under **wwwroot** folder, create **bundles** and **js** folder.
+Давайте начнем с файлов UI UI (HTML и JavaScript). В папке **wwwroot** создайте папки **bundles** и **js**.
 
 ## index.html
 
-Under **wwwroot** folder create the **index.html** file with the following content:
+В папке **wwwroot** создайте файл **index.html** с кодом ниже:
 
 ```html
 <!DOCTYPE html>
@@ -106,7 +106,7 @@ Under **wwwroot** folder create the **index.html** file with the following conte
 
 ## ForgeDesignAutomation.js
 
-Under **wwwroot/js** folder create the **ForgeDesignAutomation.js** file with the following content:
+В папке **wwwroot/js** создайте файл **ForgeDesignAutomation.js** с кодом ниже:
 
 ```javascript
 $(document).ready(function () {
@@ -261,12 +261,12 @@ function startConnection(onReady) {
 }
 ```
 
-The final result should look like:
+К этому моменту проект должен выглядеть вот так:
 
 ![](_media/designautomation/netcore/basefiles.png)
 
-At this point you can run your project, just hit **play**, the HTML interface should open, indicating that your project was created correctly. None of the buttons should work... let's move forward.
+К этому моменту  вы можете запустить ваш проект, просто нажмите **play**, и откроется HTML-станица, что означает, что вам проект создан корректно. Кнокпи работать не буут ... продолжим. 
 
 ![](_media/net/start_debug.png) 
 
-Next: [Prepare a plugin](designautomation/appbundle/)
+Далее: [Подготовка плагина](designautomation/appbundle/)
