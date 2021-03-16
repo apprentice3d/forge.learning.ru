@@ -1,8 +1,8 @@
-# Code for creating App Bundle (.NET Core)
+# Код для создания App Bundle (.NET Core)
 
 ## DesignAutomationController.cs
 
-Under **Controllers** folder create a `DesignAutomationController.cs` with the following content. This is just the class, we'll define the endpoints later, but note the `DesignAutomationHub` at the end, which allow us push notifications to the client via [SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-2.2).
+В папке **Controllers** создайте `DesignAutomationController.cs` с кодом ниже. Это просто класс, мы определим конечные точки позже. This is just the class, we'll define the endpoints later, но обратите внимание на `DesignAutomationHub` в конце, который позволяет нам отправлять уведомления клиенту через [SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-2.2).
 
 ```csharp
 using Autodesk.Forge;
@@ -77,7 +77,7 @@ Now let's add a few endpoints to this class. The following methods must be copie
 
 **1. GetLocalBundles**
 
-Look at the `bundles` folder and return a list of .ZIP files.
+Посмотрите на папку `bundles` и верните список файлов .ZIP.
 
 ```csharp
 /// <summary>
@@ -95,7 +95,7 @@ public string[] GetLocalBundles()
 
 **2. GetAvailableEngines**
 
-To define a bundle we also need the engine, so this endpoint return a list of all available engines.
+Чтобы определить bundle, нам понадобится движок, поэтому эта конечная точка возвращает список всех доступных движков. 
 
 ```csharp
 /// <summary>
@@ -117,7 +117,7 @@ public async Task<List<string>> GetAvailableEngines()
 
 **3. CreateAppBundle**
 
-That's where we actually define a new AppBundle:
+Здесь мы определяем новый AppBundle:
 
 ```csharp
 /// <summary>
@@ -194,7 +194,7 @@ public async Task<IActionResult> CreateAppBundle([FromBody]JObject appBundleSpec
 }
 ```
 
-As the `DesignAutomationHub` class is now defined (inside this controller), open the `Startup.cs` and, inside `Configure` method, add the following line:
+Т.к. класс `DesignAutomationHub` определяется сейчас (внутри этого контроллера), откройте `Startup.cs` и, внутри метода `Configure`, добавьте следующую строку:
 
 ```csharp
 app.UseRouting();
@@ -204,8 +204,8 @@ app.UseEndpoints(routes =>
 });
 ```
 
-If you run the webapp now and click on **Configure** (top-right), you should see your AppBundle and a list of all available engines. **Buttons do not work yet**... let's move forward.
+If you run the webapp now and click on **Configure** (top-right), you should see your AppBundle and a list of all available engines. **Buttons do not work yet**... let's move forward. Если вы запустите веб-приложение сейчас и нажмете **Configure** (вверху справа), вы должны увидеть свой AppBundle и список всех доступных движков. **Кнопки пока не работают** ... продолжим.
 
 ![](_media/designautomation/list_engines.png)
 
-Next: [Define an Activity](designautomation/activity/)
+Далее: [Определение Activity](designautomation/activity/)
