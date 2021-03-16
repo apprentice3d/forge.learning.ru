@@ -1,6 +1,6 @@
 # Аккаунт Autodesk
 
-Для использования платформы Autodesk Forge вам нужно создать аккаунт на сайте платформы https://forge.autodesk.com. 
+Для использования платформы Autodesk Forge вам нужно создать аккаунт на сайте платформы [https://forge.autodesk.com](https://forge.autodesk.com). 
 
 ## Создание аккаунта Forge
 
@@ -17,7 +17,7 @@
 ![](_media/account/activate_sub.png)
 
 По истечении пробного периода вам нужно приобрести подписку Autodesk Forge.
-Все вопросы по процессу оплаты за Autodesk Forge в России и СНГ вы можете напрявлять нашим специалистам www.autodesk.ru/adn_contacts.
+Все вопросы по процессу оплаты за Autodesk Forge в России и СНГ вы можете напрявлять нашим специалистам [www.autodesk.ru/adn_contacts](www.autodesk.ru/adn_contacts).
 
 ## Создание приложения
 
