@@ -1,10 +1,10 @@
-# Basic app UI
+# Стандартный пользовательский интерфейс (UI)
 
-Let's start with the UI (HTML and JavaScript) files.
+Давайте начнем с файлов UI UI (HTML и JavaScript). 
 
 ## index.html
 
-Under **public** folder create the **index.html** file with the following content:
+В папке **public** создайте файл **index.html** с кодом ниже:
 
 ```html
 <!DOCTYPE html>
@@ -106,7 +106,7 @@ Under **public** folder create the **index.html** file with the following conten
 
 ## ForgeDesignAutomation.js
 
-Create **js** folder under **public** folder and Under **public/js** folder create the **ForgeDesignAutomation.js** file with the following content:
+Создайте папку **js** в папке **public**. Затем в папке **public/js** создайте файл **ForgeDesignAutomation.js** с кодом ниже:
 
 ```javascript
 $(document).ready(function () {
@@ -294,9 +294,9 @@ function startConnection(onReady) {
 }
 ```
 
-The final result should look like:
+Финальный результат должен выглядеть вот так:
 
 ![](_media/designautomation/nodejs/basefiles.PNG)
 
 
-Next: [Prepare a plugin](designautomation/appbundle/)
+Далее: [Подготовка плагина](designautomation/appbundle/)
