@@ -4,6 +4,6 @@
 
 ![](_media/nodejs/vs_code_debug.png) 
 
-Откройте браузер и перейдите по адресу[http://localhost:3000](http://localhost:3000).
+Откройте браузер и перейдите по адресу [http://localhost:3000](http://localhost:3000).
 
 Далее: [Расширения для Viewer](tutorials/extensions)
