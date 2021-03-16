@@ -73,11 +73,11 @@ namespace forgeSample.Controllers
 }
 ```
 
-Now let's add a few endpoints to this class. The following methods must be copied inside the `DesignAutomationController` class.
+Давайте добавим несколько конечных точек к этому классу. Следующие методы должны быть скопированы внутри класса `DesignAutomationController`.
 
 **1. GetLocalBundles**
 
-Посмотрите на папку `bundles` и верните список файлов .ZIP.
+Посмотрите в папку `bundles` и верните список файлов .ZIP.
 
 ```csharp
 /// <summary>
@@ -95,7 +95,7 @@ public string[] GetLocalBundles()
 
 **2. GetAvailableEngines**
 
-Чтобы определить bundle, нам понадобится движок, поэтому эта конечная точка возвращает список всех доступных движков. 
+Чтобы определить bundle, нам понадобится движок. Эта конечная точка возвращает список всех доступных движков. 
 
 ```csharp
 /// <summary>
