@@ -1,4 +1,4 @@
-# Загрузите app bundle
+# Загрузка app bundle
 
 Сейчас, когда ZIP bundle готов, можно загружать Design Automation.
 
