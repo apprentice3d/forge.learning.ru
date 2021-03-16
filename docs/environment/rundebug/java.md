@@ -1,19 +1,19 @@
-# Running & Debugging (Java)
+# Запуск и проверка кода (Java)
 
-We will need to set our ENV Variables for both **FORGE_CLIENT_ID** and **FORGE_CLIENT_SECRET**.
+Нам нужно будет установить наши переменные ENV для **FORGE_CLIENT_ID** и **FORGE_CLIENT_SECRET**.
 
-Make sure your Tomcat Server is NOT running and head over to menu **Run** and select **Run Configurations...**. Select the Tomcat server on the left tree, go ahead and select the **Environment** tab and click **New** to add a variable. We can keep the default settings. 
-
+Убедитесь, что ваш Tomcat Server НЕ запущен, перейдите в меню **Run** и выберите**Run Configurations...**. Выберите сервер Tomcat в дереве слева, перейдите на вкладку **Environment** и нажмите **New**, чтобы добавить переменную. Мы можем оставить настройки по умолчанию.
+ 
  ![](_media/java/Eclipse_new_env_var.png) 
 
  > Make sure to add both **FORGE_CLIENT_ID** and **FORGE_CLIENT_SECRET**.
 
-Finally, click **Apply** on the right bottom and close the dialog.
+Наконец, нажмите **Apply** внизу справа и закройте диалоговое окно.
 
-Now, we can Start our Tomcat server 
+Теперь мы можем запустить наш сервер Tomcat
 
 ![](_media/java/Eclipse_start_server_final.png) 
 
-Open your browser and go to `http://localhost:3000`
+Откройте браузер и перейдите по ссылке `http://localhost:3000`
 
-Next: [Viewer extension](tutorials/extensions)
+Далее: [Расширения для Viewer](tutorials/extensions)
