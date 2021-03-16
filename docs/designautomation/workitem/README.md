@@ -1,9 +1,9 @@
-# Execute Workitem
+# Запуск Workitem
 
-A job that executes a specified Activity, using specified input files and generating appropriate output files.
+Задание, которое выполняет указанное Activity, используя указанные входные файлы и генерируя соответствующие выходные файлы.
 
-The relationship between an Activity and WorkItem can be thought of as a “function definition” and “function call”, respectively. The Activity specifies the AppBundle(s) to use, which in turn specify the Engine to use. The Workitem is then called to execute those.
+Связь между Activity и WorkItem можно рассматривать как «определение функции» и «вызов функции» соответственно. Activity определяет, какие AppBundle использовать, которые, в свою очередь, определяют движок (англ. Engine). Затем вызывается Workitem для их выполнения.
 
-In this tutorial sample, the workitem specifies the input file URL, the input JSON data with the new parameter values, and the destination URL for the output file. This sample will upload the input file to a OSS bucket before starting the workitem.
+В этом руководстве workitem указывает URL-адрес входного файла, входные данные JSON с новыми значениями параметров и целевой URL-адрес для выходного файла. Этот пример загрузит входной файл в бакет OSS перед запуском workitem.
 
-Choose your language: [Node.js](designautomation/workitem/nodejs) | [.NET Core](designautomation/workitem/netcore)
+Выберите язык: [Node.js](designautomation/workitem/nodejs) | [.NET Core](designautomation/workitem/netcore)
