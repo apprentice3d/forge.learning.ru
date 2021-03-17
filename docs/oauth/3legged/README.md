@@ -1,9 +1,9 @@
-# OAuth 3-legged
+# Трехфакторная (англ. 3-legged ) аутентификация
 
-In formal OAuth terminology, to accomplish three-legged authentication and authorization on the Forge Platform, the authorization code grant type can be adopted.
+В формальной терминологии OAuth, для выполнения трехфакторной аутентификации на платформе Forge можно использовать тип разрешения "Authorization Code" (рус. код авторизации).
 
-To use a web app as an example, this means that your app first needs to redirect the end user to the Autodesk login page where the user can approve your app's access to their data. Once they did that, an authorization code is returned to your app (via a query parameter in the callback). Your app then exchanges that authorization code for a token by communicating with the Forge authentication server directly. [Learn more](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics/).
+Используя веб-приложение в качестве примера: это означает, что ваше приложение сначала должно перенаправить конечного пользователя на страницу входа Autodesk, где пользователь может подтвердить доступ к своим данным. После этого в ваше приложение возвращается код авторизации (через query parameter в Callback URL). Ваше приложение обменивает этот код авторизации на токен, напрямую связываясь с сервером аутентификации Forge. [Узнайте больше](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics/).
 
-A user needs to authorize access to his/her data. A **3-legged** token is required.
+Пользователь должен подтвердить доступ к своим данным, для этого требуется **3-legged** токен. 
 
-Choose your language: [Node.js](oauth/3legged/nodejs) | [.NET Framework](oauth/3legged/net) | [.NET Core](oauth/3legged/netcore)
+Выберите язык: [Node.js](oauth/3legged/nodejs) | [.NET Framework](oauth/3legged/net) | [.NET Core](oauth/3legged/netcore)
