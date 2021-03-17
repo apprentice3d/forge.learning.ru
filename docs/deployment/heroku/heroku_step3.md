@@ -8,7 +8,7 @@ git push heroku master
 
 ## Настройте переменные среды
 
-Is a best practice to have keys & secrets for local development and for production, so go to your apps on Forge Developer Portal and [create a new app](/account/?id=create-an-app), for instance, **forge sample production**.  Лучше всего иметь Keys&Secrets для локальной разработки, поэтому перейдите к своим приложениям на сайте платформы Autodesk Forge и [создайте новое приложение](/account/?id=create-an-app), например, **forge sample production**.
+Лучше всего иметь Keys&Secrets для локальной разработки, поэтому перейдите к своим приложениям на сайте платформы Autodesk Forge и [создайте новое приложение](/account/?id=create-an-app), например, **forge sample production**.
 
 Войдите в учетную запись [Heroku Dashboard](https://dashboard.heroku.com/), где должно быть указано ваше приложение. Перейдите в **Settings** и создайте **Config Vars**, как показано на видео нижеw:
 
