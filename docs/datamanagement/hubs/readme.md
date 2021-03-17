@@ -4,7 +4,7 @@
 
 ![](_media/datamanagement/entities_and_domains.png)
 
-To navigate and access BIM 360 Team, Fusion Team, BIM 360 Docs, A360 Personal, and OSS data, you need to be familiar with the following terminology: Для навигации и доступа к данным BIM 360, Fusion Team, A360 Personal и Object Storage Service (OSS) необходимо знать следующую терминологию:
+Для навигации и доступа к данным BIM 360, Fusion Team, A360 Personal и Object Storage Service (OSS) необходимо знать следующую терминологию:
 
 - `hubs`:  репозитории данных BIM 360 Team, Fusion Team, аккаунт BIM 360 Docs или A360 Personal
 - `projects`: проекты BIM 360 Team, Fusion Team, BIM 360 Docs или A360 Personal
