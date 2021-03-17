@@ -10,7 +10,7 @@
   - [Отображение файлов в Viewer](viewer/2legged/)
 - [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md)
   - [Создание сервера](environment/setup/3legged)
-  - [Авторизация](oauth/3legged/)
+  - [Аутентификация](oauth/3legged/)
   - [Указание репозиториев данных и проектов](datamanagement/hubs/readme.md)
   - [Обработка информации профиля пользователя](oauth/user/readme.md)
   - [Отображение файлов в Viewer](viewer/3legged/readme.md)
