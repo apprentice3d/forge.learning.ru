@@ -2,7 +2,7 @@
 
 Design Automation использует .bundle так же, как Autodesk App Store. Это означает, что вам нужно создать `PackageContents.xml` и ZIP-файл с` DLL` (и другими необходимыми файлами). Для получения подробной информации о том, как их создать, перейдите на сайт [Autodesk App Store Developer Center](https://www.autodesk.com/developer-network/app-store).
 
-At this section we will create a basic plugin that update `width` and `height` parameter and save the resulting file. Also the supporting files (`PackageContents.xml`) and the folder structure to place them. Finally create a .ZIP file ready to upload to Design Automation. В этом разделе мы создадим стандартный плагин, который обновит параметры `width` и `height` и сохранит полученный файл, а также вспомогательные файлы (`PackageContents.xml`) и структуру папок для их размещения. Создайте файл .ZIP, готовый для загрузки в Design Automation.
+В этом разделе мы создадим стандартный плагин, который обновит параметры `width` и `height` и сохранит полученный файл, а также вспомогательные файлы (`PackageContents.xml`) и структуру папок для их размещения. Создайте файл .ZIP, готовый для загрузки в Design Automation.
 
 ### Требования
 
@@ -10,7 +10,7 @@ At this section we will create a basic plugin that update `width` and `height` p
 
 ### Дополнительные требования
 
-\Для следующего раздела вы можете использовать заранее подготовленный плагин. Если вы захотите создать его, вам потребуется:
+Для следующего раздела вы можете использовать заранее подготовленный плагин. Если вы захотите создать его, вам потребуется:
 - **Visual Studio**: Visual Studio 2017 или более новая версия, пожалуйста, перейдите [по ссылке](https://visualstudio.microsoft.com/vs/).
 
 - **AutoCAD, Inventor, Revit и 3ds Max**: Для разработки, тестирования и отладки вашего плагина Design Automation: [AutoCAD](https://www.autodesk.com/products/autocad/overview) | [Inventor](https://www.autodesk.com/products/inventor/overview) | [Revit](https://www.autodesk.com/products/revit/overview) | [3ds Max](https://www.autodesk.com/products/3ds-max/overview).
