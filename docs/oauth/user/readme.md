@@ -1,5 +1,5 @@
-# User information
+# Обработка информации профиля пользователя
 
-When using a 3-legged access token we can get the profile information of an authorizing end user. It includes the **name** and **picture**, which is interesting to give a better customization of the user interface. [Learn more](https://developer.autodesk.com/en/docs/oauth/v2/reference/http/users-@me-GET/)
+При использовании 3-legged токена доступа мы можем получить информацию из профиля конечного пользователя, что включает **имя** и **фотографию**. Это предоставляет отличную возможность кастомизировать пользовательский интерфейс. [Узнайте больше](https://developer.autodesk.com/en/docs/oauth/v2/reference/http/users-@me-GET/)
 
-Choose your language: [Node.js](oauth/user/nodejs) | [.NET Framework](oauth/user/net) | [.NET Core](oauth/user/netcore)
+Выберите язык: [Node.js](oauth/user/nodejs) | [.NET Framework](oauth/user/net) | [.NET Core](oauth/user/netcore)
