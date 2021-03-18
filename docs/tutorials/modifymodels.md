@@ -9,7 +9,7 @@
 Чтобы изменить параметры вашей модели в браузере, вам нужно:
 
 1. [Настроить сервер](environment/setup/2legged_da) << Вы начинающий разработчик? Начните с этого шага
-2. [Добавить стандартный пользовательский интерфейс](designautomation/html/)
+2. [Добавить базовый пользовательский интерфейс](designautomation/html/)
 3. [Подготовить плагин](designautomation/appbundle/)
 4. [Определить activity](designautomation/activity/)
 5. [Запустить workitem](designautomation/workitem/)
