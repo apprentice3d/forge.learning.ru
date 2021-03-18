@@ -8,6 +8,6 @@
 
 Нам понадобится интегрированная среда разработки JAVA, чтобы написать код. Чтобы создать веб-приложение, мы будем использовать руководство [Eclipse Java EE IDE for Web Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3) version Oxygen.2 Release (4.7.2). 
 
-> For this tutorial, use all default install options. Для этого примера используйте параметры установки по умолчанию. 
+> В этом руководстве в ходе установки инструментов используйте параметры по умолчанию.
 
 Далее: [Аутентификация](oauth/)
