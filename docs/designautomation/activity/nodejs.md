@@ -1,8 +1,8 @@
-# Define an Activity (Node.js)
+# Определение Activity (Node.js)
 
 **Activity**
 
-Now we will write endpoints for creating new activity and getting the existing activities, copy the following code into `DesignAutomation.js` file before the last line `module.exports = router;`:
+Теперь мы напишем конечные точки для создания новой activity и получения уже существующих activities. Скопируйте следующий код в файл `DesignAutomation.js`перед последней строкой `module.exports = router;`:
 
 ```javascript
 /// <summary>
@@ -131,8 +131,8 @@ router.get('/forge/designautomation/activities', async /*GetDefinedActivities*/ 
 	res.status(200).json(definedActivities);
 });
 ```
-Now you can click on **Configure** (top-right), select the AppBundle, select the Engine and click on **Define Activity**, which should define and upload the appbundle and define the activity. The results panel (left-side) shows the respective ids. **All other buttons do not work yet**... let's move forward.
+Теперь вы можете нажать на **Configure** (вверху справа), выбрать AppBundle, выбрать Engine и нажать **Define Activity**, что определит и загрузит appbundle и определит activity. На панели результатов (слева) показаны соответствующие ID. **Все остальные кнопки пока не работают** ... продолжим.
 
 ![](_media/designautomation/define_activity.gif)
 
-Next: [Execute workitem](designautomation/workitem/README.md)
+Далее: [Запуск workitem](designautomation/workitem/README.md)
