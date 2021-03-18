@@ -14,7 +14,7 @@ Design Automation использует .bundle так же, как Autodesk App 
 Для следующего раздела вы можете использовать заранее подготовленный плагин. Если вы захотите создать его, вам потребуется:
 - **Visual Studio**: Visual Studio 2017 или более новая версия. Пожалуйста, перейдите [по ссылке](https://visualstudio.microsoft.com/vs/).
 
-- **AutoCAD, Inventor, Revit и 3ds Max**: Для разработки, тестирования и отладки вашего плагина Design Automation: [AutoCAD](https://www.autodesk.com/products/autocad/overview) | [Inventor](https://www.autodesk.com/products/inventor/overview) | [Revit](https://www.autodesk.com/products/revit/overview) | [3ds Max](https://www.autodesk.com/products/3ds-max/overview).
+- **AutoCAD, Inventor, Revit и 3ds Max**: Для разработки, тестирования и отладки вашего плагина Design Automation: [AutoCAD](https://www.autodesk.ru/products/autocad/overview?term=1-YEAR&support=null) | [Inventor](https://www.autodesk.ru/products/inventor/overview) | [Revit](https://www.autodesk.ru/products/revit/overview?term=1-YEAR&support=null) | [3ds Max](https://www.autodesk.ru/products/3ds-max/overview?term=1-YEAR&support=null).
 
 ***
 
