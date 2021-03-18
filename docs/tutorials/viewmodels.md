@@ -6,7 +6,7 @@
 
 Чтобы визуализировать вашу модель в браузере, вам нужно:
 
-1. [Создать сервер](environment/setup/2legged) << Вы начинающий разработчик? Начните с этого шага
+1. [Настроить сервер](environment/setup/2legged) << Вы начинающий разработчик? Начните с этого шага
 2. [Пройти авторизацию](oauth/2legged/)
 3. [Загрузить модель в OSS (object storage service)](datamanagement/oss/)
 4. [Конвертировать файл](modelderivative/translate/)
