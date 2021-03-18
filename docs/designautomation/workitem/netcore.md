@@ -1,10 +1,10 @@
-# Execute Workitem (.NET Core)
+# Запуск Workitem (.NET Core)
 
-The following methods should be added to the `DesignAutomationController` class.
+Все перечисленные ниже методы должны быть добавлены в класс `DesignAutomationController`.
 
 **1. StartWorkitem**
 
-This is where we actually start the Design Automation. The `StartWorkitemInput` is just a data structure. This method also uploads the input file to an OSS Bucket and define that the output should be saved at the same bucket. To help you identify the files, both input and output uses the same original file name, but with a suffix (`input` or `output`) plus a time stamp.
+Именно здесь мы фактически запускаем Design Automation. `StartWorkitemInput` - это просто структура данных. Этот метод также загружает исходный файл в бакет OSS и определяет, что выходные данные должны быть сохранены там же. Чтобы помочь вам идентифицировать файлы, и исходные, и выходные, используется одно и то же имя файла, но с суффиксом (`input` или `output`), а также отметка времени.
 
 ```csharp
 /// <summary>
@@ -106,11 +106,11 @@ public class StartWorkitemInput
 }
 ```
 
-> Note how the `StartWorkitemInput` class is defined **inside** de **DesignAutomationController**, this is correct and it's used as input parameter for `StartWorkitem` method.
+> Обратите внимание, как класс `StartWorkitemInput` определен **внутри** **DesignAutomationController**, - это правильно, он используется в качестве входного параметра для метода `StartWorkitemInput`.
 
 **2. OnCallback**
 
-When the workitem is done, Design Automation will callback our app (using the ngrok forwarding URL). This function will handle it and push a notification to the client (using SignalR Hub).
+Когда workitem будет готов, Design Automation обратится к нашему приложению (используя ngrok forwarding URL URL-адрес). Эта функция обработает его и отправит уведомление клиенту (с помощью SignalR Hub).
 
 ```csharp
 /// <summary>
@@ -148,7 +148,7 @@ public async Task<IActionResult> OnCallback(string id, string outputFileName, [F
 
 **3. ClearAccount**
 
-Last, but not least, to help you test, this function removes all appbundles and activities from your account. 
+И последнее, но не менее важное: чтобы помочь вам в тестировании, эта функция удаляет все appbundles и activities из вашей учетной записи.
 
 ```csharp
 /// <summary>
@@ -164,6 +164,6 @@ public async Task<IActionResult> ClearAccount()
 }
 ```
 
-Everything ready!
+Готово!
 
-Next: [Run & Debug](environment/rundebug/2legged_da)
+Далее: [Запуск и проверка кода](environment/rundebug/2legged_da)
