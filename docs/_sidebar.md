@@ -16,7 +16,7 @@
   - [Отображение файлов в Viewer](viewer/3legged/readme.md)
 - [Редактирование моделей в вебе](tutorials/modifymodels.md)
   - [Настройка сервера](environment/setup/2legged_da.md)
-  - [Стандартный пользовательский интерфейс (UI)](designautomation/html/)
+  - [Базовый пользовательский интерфейс (UI)](designautomation/html/)
   - [Подготовка плагина](designautomation/appbundle/)
   - [Определение Activity](designautomation/activity/)
   - [Запуск Workitem](designautomation/workitem/)
