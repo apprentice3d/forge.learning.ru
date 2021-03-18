@@ -31,4 +31,4 @@
 
 ![](_media/net/csharp_extension.png)
 
-Далее: [Аутентификция](oauth/)
+Далее: [Аутентификация](oauth/)
