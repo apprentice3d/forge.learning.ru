@@ -1,5 +1,6 @@
-# Подготовка плагина для Design Automation
+# Подготовка плагина AppBundle для Design Automation
 
+AppBundle определяет, какие операции буду выполняться в Design Automation. 
 Design Automation использует .bundle так же, как Autodesk App Store. Это означает, что вам нужно создать `PackageContents.xml` и ZIP-файл с` DLL` (и другими необходимыми файлами). Для получения подробной информации о том, как их создать, перейдите на сайт [Autodesk App Store Developer Center](https://www.autodesk.com/developer-network/app-store).
 
 В этом разделе мы создадим стандартный плагин, который обновит параметры `width` и `height` и сохранит полученный файл, а также вспомогательные файлы (`PackageContents.xml`) и структуру папок для их размещения. Создайте файл .ZIP, готовый для загрузки в Design Automation.
