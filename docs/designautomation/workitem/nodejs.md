@@ -1,10 +1,10 @@
-# Execute Workitem (Node.js)
+# Запуск Workitem (Node.js)
 
-The following apis should be added to the `DesignAutomation` js file before the last line `module.exports = router;`
+Все перечисленные ниже APIs должны быть добавлены в файл `DesignAutomation` перед последней строкой `module.exports = router;`
 
 **1. StartWorkitem**
 
-This is where we actually start the Design Automation. This endpoint also uploads the input file to an OSS Bucket and define that the output should be saved at the same bucket. To help you identify the files, both input and output uses the same original file name, but with a suffix (`input` or `output`) plus a time stamp. 
+Именно здесь мы фактически запускаем Design Automation. Эта конечная точка также загружает исхожный файл в бакет OSS и определяет, что выходные данные должны быть сохранены там же. Чтобы помочь вам идентифицировать файлы, и исходные, и выходные, используется одно и то же имя файла, но с суффиксом (`input` или `output`, а также отметка времени.
 
 ```javascript
 /// <summary>
@@ -130,7 +130,7 @@ router.post('/forge/designautomation/workitems', multer({
 
 **2. OnCallback**
 
-When the workitem is done, Design Automation will callback our app (using the ngrok forwarding URL). This function will handle it and push a notification to the client (using socketIO).
+Когда workitem будет готов, Design Automation обратится к нашему приложению (используя ngrok forwarding URL URL-адрес). Эта функция обработает его и отправит уведомление клиенту (используя socketIO).
 
 ```javascript
 /// <summary>
@@ -200,7 +200,7 @@ router.post('/forge/callback/designautomation', async /*OnCallback*/ (req, res) 
 
 **3. ClearAccount**
 
-Last, but not least, to help you test, this api removes all appbundles and activities from your account.
+И последнее, но не менее важное: чтобы помочь вам в тестировании, этот API удаляет все appbundles и activities из вашей учетной записи.
 
 ```javascript
 /// <summary>
@@ -214,6 +214,6 @@ router.delete('/forge/designautomation/account', async /*ClearAccount*/ (req, re
 });
 ```
 
-Everything ready!
+Готово!
 
-Next: [Run & Debug](environment/rundebug/2legged_da)
+Далее: [Запуск и проверка кода](environment/rundebug/2legged_da)
