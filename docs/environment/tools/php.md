@@ -2,7 +2,7 @@
 
 Загрузите [PHP](http://php.net/downloads.php), чтобы запустить ваш код.
 
-Загрузите [Composer](https://getcomposer.org/download/), чтобы управлять вашей зависимостью. 
+Загрузите [Composer](https://getcomposer.org/download/), чтобы управлять вашими зависимостями. 
 
 >Примечание: Если команда Composer не может быть распознана после установки, переименуйте composer.phar и переместите её в папку /usr/local/bin/ с помощью следующей команды:
 
