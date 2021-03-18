@@ -21,4 +21,4 @@
 
 Готовы писать программный код?
 
-Далее: [Создание сервера](environment/setup/3legged)
+Далее: [Настройка сервера](environment/setup/3legged)
