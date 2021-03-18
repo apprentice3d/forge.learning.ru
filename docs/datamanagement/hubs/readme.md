@@ -8,8 +8,8 @@
 
 - `hubs`:  репозитории данных BIM 360 Team, Fusion Team, BIM 360 Docs или A360 Personal
 - `projects`: проекты BIM 360 Team, Fusion Team, BIM 360 Docs или A360 Personal
-- `folders`: логическая организация элементов внутри одного проекта - папки 
-- `items`: одна или несколько версий файлов, например, dwg, pdf или Fusion designs and drawings - элементы
+- `folders`: логическая организация (структура) элементов внутри одного проекта - папки 
+- `items`: один или несколько файлов, например, dwg, pdf или Fusion designs and drawings - элементы
 - `versions`: состояние элемента; аналог конкретной версии файла - версии 
 - `buckets`: контейнеры для объектов с уникальными именами - бакеты
 - `objects`: двоичные данные, идентифицированные URN или ключом и хранящиеся в определенном контейнере - объекты 
@@ -18,6 +18,6 @@
 
 ![](_media/datamanagement/hub_extension_types.png)
 
-В этом разделе мы создадим конечную точку для возврата списка **Hubs**, **Projects**, **Folders**, **Items** (файлов) и соответсвующих **Versions** (которые можно отобразить во Viewer).
+В этом разделе мы создадим конечную точку для возврата списка с **Hubs**, **Projects**, **Folders**, **Items** (файлов) и соответствующих **Versions** (которые можно отобразить в Viewer).
  
 Выберите ваш язык: [Node.js](datamanagement/hubs/nodejs) | [.NET Framework](datamanagement/hubs/net) | [.NET Core](datamanagement/hubs/netcore)
