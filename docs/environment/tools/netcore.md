@@ -15,7 +15,7 @@
 
 > Для этого руководства нам не нужны возможности уровня Professional или Enterprise.
 
-!> .NET Core **НЕ** поддерживается in Visual Studio 2015 и .NET Core 3.0 **НЕ** поддерживается в Visual Studio 2017.
+!> .NET Core **НЕ** поддерживается в Visual Studio 2015 и .NET Core 3.0 **НЕ** поддерживается в Visual Studio 2017.
 
 Лучше всего использовать версию 2019 года. Если вам необходимо использовать уже установленные старые версии (например, Visual Studio Professional 2017), перейдите в Add or remove programs >> Apps & Features, найдите Visual Studio Community и нажмите Modify, затем выберите workload (как показано ниже). . **.NET desktop development** требуется для руководства **Редактирование моделей в вебе**.
 
