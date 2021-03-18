@@ -4,7 +4,7 @@
 
 ## Visual Studio Community 2019
 
-Из всех видов [Visual Studio](https://visualstudio.microsoft.com/vs/), в этом руководстве используется **Community** edition. [Скачайте установщик](https://visualstudio.microsoft.com/vs/) и следуйте инструкции, выберите **ASP.NET and web development** и **.NET desktop development** (требуется для руководства **Редактирование моделей в вебе**).
+Из всех видов [Visual Studio](https://visualstudio.microsoft.com/vs/), в этом руководстве используется **Community** edition. [Скачайте инсталлятор](https://visualstudio.microsoft.com/vs/) и следуйте инструкции, выберите **ASP.NET and web development** и **.NET desktop development** (требуется для руководства **Редактирование моделей в вебе**).
 
 !> НЕ используйте Visual code в этом руководстве.
 
