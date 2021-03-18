@@ -1,10 +1,10 @@
-# Define an Activity (.NET Core)
+# Определение Activity (.NET Core)
 
-The following methods should be added to the `DesignAutomationController` class.
+Все перечисленные ниже методы должны быть добавлены в класс `DesignAutomationController`.
 
 **1. EngineAttributes**
 
-To define the activity we'll need the executable and the default file extension. This helper function provides it (from the engine name). 
+Для определения activity нам понадобится исполняемый файл и расширение файла по умолчанию. Эта вспомогательная функция предоставляет его (по названию движка).
 
 ```csharp
 /// <summary>
@@ -22,7 +22,7 @@ private dynamic EngineAttributes(string engine)
 
 **2. CreateActivity**
 
-Define a new activity with an input file, input data (JSON) and an output file.
+Определите новую activity с исходным файлом with an input file, input data (JSON) and an output file.
 
 ```csharp
 /// <summary>
@@ -83,8 +83,8 @@ public async Task<IActionResult> CreateActivity([FromBody]JObject activitySpecs)
 
 **3. GetDefinedActivities**
 
-We'll also need a method to return all defined activities. Note that returns only those defined by you (we use the `Forge Client Id` as nick name, which then appears as a prefix).
-
+Нам также понадобится метод для возврата всех заданных activities. Обратите внимание, что возвращаются только те, которые определены вами (мы используем `Forge Client Id` в качестве псевдонима (англ. nick name), который затем появляется как префикс).
+ 
 ```csharp
 /// <summary>
 /// Get all Activities defined for this account
@@ -104,8 +104,8 @@ public async Task<List<string>> GetDefinedActivities()
 }
 ```
 
-Now you can click on **Configure** (top-right), select the AppBundle, select the Engine and click on **Define Activity**, which should define and upload the appbundle and define the activity. The results panel (left-side) shows the respective ids. **All other buttons do not work yet**... let's move forward.
+Теперь вы можете нажать **Configure** (вверху справа), выбрать AppBundle, выбрать Engine и нажать **Define Activity**, что определит и загрузит appbundle и определит activity. На панели результатов (слева) показаны соответствующие ID. **Все остальные кнопки пока не работают** ... продолжим.
 
 ![](_media/designautomation/define_activity.gif)
 
-Next: [Execute workitem](designautomation/workitem/)
+Далее: [Запуск workitem](designautomation/workitem/)
