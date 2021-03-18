@@ -6,7 +6,7 @@
 
 Для навигации и доступа к данным BIM 360, Fusion Team, A360 Personal и Object Storage Service (OSS) необходимо знать следующую терминологию:
 
-- `hubs`:  репозитории данных BIM 360 Team, Fusion Team, аккаунт BIM 360 Docs или A360 Personal
+- `hubs`:  репозитории данных BIM 360 Team, Fusion Team, BIM 360 Docs или A360 Personal
 - `projects`: проекты BIM 360 Team, Fusion Team, BIM 360 Docs или A360 Personal
 - `folders`: логическая организация элементов внутри одного проекта - папки 
 - `items`: одна или несколько версий файлов, например, dwg, pdf или Fusion designs and drawings - элементы
