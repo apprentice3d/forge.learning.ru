@@ -33,6 +33,6 @@ set GOPATH=C:\GOPROJECTS
 -`github.com/nsf/gocode` - добавит контекстное автозаполнение;    
 -`github.com/rogpeppe/godef` - поможет вам найти информацию о символах в исходном коде Go;    
 -`github.com/sqs/goreturns` - автоматически заполнит возвращаемые функцией значения;    
--`github.com/tpng/gopkgs` - поможет вам отслеживать установленные пакеты;
+-`github.com/tpng/gopkgs` - поможет вам отслеживать установленные пакеты.
 
 Далее: [Аутентификация](oauth/)
