@@ -53,7 +53,7 @@ az webapp create --name <nameofyourapp> --plan myAppServicePlan --resource-group
 - Перейдите в ```Deployment Center```, чтобы отрегулировать настройки развертывания
 ![](_media/deployment/azure/deployment_settings_1.png)
 
-- Выберите ваш сборочный сервер (англ. build server)
+- Выберите ваш сервер сборки (англ. build server)
 ![](_media/deployment/azure/deployment_settings_kudu.png)
 
 - Укажите источник развертывания - ```Local Git```
@@ -62,7 +62,7 @@ az webapp create --name <nameofyourapp> --plan myAppServicePlan --resource-group
 - Нажмите выделенную кнопку справа вверху, чтобы открыть Azure CLI, запустите ```az webapp deployment user set --user-name $username --password $password```, чтобы настроить данные развертывания и записать полученный Git URL.
 ![](_media/deployment/azure/deployment_settings_azure.png)
 
-- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` and ```FORGE_CLIENT_SECRET```) и Callback Url (придерживаясь структуры ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
+- Настройте переменные среды с данными аккаунта Forge (```FORGE_CLIENT_ID``` и ```FORGE_CLIENT_SECRET```) и Callback Url (придерживаясь структуры ```http://<nameofyourapp>.azurewebsites.net/api/forge/callback/oauth```)
 ![](_media/deployment/azure/portalAppSettings.png)
 
 **2. Развертывание с использованием CLI**
@@ -78,7 +78,7 @@ echo $(az webapp deployment source config-local-git --name <nameofyourapp> --res
 az webapp config appsettings set -g MyResourceGroup -n <nameofyourapp> --settings FORGE_CLIENT_ID=<yourForgeAppClientID> FORGE_CLIENT_SECRET=<yourForgeAppSecret> FORGE_CLIENT_SECRET=<yourForgeAppSecret> FORGE_CALLBACK_URL=<yourCallbackURL>
 ```
 
-- Push your local repo to your Azure Web App with [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or your favorite Git client
+- Отправьте локальный репозиторий в Azure Web App с помощью [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) или вашего любимого клиента Git
 
 ```bash
 # Add the Azure remote to your local Git respository and push your code
@@ -102,7 +102,7 @@ Dashboard приложения должен быть таким:
 
 # Демо-ролик
 
-Посмотрите это видео, демонстрирующе развертывание шаги по резвертыванию через Azure Portal и CLI (демо-ролик основан на Bash, но комманды будут такими же и для Windows CLI и [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell). И вы можете запустить Bash на Windows! Подробности [здесь](http://mingw.org/wiki/msys) или [здесь](https://gitforwindows.org/) (как часть Git) или попробуйте [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
+Посмотрите это видео, демонстрирующее шаги по резвертыванию через Azure Portal и CLI (демо-ролик основан на Bash, но комманды будут такими же и для Windows CLI и [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell). И вы можете запустить Bash на Windows! Подробности [здесь](http://mingw.org/wiki/msys) или [здесь](https://gitforwindows.org/) (как часть Git) или попробуйте [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
 
 [viewNodejs](https://www.youtube.com/embed/h_b_te0Iza0 ':include :type=iframe width=100% height=400px')
 
