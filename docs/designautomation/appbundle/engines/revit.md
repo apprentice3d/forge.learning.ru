@@ -6,7 +6,7 @@
 
 ## Создание нового проекта
 
-Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateRVTParam`. 
+Щелкните правой кнопкой мыши на решение (англ. solution), затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateRVTParam`. 
 
 > Пожалуйста, выберите .NET Framework 4.8. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
