@@ -115,7 +115,7 @@ class ModelSummaryPanel extends Autodesk.Viewing.UI.PropertyPanel {
 
 ## Добавление функции .onClick
 
-Теперь пора заменить `Execute an action here` внутри функции `onClick`. Для этого примера давайте будем выделять элементы модели. Скопируйте следующий код в файл вашего расширения .js внутри функции .onClick: Now it's time to replace the `Execute an action here` placeholder inside the `onClick` function. For this sample, let's first show the property panel, then enumerate leaf nodes, then get a specific set of properties for leaf nodes, finally count ocurrences of those properties and show results on the panel. 
+Теперь пора заменить `Execute an action here` внутри функции `onClick`. Для этого примера давайте будем выделять элементы модели. Скопируйте следующий код в файл вашего расширения .js внутри функции .onClick.
 Давайте сначала отобрахим панель свойств, затем перечислим конечные узлы, затем получим определенный набор свойств для конечных узлов, и, наконец, подсчитаем вхождение этих свойств и отобразим результаты.
 
 !> В коде ниже вам **НЕОБХОДИМО** настроить `filteredProps` под названия свойств, которые применяются к вашим моделям. to the property names that applies to your models. Например, т.к. **Material** есть практически на всех моделях, вы можете попробовать `const filteredProps = ['Material'];`
