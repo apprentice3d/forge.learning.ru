@@ -20,4 +20,6 @@ Design Automation использует .bundle так же, как Autodesk App 
 
 На следующем шаге выберите **Engine** (рус. движок), т.е. продукт Autodesk, в котором будет запускаться ваш плагин. Вам потребуется установить соответствующее приложение для локальной компиляции, отладки и тестирования.
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/).
+
 Выберите движок: [AutoCAD](/designautomation/appbundle/engines/autocad) | [Inventor](/designautomation/appbundle/engines/inventor) | [Revit](/designautomation/appbundle/engines/revit) | [3ds Max](/designautomation/appbundle/engines/max)
