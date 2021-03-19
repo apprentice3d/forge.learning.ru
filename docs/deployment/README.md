@@ -33,3 +33,5 @@ _Heroku - это облачная PaaS платформа (англ. platform-as
 _AppHarbor - это платформа, построенная на .NET. AppHarbor может развернуть и масштабировать любое стандартное .NET приложение в интернете._ [Узнайте больше](https://appharbor.com/).
 
 Выберите язык программирования:  [.NET Framework](https://forge.autodesk.com/blog/deploying-forge-aspnet-samples-appharbor)
+
+[Страница на английском языке](https://learnforge.autodesk.io/#/deployment/).
