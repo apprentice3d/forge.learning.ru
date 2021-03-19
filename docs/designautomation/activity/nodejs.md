@@ -135,4 +135,6 @@ router.get('/forge/designautomation/activities', async /*GetDefinedActivities*/ 
 
 ![](_media/designautomation/define_activity.gif)
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/activity/nodejs).
+
 Далее: [Запуск workitem](designautomation/workitem/README.md)
