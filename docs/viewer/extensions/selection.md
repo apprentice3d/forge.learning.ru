@@ -146,4 +146,6 @@ if (selection.length > 0) {
 - **.forEach()** для перебора коллекции, это функция JavaScript, [learn more](https://www.w3schools.com/jsref/jsref_forEach.asp)
 - **.push()** для добавления элементов в массив, [learn more](https://www.w3schools.com/jsref/jsref_push.asp)
 
-Далее: [Docking panel](viewer/extensions/panel)
+Далее: [Панель свойств](viewer/extensions/panel)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/extensions/selection).
