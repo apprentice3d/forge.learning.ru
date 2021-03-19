@@ -182,7 +182,7 @@ public class oss extends HttpServlet {
 
 
 
-As we plan to suppor the [jsTree](https://www.jstree.com/) library, our **GET oss/buckets** need to return handle the `id` querystring parameter and return buckets when `id=#` and objects for a given bucketKey passed as `id=bucketKey`. Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наш **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
+Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наш **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
 
 ## ossuploads.java
 
