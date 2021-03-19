@@ -1,10 +1,12 @@
-# User information (Node.js)
+# Обработка информации профиля пользователя (Node.js)
 
-This endpoint will request the end-user information and return the **name** and **picture** (40px).
+Эта конечная точка запросит данные конечного пользователя и вернет **имя** и **фотографию профиля** (40px).
+
+UserController.cs
 
 ## routes/user.js
 
-Create a `routes/user.js` file and copy the following content:
+Создайте файл `routes/user.js` и скопируйте следующий код:
 
 ```javascript
 const express = require('express');
@@ -28,4 +30,4 @@ router.get('/user/profile', async (req, res) => {
 module.exports = router;
 ```
 
-Next: [Show on Viewer](viewer/3legged/readme)
+Далее: [Отображение файлов в Viewer](viewer/3legged/readme)
