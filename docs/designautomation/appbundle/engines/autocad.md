@@ -1,6 +1,6 @@
 # Подготовка AutoCAD bundle
 
-В этом разделе мы создадим стандартный плагин AutoCAD для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First AutoCAD Plugin](https://knowledge.autodesk.com/support/autocad/learn-explore/caas/simplecontent/content/my-first-autocad-plug-overview.html). 
+В этом разделе мы создадим базовый плагин AutoCAD для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First AutoCAD Plugin](https://knowledge.autodesk.com/support/autocad/learn-explore/caas/simplecontent/content/my-first-autocad-plug-overview.html). 
 
 > Вы можете [скачать Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateDWGParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
