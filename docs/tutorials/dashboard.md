@@ -4,8 +4,10 @@
 
 ![](_media/tutorials/run_sample_dashboard.gif)
 
-> Для этого руководства вам понадобится приложение с Forge Viewer, например, [Визуализация моделей](tutorials/viewmodels.md) или [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md) tutorial. Viewer во всех этих примерах идентичен.
+> Для этого руководства вам понадобится приложение с Forge Viewer, например, [Визуализация моделей](tutorials/viewmodels.md) или [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md). Viewer во всех этих примерах идентичен.
 
 Готовы начать?
 
-Далее: [Adjust layout](viewer/dashboard/layout.md)
+Далее: [Макет веб-приложения](viewer/dashboard/layout.md)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/tutorials/dashboard).
