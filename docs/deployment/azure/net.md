@@ -61,3 +61,5 @@ This is to walk you through the steps to deploy a .NET sample Forge App to Azure
 - [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-azure-web-apps)
 - [Using Azure Web Site Logging and Diagnostics](https://azure.microsoft.com/en-us/resources/videos/azure-web-site-logging-and-diagnostics/)
 - [Pricing - App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/deployment/azure/net).
