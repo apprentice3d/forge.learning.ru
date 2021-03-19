@@ -1,10 +1,10 @@
-# List hubs & projects (.NET Framework)
+# Репозитории данных и проекты (.NET Framework)
 
 ## DataManagementController.cs
 
-Create a .NET WebAPI Controller named **DataManagementController** (see [how to create a controller](environment/setup/net_controller)) and add the following content:
+Создайте .NET WebAPI Controller с именем **DataManagementController** (см. [как создать контроллер](environment/setup/net_controller)) и добавьте следующий код:
 
-> Note that a few errors will appear, to be fixed right after.
+> Обратите внимание, сначала появятся ошибки, позже мы их исправим. 
 
 ```csharp
 using Autodesk.Forge;
@@ -63,7 +63,7 @@ namespace forgeSample.Controllers
 }
 ```
 
-The above receives the request from the UI tree. The `id` parameter indicates the node that is being expanded: `#` means root node, so list hubs. After that it contains the `href` of the resource, so when expanding one `hub` the endpoint should return the projects for the hub. The above code calls different `get` functions. To complete it, also copy the following content to the file (inside the same `DataManagementController` class).
+Код выше получает запрос от дерева пользовательского интерфейса. Параметр `id` указывает узел, который расширяется: `#`означает корневой узел, поэтому перечислите репозитории. После этого он содержит `href` ресурса, поэтому при расширении одного `репозитория` конечная точка должна возвращать всего проекты, которые в нем сожержатся. Приведенный выше код вызывает разные функции `get`. Для его завершения также скопируйте следующий код в файл (внутри того же класса `DataManagementController`).
 
 ```csharp
 private async Task<IList<jsTreeNode>> GetHubsAsync()
@@ -224,8 +224,8 @@ public class jsTreeNode
 }
 ```
 
-The last `get` function returns the **Versions** for each item (file), where the `.relationships.derivatives.data.id` property contains the `URN` for the **Viewer**. It's important to test if this attribute is available as some items may not have viewables (e.g. a ZIP or DOCx file) or may not have being translated yet.
+Последняя функция `get` возвращает **Версии** для каждого элемента (файла), где свойство `.relationships.derivatives.data.id` содержит `URN` для **Viewer**. Важно проверить, доступен ли этот атрибут, поскольку некоторые элементы могут не отображаться (например, ZIP-файлы или файлы .DOCx) или еще не прошли конвертацию.
 
-Note how we reuse the `Credentials` exposed via property.
+Обратите внимание, что мы повторно используем `Credentials`, представленные через свойство.
 
-Next: [User information](oauth/user/readme)
+Далее: [Обработка информации профиля пользователя](oauth/user/readme)
