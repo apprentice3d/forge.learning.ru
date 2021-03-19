@@ -89,7 +89,7 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions: ['HandleSelectionExtension'] });
 ```
 
-Важно :- Если одно расширение уже загружено, тогда HandleSelectionExtension может быть добавлено с использованием **запятой (',')** в множестве:
+Важно: Если одно расширение уже загружено, тогда HandleSelectionExtension может быть добавлено с использованием **запятой (',')** в множестве:
 
 ```javascript
 viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer'), { extensions['MyAwesomeExtension','HandleSelectionExtension'] }); 
