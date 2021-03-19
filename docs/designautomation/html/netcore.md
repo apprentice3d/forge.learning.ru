@@ -270,3 +270,5 @@ function startConnection(onReady) {
 ![](_media/net/start_debug.png) 
 
 Далее: [Подготовка плагина](designautomation/appbundle/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/html/netcore).
