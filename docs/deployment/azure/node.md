@@ -2,7 +2,7 @@
 
 Этот раздел поможет вам развернуть приложения Node.js в Azure App Service как веб-приложение на [портале Azure](https://azure.microsoft.com/en-us/features/azure-portal/) или [Git](https://git-scm.com/). 
 
-В этом руководстве мы будем использовать пример ViewHubModels из [предыдущего раздела](tutorials/viewhubmodels). Полный пример вы найдете по ссылке [Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/nodejs). Те же инструкции должны работать и для примера **View Models**.
+В этом руководстве мы будем использовать пример *Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360* из [предыдущего раздела](tutorials/viewhubmodels). Полный пример вы найдете по ссылке [Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/nodejs). Те же инструкции должны работать и для примера **Визуализация моделей**.
 
 [Войдите в свой аккаунт Azure или создайте учётную запись](https://signup.azure.com/) для [Microsoft Azure Computing Platform & Services](https://azure.microsoft.com/) и получите доступ к [бесплатному пробному периоду](https://azure.microsoft.com/en-us/free/?cdn=disable), который длится 12 месяцев и включает $200 credit.
 
@@ -114,3 +114,5 @@ Dashboard приложения должен быть таким:
 - [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-azure-web-apps)
 - [Using Azure Web Site Logging and Diagnostics](https://azure.microsoft.com/en-us/resources/videos/azure-web-site-logging-and-diagnostics/)
 - [Pricing - App Service](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/deployment/azure/node).
