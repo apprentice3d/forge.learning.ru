@@ -152,3 +152,5 @@ module.exports = { OAuth };
 !> Наш сервер был указан только с доступом по протоколу `https`, а файлы cookie могут быть прочитаны только клиентом и сервером.
 
 Далее: [Репозитории данных (англ. hubs) и проекты](/datamanagement/hubs/readme)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/3legged/nodejs).
