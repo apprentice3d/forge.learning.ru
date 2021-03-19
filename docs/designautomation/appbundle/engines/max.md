@@ -1,6 +1,6 @@
 # Подготовка 3ds Max bundle
 
-В этом разделе мы создадим стандартный плагин 3ds Max для Design Automation. Обратите внимание, что 3ds Max можно автоматизировать с помощью MAXScript, Python, NET API и C ++. 3ds Max .NET API, вероятно, используется для плагинов не очень часто, однако для других продуктов Design Automatiuon это типичный API. Ресурсы 3ds Max для .NET API можно найти здесь (ссылки 2019, но .NET API поддерживается для всех доступных версий движков 3ds Max Design Automation):
+В этом разделе мы создадим базовый плагин 3ds Max для Design Automation. Обратите внимание, что 3ds Max можно автоматизировать с помощью MAXScript, Python, NET API и C ++. 3ds Max .NET API, вероятно, используется для плагинов не очень часто, однако для других продуктов Design Automatiuon это типичный API. Ресурсы 3ds Max для .NET API можно найти здесь (ссылки 2019, но .NET API поддерживается для всех доступных версий движков 3ds Max Design Automation):
 * [Writing 3ds Max .NET plugins](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max_sdk___the_learning_path_lesson_7_writing__net_plug_ins_html)
 * [The 3ds Max .NET SDK](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max__net_sdk_html)
 * [GetCOREInterface Blog .NET Samples](https://getcoreinterface.typepad.com/blog/2017/10/updated-net-api-samples-for-3ds-max-2018.html)
