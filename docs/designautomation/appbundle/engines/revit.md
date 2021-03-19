@@ -1,6 +1,6 @@
 # Подготовка Revit bundle
 
-В этом разделе мы создадим стандартный плагин Revit для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First Revit Plugin](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/simplecontent/content/my-first-revit-plug-overview.html).
+В этом разделе мы создадим базовый плагин Revit для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First Revit Plugin](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/simplecontent/content/my-first-revit-plug-overview.html). Версия на русском языке: [Моя первая программа для Autodesk Revit](https://www.autodesk.ru/autodesk-developer-network/api-trainings/my-first-plugin/first-prog-adsk-revit).
 
 > Вы можете [скачать Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateRVTParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
