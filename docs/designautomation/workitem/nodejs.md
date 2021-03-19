@@ -216,6 +216,6 @@ router.delete('/forge/designautomation/account', async /*ClearAccount*/ (req, re
 
 Готово!
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/workitem/nodejs).
-
 Далее: [Запуск и проверка кода](environment/rundebug/2legged_da)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/workitem/nodejs).
