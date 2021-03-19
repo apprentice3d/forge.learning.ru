@@ -1,10 +1,10 @@
-# User information
+# Обработка информации профиля пользователя
 
-This endpoint will request the end-user information and return the **name** and **picture** (40px).
+Эта конечная точка запросит данные конечного пользователя и вернет **имя** и **фотографию профиля** (40px).
 
 ## UserController.cs
 
-Under **Controllers** folder, create a class named **UserController** in a class file with the same name (`UserController.cs`) and add the following content:
+В папке **Controllers** создайте класс **UserController** в папке класса с тем же названием (`UserController.cs`) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -44,4 +44,4 @@ namespace forgeSample.Controllers
 }
 ```
 
-Next: [Show on Viewer](viewer/3legged/readme)
+Далее: [Отображение файлов в Viewer](viewer/3legged/readme)
