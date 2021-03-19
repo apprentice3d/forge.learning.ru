@@ -9,3 +9,6 @@
 
 
 - [Редактирование моделей в вебе](environment/rundebug/2legged_da.md)
+
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/readme).
