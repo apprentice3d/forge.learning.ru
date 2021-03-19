@@ -4,8 +4,10 @@
 
 Этот раздел содержит пошаговое руководство по созданию расширения для Viewer.
 
-> Для выполнения этого руководства вам понадобится веб-приложение с Viewer, например, [View your models](tutorials/viewmodels.md) или [View BIM 360 & Fusion models](tutorials/viewhubmodels.md). Viewer во всех этих примерах идентичен. 
+> Для выполнения этого руководства вам понадобится веб-приложение с Viewer, например, Визуализация моделей](tutorials/viewmodels.md) или [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md). Viewer во всех этих примерах идентичен. 
 
 Готовы начать?
 
-Далее: [Basic skeleton](viewer/extensions/skeleton.md)
+Далее: [Базовая структура расширения](viewer/extensions/skeleton.md)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/tutorials/extensions). 
