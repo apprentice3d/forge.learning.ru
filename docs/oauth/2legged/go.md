@@ -1,13 +1,13 @@
-# Authenticate (Go)
+# Аутентификация (Go)
 
 
-The only thing we need for our server in context of authentication, is to expose the endpoint `GET /api/forge/oauth/token` that will be used by the frontend to request tokens with `viewables:read` scope, to be able to display your viewables in the browser.
+ Все, что нам нужно для нашего сервера в контексте аутентификации, - это предоставить конечную точку `GET /api/forge/oauth/token`. Она будет использоваться интерфейсом для запроса токенов с областью видимости `viewables:read`, чтобы отображать ваши модели в браузере.
 
-For this, we would need just one file.
+Для этого нам понадобится всего один файл. 
 
 ## oauth.go
 
-Create a `/server/oauth.go` file. This file will take care of exposing the abovementioned endpoint. 
+Создайте файл `/server/oauth.go`. Этот файл раскроет вышеупомянутую конечную точку.
 
 ```go
 package server
@@ -52,7 +52,7 @@ func (service ForgeServices) getAccessToken(writer http.ResponseWriter, request 
 }
 ```
 
-This will assure that any `GET /api/forge/oauth/token` call to our server, will return an access token in form of
+Это гарантирует, что любой вызов `GET /api/forge/oauth/token` на наш сервер вернет токен доступа в виде
 
 ```json
 {
@@ -61,4 +61,4 @@ This will assure that any `GET /api/forge/oauth/token` call to our server, will 
 }
 ```
 
-Next: [Upload file to OSS](/datamanagement/oss/)
+Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
