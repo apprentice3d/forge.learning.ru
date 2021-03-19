@@ -84,7 +84,7 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 
 ## Перечисление конечных узлов
 
-Viewer содержит все элементы модели, включая категории (например, семейства или определение детали), поэтому нам нужно перечислить конечные узлы, т.е. фактические экземпляры класса в модели. Функция `getAllLeafComponents()` должна быть добавлены к классу нашего расширения. [См. наш блог](https://forge.autodesk.com/blog/enumerating-leaf-nodes-viewer). 
+Viewer содержит все элементы модели, включая категории (например, семейства или определение детали), поэтому нам нужно перечислить конечные узлы, т.е. фактические экземпляры класса в модели. Функция `getAllLeafComponents()` должна быть добавлена к классу нашего расширения. [См. наш блог](https://forge.autodesk.com/blog/enumerating-leaf-nodes-viewer). 
 
 ```javascript
 getAllLeafComponents(callback) {
@@ -102,7 +102,7 @@ getAllLeafComponents(callback) {
 
 ## Панель свойств
 
-Расширение отобразит результат во Viewer [property panel](https://forge.autodesk.com/en/docs/viewer/v7/reference/UI/PropertyPanel/). Скопируйте код в файл вашего расширения **.js** (где угодно в файле, отдельно от других функций).
+Расширение отобразит результат в [панели свойств Viewer](https://forge.autodesk.com/en/docs/viewer/v7/reference/UI/PropertyPanel/). Скопируйте код в файл вашего расширения **.js** (где угодно в файле, отдельно от других функций).
 
 ```javascript
 class ModelSummaryPanel extends Autodesk.Viewing.UI.PropertyPanel {
