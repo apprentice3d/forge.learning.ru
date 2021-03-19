@@ -11,7 +11,7 @@
 
 ## Создание нового проекта .NET
 
-Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateMAXParam`. Затем вам нужно будет сослаться на управляемую сборку Autodesk.Max.Dll (основной модуль 3ds Max .NET API). Этот модуль находится в папке 3dsmax.exe, и при обращении к нему не забудьте выключить флажок "Copy Local". Есть несколько других модулей, используемых для поддержки .NET API (см.[The 3ds Max .NET SDK](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max__net_sdk_html)), но для этого руководства мы будем использовать только Autodesk.Max.dll. Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
+Щелкните правой кнопкой мыши на решение (англ. solution), затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateMAXParam`. Затем вам нужно будет сослаться на управляемую сборку Autodesk.Max.Dll (основной модуль 3ds Max .NET API). Этот модуль находится в папке 3dsmax.exe, и при обращении к нему не забудьте выключить флажок "Copy Local". Есть несколько других модулей, используемых для поддержки .NET API (см.[The 3ds Max .NET SDK](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max__net_sdk_html)), но для этого руководства мы будем использовать только Autodesk.Max.dll. Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
  
 > Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
