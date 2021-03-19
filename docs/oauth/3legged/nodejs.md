@@ -1,10 +1,10 @@
-# Authenticate (Node.js)
+# Аутентификация (Node.js)
 
-For a basic *OAuth* implementation we need 2 files.
+Для настройки базового *процесса аутентификации (OAuth)* нам понадобится два файла.
 
 ## routes/oauth.js
 
-Create a `routes/oauth.js` file. This file takes care of creating an express router for OAuth-related endpoints.
+Создайте файл `routes/oauth.js`. Этот файл создаст маршрутизацию для конечных точек, связанных с Oauth.
 
 ```javascript
 const express = require('express');
@@ -61,8 +61,7 @@ module.exports = router;
 
 ## routes/common/oauth.js
 
-Now create a `common` subfolder in the `routes` folder, and prepare a `routes/common/oauth.js` file that will actually request
-the access token from Forge. This will be reused in other parts of this tutorial.
+Теперь создайте подпапку `common` в папке `routes` и подготовьте файл `routes/common/oauth.js`, который будет запрашивать токен доступа у Forge. Мы будем повторно использовать это в других частях этого руководства.
 
 ```javascript
 const { AuthClientThreeLegged } = require('forge-apis');
@@ -148,8 +147,8 @@ class OAuth {
 module.exports = { OAuth };
 ```
 
-This code will store both **access tokens** on the session (cookie-based) with the **refresh token** and **expiration time**. When it expires, it will use the refresh token to request 2 new access tokens (internal & public). 
+Этот код будет хранить оба **токена доступа** вместе с **refresh token** и **expiration time**. Когда срок токена истечет, он будет использовать refresh token для запроса 2 новых токенов доступа (внутреннего и открытого).
 
-!> Our server was specified with `https` access only and the cookie can only be read by the client and server. 
+!> Наш сервер был указан только с доступом по протоколу `https`, а файлы cookie могут быть прочитаны только клиентом и сервером.
 
-Next: [List hubs & projects](/datamanagement/hubs/readme)
+Далее: [Репозитории данных (англ. hubs) и проекты](/datamanagement/hubs/readme)
