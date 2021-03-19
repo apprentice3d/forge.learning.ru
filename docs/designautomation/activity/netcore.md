@@ -104,7 +104,7 @@ public async Task<List<string>> GetDefinedActivities()
 }
 ```
 
-Теперь вы можете нажать на **Configure** (вверху справа), выбрать AppBundle, выбрать Engine и нажать **Define Activity**, что определит и загрузит appbundle и определит activity. На панели результатов (слева) показаны соответствующие ID. **Все остальные кнопки пока не работают** ... продолжим.
+Теперь вы можете нажать на **Configure** (вверху справа), выбрать AppBundle, выбрать Engine и нажать **Define Activity**, что определит и загрузит appbundle и определит activity. На панели результатов (слева) показаны соответствующие ID. **Все остальные кнопки пока не работают** ... давайте продолжим.
 
 ![](_media/designautomation/define_activity.gif)
 
