@@ -1,10 +1,10 @@
-# Authenticate (JAVA)
+# Аутентификация (JAVA)
 
-For a basic *OAuth* implementation we need 2 files.
+Для настройки базового *процесса аутентификации (OAuth)* нам понадобится два файла.
 
 ## oauth.java
 
-Create a new **Java Class** named `/src/main/java/oauth.java` and copy the following content. This will request the access token from Forge. This will be reused on other parts of this tutorial.
+Создайте новый **Java Class** и назовите его `/src/main/java/oauth.java`, а затем скопируйте код ниже - это запросит токен доступа у Forge. Мы будем повторно использовать это в других частях этого руководства.
 
 ```java
 package forgesample;
@@ -68,13 +68,13 @@ public class oauth {
 }
 ```
 
-To avoid getting a new access token for each end-user request, which adds unnecessary latency, let's cache them in global variables. Note we still need to refresh it after `expires_in` seconds.
+Чтобы избежать получения нового токена доступа на каждый запрос конечного пользователя (т.к. это создает ненужную задержку работы), давайте кэшируем их в глобальных переменных. Обратите внимание, что нам все еще нужно обновлять его после времени окончания действия (`expires_in` secons).
 
-!> Share access token between users is only valid in this case, where all users are accessing the same information (2-legged). If your app uses per-user data (3-legged), **DOT NOT** use this approach.
-
+!> Обмен токенами доступа между пользователями действителен только в том случае, когда все пользователи получают доступ к одним и тем же данным (2-legged токены). Если ваше приложение использует данные для каждого пользователя (3-legged токены), **НЕ** используйте этот подход.
+ 
 ## oauthtoken.java
 
-Now create a `/src/main/java/oauthtoken.java` and copy the following content. This file takes care of creating the endpoint router.  
+Создайте `/src/main/java/oauthtoken.java` и скопируйте код ниже. Этот файл создаст маршрутизацию конечной точки.
 
 ```java
 package forgesample;
@@ -139,9 +139,9 @@ public class oauthtoken extends HttpServlet {
 }
 ```
 
-Note the `@WebServlet` annotation to make the class `oauthtoken` as web service by [WebServlet](http://blog.caucho.com/2009/10/06/servlet-30-tutorial-weblistener-webservlet-webfilter-and-webinitparam/). 
+Обратите внимание на аннотацию `@WebServlet`, чтобы сделать класс `oauthtoken` веб-сервисом [WebServlet](http://blog.caucho.com/2009/10/06/servlet-30-tutorial-weblistener-webservlet-webfilter-and-webinitparam/).
 
-Finally expose the endpoint in `src/webapp/WEB-INF/web.xml`, replace the existing content with:
+Наконец, раскройте (англ. expose) конечную точку в `src/webapp/WEB-INF/web.xml`, замените содержание файла на:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -162,4 +162,4 @@ Finally expose the endpoint in `src/webapp/WEB-INF/web.xml`, replace the existin
 </web-app>
 ```
 
-Next: [Upload file to OSS](/datamanagement/oss/)
+Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
