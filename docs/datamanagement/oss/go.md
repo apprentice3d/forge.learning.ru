@@ -196,4 +196,4 @@ func (service ForgeServices) manageObjects(writer http.ResponseWriter, request *
 
 !> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
-далееanslate the file](modelderivative/translate/)
+Далее: [Конвертация файлов](modelderivative/translate/)
