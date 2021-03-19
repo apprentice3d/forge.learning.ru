@@ -4,6 +4,6 @@ Activity - это спецификация для действия, которо
 
 В этом руководстве Activity имеет 2 input (файл и данные JSON) и 1 output файл.
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/activity/).
-
 Выберите язык: [Node.js](designautomation/activity/nodejs) | [.NET Core](designautomation/activity/netcore)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/activity/).
