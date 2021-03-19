@@ -191,4 +191,6 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateRVTParam.zip"
 
 !> Если после сборки output содержит скопированные **2 папки, 5 файлов**, вернитесь и убедитесь, что **RevitAPI** reference настроено таким образом: **Copy Local**:**False**. Возможно, вам придется удалить все DLL в папке `UpdateRVTParam.bundle/Contents/`.
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/revit).
+
 Далее: [Загрузка плагина](designautomation/appbundle/common)
