@@ -19,3 +19,5 @@
 - [Custom properties](https://forge.autodesk.com/blog/custom-properties-viewer-net-lambda-dynamodb): stores custom properties on a database (AWS DynamoDB) and uses a .NET WebAPI code to serve via REST endpoints. хранит настраиваемые свойства в базе данных (AWS DynamoDB) и использует код .NET WebAPI для обслуживания через конечные точки REST.
 
 Далее: [Развертывание](deployment/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/extensions/examples).
