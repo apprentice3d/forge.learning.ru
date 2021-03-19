@@ -1,4 +1,4 @@
-# Upload file to OSS (.NET Framework)
+# Загрузка файлов в OSS (.NET Framework)
 
 В этом разделе нам нужны 3 функции:
 
