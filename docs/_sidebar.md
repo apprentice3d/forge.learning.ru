@@ -5,7 +5,7 @@
 - [Визуализация моделей](tutorials/viewmodels.md)
   - [Настройка сервера](environment/setup/2legged)
   - [Аутентификация](oauth/2legged/)
-  - [Загрузка модель в OSS (object storage service)](datamanagement/oss/)
+  - [Загрузка файлов в OSS (object storage service)](datamanagement/oss/)
   - [Конвертация файлов](modelderivative/translate/)
   - [Отображение файлов в Viewer](viewer/2legged/)
 - [Просмотр моделей из репозиториев Autodesk BIM 360 & Fusion 360](tutorials/viewhubmodels.md)
