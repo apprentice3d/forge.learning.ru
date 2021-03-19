@@ -1,8 +1,8 @@
-# Authenticate (.NET Framework)
+# Аутентификация (.NET Framework)
 
 ## OAuthController.cs
 
-Create a .NET WebAPI Controller named **OAuthController** (see [how to create a controller](environment/setup/net_controller)) and add the following content:
+Создайте .NET WebAPI Controller с названием **OAuthController** (см. [как создать контроллер](environment/setup/net_controller)) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -77,12 +77,14 @@ namespace forgeSample.Controllers
 }
 ```
 
-The **Get2LeggedTokenAsync** method connects to Autodesk Forge and get the access token. As we need a public (read-only) and an internal (write-enabled) tokens, **GetPublicAsync** exposes as an endpoint while **GetInternalAsync** is for the application. 
+Метод **Get2LeggedTokenAsync** подключается к Autodesk Forge и получает токен доступа. Поскольку нам нужны открытые (только для read) и внутренние (с возможностью write) токены, **GetPublicAsync** предоставляется как конечная точка, а **GetInternalAsync** нужен для веб-приложения.
 
-To avoid getting a new access token for each end-user request, which adds unnecessary latency, let's cache them in a couple `static` variables. Note we still need to refresh it after `expires_in` seconds.
+Чтобы избежать получения нового токена доступа на каждый запрос конечного пользователя (т.к. это создает ненужную задержку работы), давайте кэшируем их в переменных `static`. Обратите внимание, что нам все еще нужно обновлять его после времени окончания действия (`expires_in` seconds).
 
-!> Share access token between users is only valid in this case, where all users are accessing the same information (2-legged). If your app uses per-user data (3-legged), **DOT NOT** use this approach.
+!> Обмен токенами доступа между пользователями действителен только в том случае, когда все пользователи получают доступ к одним и тем же данным (2-legged токены). Если ваше приложение использует данные для каждого пользователя (3-legged токены), **НЕ** используйте этот подход.
 
-As per comments, the **GetAppSetting** simply gets the ID & Secret from the **Web.Config** file.
+oauthtoken.java
 
-Next: [Upload file to OSS](/datamanagement/oss/)
+ Комментарий: **GetAppSetting** просто получает ID & Secret из файла **Web.Config**.
+
+Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
