@@ -6,7 +6,7 @@
  
  ![](_media/java/Eclipse_new_env_var.png) 
 
- > Make sure to add both **FORGE_CLIENT_ID** and **FORGE_CLIENT_SECRET**.
+ > Обязательно добавьте и **FORGE_CLIENT_ID**, и **FORGE_CLIENT_SECRET**.
 
 Наконец, нажмите **Apply** внизу справа и закройте диалоговое окно.
 
