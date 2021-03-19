@@ -1,6 +1,6 @@
 # Подготовка Inventor bundle
 
-В этом разделе мы создадим базовый плагин Inventor для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First Inventor Plugin](https://knowledge.autodesk.com/support/inventor-products/learn-explore/caas/simplecontent/content/my-first-inventor-plug-overview.html).
+В этом разделе мы создадим базовый плагин Inventor для Design Automation. Чтобы узнать больше информации, перейдите на сайт [My First Inventor Plugin](https://knowledge.autodesk.com/support/inventor-products/learn-explore/caas/simplecontent/content/my-first-inventor-plug-overview.html). Версия на русском языке: [Моя первая программа для Autodesk Inventor](https://www.autodesk.ru/autodesk-developer-network/api-trainings/my-first-plugin/my-first-program).
 
 > Вы можете [скачать Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateIPTParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
