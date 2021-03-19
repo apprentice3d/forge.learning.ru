@@ -165,3 +165,5 @@ namespace forgeSample.Controllers
 !> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
 Далее: [Конвертация файлов](modelderivative/translate/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/oss/net).
