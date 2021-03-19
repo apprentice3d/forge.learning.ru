@@ -87,6 +87,6 @@ class Dashboard {
 }
 ```
 
-Далее: [Panel basics](viewer/dashboard/panelbasics)
+Далее: [Подготовка данных](viewer/dashboard/panelbasics)
 
 [Страница на английском языке](https://learnforge.autodesk.io/#/viewer/dashboard/layout).
