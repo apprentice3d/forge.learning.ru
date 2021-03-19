@@ -143,8 +143,8 @@ if (selection.length > 0) {
 
 Дополнительные функции:
 
-- **.forEach()** для перебора коллекции, это функция JavaScript, [learn more](https://www.w3schools.com/jsref/jsref_forEach.asp)
-- **.push()** для добавления элементов в массив, [learn more](https://www.w3schools.com/jsref/jsref_push.asp)
+- **.forEach()** для перебора коллекции, это функция JavaScript, [узнать больше](https://www.w3schools.com/jsref/jsref_forEach.asp)
+- **.push()** для добавления элементов в массив, [узнать больше](https://www.w3schools.com/jsref/jsref_push.asp)
 
 Далее: [Панель свойств](viewer/extensions/panel)
 
