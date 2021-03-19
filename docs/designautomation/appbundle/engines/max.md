@@ -1,11 +1,11 @@
 # Подготовка 3ds Max bundle
 
-В этом разделе мы создадим базовый плагин 3ds Max для Design Automation. Обратите внимание, что 3ds Max можно автоматизировать с помощью MAXScript, Python, NET API и C ++. 3ds Max .NET API, вероятно, используется для плагинов не очень часто, однако для других продуктов Design Automatiuon это типичный API. Ресурсы 3ds Max для .NET API можно найти здесь (ссылки 2019, но .NET API поддерживается для всех доступных версий движков 3ds Max Design Automation):
+В этом разделе мы создадим базовый плагин 3ds Max для Design Automation. Обратите внимание, что 3ds Max можно автоматизировать с помощью MAXScript, Python, NET API и C ++. 3ds Max .NET API, вероятно, используется для плагинов не очень часто, однако для других продуктов Design Automation это типичный API. Ресурсы 3ds Max для .NET API можно найти здесь (ссылки 2019, но .NET API поддерживается для всех доступных версий движков 3ds Max Design Automation):
 * [Writing 3ds Max .NET plugins](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max_sdk___the_learning_path_lesson_7_writing__net_plug_ins_html)
 * [The 3ds Max .NET SDK](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max__net_sdk_html)
 * [GetCOREInterface Blog .NET Samples](https://getcoreinterface.typepad.com/blog/2017/10/updated-net-api-samples-for-3ds-max-2018.html)
 
-Помните, что для Design Automationя не должно быть UI или promts, которые нельзя автоматизировать. Чтобы автоматизировать движок 3ds Max DA, вы должны предоставить MAXScript. Обычно это очень просто, т.к. большинство настроек можно быстро открыть в MAXScript (см. [function publishing for C++](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max_sdk_features_function_publishing_html) и [MAXScript .NET handling](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=GUID-779FD7AC-953D-4567-B2A8-60B1D8695B95))
+Помните, что для Design Automation не должно быть UI или promts, которые нельзя автоматизировать. Чтобы автоматизировать движок 3ds Max DA, вы должны предоставить MAXScript. Обычно это очень просто, т.к. большинство настроек можно быстро открыть в MAXScript (см. [function publishing for C++](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=__developer_3ds_max_sdk_features_function_publishing_html) и [MAXScript .NET handling](http://help.autodesk.com/view/3DSMAX/2019/ENU/?guid=GUID-779FD7AC-953D-4567-B2A8-60B1D8695B95))
 
 > Вы можете [скачать the Bundle ZIP](https://github.com/Autodesk-Forge/learn.forge.designautomation/raw/master/forgesample/wwwroot/bundles/UpdateMAXParam.zip) в папку `/public/bundles/` (Node.js) или `/forgeSample/wwwroot/bundles` (.NET Core) и [пропустить этот раздел](designautomation/appbundle/common.md)
 
@@ -263,5 +263,7 @@ UpdateParam()
 "%ADSK_3DSMAX_x64_2019%\3dsmaxbatch.exe" -sceneFile <myTestScene>.max da_script.ms
 ```
 Позже в этом руководстве вы увидите, как эти же инструкции отправляются в движок 3ds Max Design Automation.
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/max).
 
 Далее: [Загрузка плагина](designautomation/appbundle/common)
