@@ -35,7 +35,7 @@
 - Вы можете создать приложение на портале Azure Portal в вашем браузере. Просто выберите ```API App``` в ```Marketplace``` (при создании приложения в браузере) и ```Existing App```(при публикации или создании ```Deployment Profile``` в Visual Studio). 
 
   ![](_media/deployment/azure/app_dashboard.png)
-- Как только вы создадите ```API App```, вы сможете развернуть его из локального репозитория Git repo - подробности [здесь](deployment/azure/node). 
+- Как только вы создадите ```API App```, вы сможете развернуть его из локального репозитория Git - подробности [здесь](deployment/azure/node). 
 
 ### Другие варианты развертывания 
 - [Visual Code](https://azure.microsoft.com/en-us/blog/visual-studio-code-and-azure-app-service-a-perfect-fit/)/[Visual Studio](../node)
