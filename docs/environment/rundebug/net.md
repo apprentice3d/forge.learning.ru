@@ -7,3 +7,5 @@ Visual Studio должна распознать все браузеры на к�
 ![](_media/net/start_debug.png) 
 
 Далее: [Расширения для Viewer](tutorials/extensions)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/netcore).
