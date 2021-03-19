@@ -1,10 +1,10 @@
-# Authenticate (PHP)
+# Аутентификация (PHP)
 
-For a basic *OAuth* implementation we need 2 files.
+Для настройки **базового процесса аутентификации (OAuth)** нам понадобится два файла.
 
 ## OAuthToken.php
 
-Create a `/server/oauthtoken.php` file. This file takes care of responding to the endpoint and returning the access token. 
+Создайте файл `/server/oauthtoken.php`. Этой файл ответит на конечную точку и вернет токен доступа.
 
 ```php
 <?php
@@ -29,7 +29,7 @@ class AccessToken{
 
 ## OAuth.php
 
-Now create a `/sever/oauth.php` file that will actually request the access token from Forge. This will be reused on other parts of this tutorial.
+Создайте файл `/sever/oauth.php`, который будет запрашивать токен доступа у Forge. Мы будем повторно использовать это в других частях этого руководства.
 
 ```php
 <?php
@@ -84,4 +84,4 @@ $twoLeggedAuth = new AuthClientTwoLegged();
 ```
 
 
-Next: [Upload file to OSS](/datamanagement/oss/)
+Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
