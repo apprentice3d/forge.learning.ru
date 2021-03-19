@@ -1,10 +1,10 @@
-# Authorize
+# Аутентификация
 
-For a basic *OAuth* implementation we need 1 file.
+Для настройки базового *процесса аутентификации (OAuth)* нам понадобится один файл.
 
 ### OAuthController.cs
 
-Create folder named `Controllers` at project root level, then create a class named **OAuthController** in a class file with the same name (`OAuthController.cs`) and add the following content:
+Создайте `Controllers` в корневой папке проекта (англ. project root level), а затем класс **OAuthController** в папке класса с тем же именем  (`OAuthController.cs`) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -192,6 +192,6 @@ namespace forgeSample.Controllers
 }
 ```
 
-This code will store both **access tokens** on the session with the **refresh token** and **expiration time**. When it expires, it will use the refresh token to request 2 new access tokens (internal & public). Note how it contains 2 classes: `OAuthController` and `Credentials`, where the first exposes the endpoints and the second handles the access tokens (including refresh).
+Этот код будет хранить оба **токена доступа** вместе с **refresh token** и **expiration time**. Когда срок токена истечет, он будет использовать refresh token для запроса 2 новых токенов доступа (внутреннего и открытого). Обратите внимание, что он содержит 2 класса: `OAuthController` и `Credentials`, где первый предоставляет конечные точки, а второй обрабатывает токены доступа (включая обновление).
 
-Next: [List hubs & projects](/datamanagement/hubs/readme)
+Далее: [Репозитории данных (англ. hubs) и проекты](/datamanagement/hubs/readme)
