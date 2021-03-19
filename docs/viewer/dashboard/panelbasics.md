@@ -139,3 +139,5 @@ class ModelData {
 ```
 
 Далее: [Добавление графиков](viewer/dashboard/charts)
+
+[Страница на английском языке](https://learnforge.autodesk.io/#/viewer/dashboard/panelbasics).
