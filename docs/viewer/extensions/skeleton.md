@@ -103,4 +103,4 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 
 Далее: [Выделение элементов](viewer/extensions/selection)
 
-[Эта страница на английском](https://learnforge.autodesk.io/#/viewer/extensions/skeleton).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/extensions/skeleton).
