@@ -166,6 +166,6 @@ public async Task<IActionResult> ClearAccount()
 
 Готово!
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/workitem/netcore).
-
 Далее: [Запуск и проверка кода](environment/rundebug/2legged_da)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/workitem/netcore).
