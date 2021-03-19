@@ -139,7 +139,7 @@ func (service ForgeServices) manageBuckets(writer http.ResponseWriter, request *
 
 ```
 
-Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наши **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и возвращать бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
+Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наш **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
 
 
 ## uploader.go
