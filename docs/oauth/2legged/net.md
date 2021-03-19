@@ -83,8 +83,8 @@ namespace forgeSample.Controllers
 
 !> Обмен токенами доступа между пользователями возможен только в том случае, когда все пользователи получают доступ к одним и тем же данным (2-legged токены). Если ваше приложение использует данные для каждого пользователя (3-legged токены), **НЕ** используйте этот подход.
 
-oauthtoken.java
-
  Комментарий: **GetAppSetting** просто получает ID & Secret из файла **Web.Config**.
 
 Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/2legged/net).
