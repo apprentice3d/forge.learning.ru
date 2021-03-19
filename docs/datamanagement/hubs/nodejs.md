@@ -1,8 +1,8 @@
-# List hubs & projects (Node.js)
+# Репозитории данных и проекты (Node.js)
 
 ## routes/datamanagement.js
 
-Create a `routes/datamanagement.js` file with the following content:
+Создайте файл `routes/datamanagement.js` и добавьте следующий код:
 
 ```javascript
 const express = require('express');
@@ -57,7 +57,8 @@ router.get('/datamanagement', async (req, res) => {
 });
 ```
 
-The above receives the request from the UI tree. The `id` parameter indicates the node that is being expanded: `#` means root node, so list hubs. After that it contains the `href` of the resource, so when expanding one `hub` the endpoint should return the projects for the hub. The above code calls different `get` functions. To complete it, also copy the following content to the file:
+Код выше получает запрос от дерева пользовательского интерфейса (англ. UI tree). Параметр `id` указывает узел, который расширяется: `#`означает корневой узел, поэтому укажите репозитории. После этого он содержит `href` ресурса, поэтому при расширении одного `репозитория` конечная точка должна возвращать все проекты, которые в нем сожержатся. Приведенный выше код вызывает разные функции `get`. Для его завершения также скопируйте следующий код в файл (внутри того же класса `DataManagementController`).
+
 
 ```javascript
 async function getHubs(oauthClient, credentials, res) {
@@ -162,9 +163,10 @@ function createTreeNode(_id, _text, _type, _children) {
 
 module.exports = router;
 ```
+ 
+Последняя функция `get` возвращает **Версии** для каждого элемента (файла), где свойство `.relationships.derivatives.data.id` содержит `URN` для **Viewer**. Важно проверить, доступен ли этот атрибут, поскольку некоторые элементы могут не отображаться (например, ZIP-файлы или файлы .DOCx) или еще не прошли конвертацию.
 
-The last `get` function returns the **Versions** for each item (file), where the `.relationships.derivatives.data.id` property contains the `URN` for the **Viewer**. It's important to test if this attribute is available as some items may not have viewables (e.g. a ZIP or DOCx file) or may not have being translated yet.
 
-Note how we reuse the auth helpers from `routes/common/oauth.js` here.
+Обратите внимание, что здесь мы повторно используем auth helpers из `routes/common/oauth.js`.
 
-Next: [User information](oauth/user/readme)
+Далее: [Обработка информации профиля пользователя](oauth/user/readme)
