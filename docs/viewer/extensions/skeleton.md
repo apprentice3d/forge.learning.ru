@@ -1,6 +1,6 @@
 # Структура расширения
 
-Эта часть руководства описывает базовую структуру расширения с кнопкой на панели инструментов, которая запускает код внутри функции`.onClick`. Вы можете перейти сразу на пример [Handling Selection](viewer/extensions/selection).
+Эта часть руководства описывает базовую структуру расширения с кнопкой на панели инструментов Forge Viewer, которая запускает код внутри функции`.onClick`. Вы можете перейти сразу на пример [Выделение элементов](viewer/extensions/selection).
 
 ## Создания расширения
 
@@ -102,3 +102,5 @@ viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('forgeViewer')
 
 
 Далее: [Выделение элементов](viewer/extensions/selection)
+
+[Эта страница на английском](https://learnforge.autodesk.io/#/viewer/extensions/skeleton).
