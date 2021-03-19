@@ -84,3 +84,5 @@ If you are interested in a terminal only debugging (hardcore debugging), have a 
 
 
 Далее: [Расширения для Viewer](tutorials/extensions)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/go).
