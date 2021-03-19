@@ -1,14 +1,14 @@
-# Upload file to OSS (JAVA)
+# Загрузка файлов в OSS (JAVA)
 
-At this section we actually need 3 features:
+В этом разделе нам нужны 3 функции:
 
-1. Create buckets
-2. List buckets & objects (files)
-3. Upload objects (files)
+1. Создание бакетов
+2. Указание репозиториев данных и объектов (файлов)
+3. Загрузка объектов (файлов)
 
 ## oss.java
 
-Create a new Java Class named `/src/main/java/oss.java` with the following content. This file handles creating and listing buckets.
+Создайте Java Class с названием `/src/main/java/oss.java`, который отвечает за создание и указание бакетов. 
 
 
 ```java
@@ -182,11 +182,11 @@ public class oss extends HttpServlet {
 
 
 
-As we plan to suppor the [jsTree](https://www.jstree.com/) library, our **GET oss/buckets** need to return handle the `id` querystring parameter and return buckets when `id=#` and objects for a given bucketKey passed as `id=bucketKey`.
+As we plan to suppor the [jsTree](https://www.jstree.com/) library, our **GET oss/buckets** need to return handle the `id` querystring parameter and return buckets when `id=#` and objects for a given bucketKey passed as `id=bucketKey`. Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наш **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
 
 ## ossuploads.java
 
-Create a `/src/main/ossuploads.java` file with the following content. This file handles uploading file. The workflow gets the file stream and uploads to Forge.
+Создайте файл `/src/main/ossuploads.java` со следующим кодом. Он отвечает за загрузку файлов. Рабочий процесс (англ. workflow) получает файлы и загружает их в Forge.
 
 ```java
 package forgesample;
@@ -329,7 +329,7 @@ public class ossuploads extends HttpServlet {
 }
 ```
 
-Now explictly expose the endpoint in `/web/WEB-INF/web.xml`, add the following content before `</web-app>`:
+Теперь предоставьте конечную точку в `/web/WEB-INF/web.xml`, добавьте следующий код перед `</web-app>`:
 
 ```xml
 <servlet>
@@ -350,8 +350,8 @@ Now explictly expose the endpoint in `/web/WEB-INF/web.xml`, add the following c
 </servlet-mapping>
 ```
 
-Note how we reuse the `/src/main/java/oauth.java` file to call `.getTokenInternal()` on all functions. 
+Обратите внимание, что мы повторно используем файл `/src/main/java/oauth.java` для вызова `.getTokenInternal()` у всех функций.
 
-!> Upload a file from the client (browser) directly to Autodesk Forge is possible, but requires giving the client a **write-enabled** access token, which is **NOT SECURE**.
+!> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
-Next: [Translate the file](modelderivative/translate/)
+Далее: [Конвертация файлов](modelderivative/translate/)
