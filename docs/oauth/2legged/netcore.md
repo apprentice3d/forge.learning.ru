@@ -86,3 +86,5 @@ namespace forgeSample.Controllers
 Комментарий: **GetAppSetting** просто получает ID & Secret из файла **Web.Config**.
 
 Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/2legged/netcore).
