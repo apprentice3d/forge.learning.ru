@@ -10,7 +10,7 @@ git push heroku master
 
 Лучше всего иметь Keys&Secrets для локальной разработки, поэтому перейдите к своим приложениям на сайте платформы Autodesk Forge и [создайте новое приложение](/account/?id=create-an-app), например, **forge sample production**.
 
-Войдите в учетную запись [Heroku Dashboard](https://dashboard.heroku.com/), где должно быть указано ваше приложение. Перейдите в **Settings** и создайте **Config Vars**, как показано на видео нижеw:
+Войдите в учетную запись [Heroku Dashboard](https://dashboard.heroku.com/), где должно быть указано ваше приложение. Перейдите в **Settings** и создайте **Config Vars**, как показано на видео ниже:
 
 ![](_media/deployment/heroku/env_vars.gif) 
 
