@@ -24,4 +24,4 @@
 
 Другие APIs: [Webhooks](https://stackoverflow.com/questions/tagged/autodesk-webhooks) | [BIM 360](https://stackoverflow.com/questions/tagged/autodesk-bim360)
 
-{Эта страница на английском языке](https://learnforge.autodesk.io/#/help/).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/help/).
