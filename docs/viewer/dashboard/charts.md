@@ -137,4 +137,6 @@ new PieChart('Material')
 
 > Консоль браузера необходима для веб-разработки и проверки кода. Узнайте больше о том, как её использовать для [Chrome](https://developers.google.com/web/tools/chrome-devtools/console/), [Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console), [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console) and [Safari](https://developer.apple.com/safari/tools/).
 
-Далее: [Deployment](deployment/)
+Далее: [Развертывание](deployment/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/dashboard/charts).
