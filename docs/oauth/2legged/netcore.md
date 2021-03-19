@@ -1,8 +1,8 @@
-# Authenticate (.NET Core)
+# Аутентификация (.NET Core)
 
 ## OAuthController.cs
 
-Create folder named `Controllers` at project root level, then create a class named **OAuthController** in a class file with the same name (`OAuthController.cs`) and add the following content:
+Создайте папку `Controllers` в корневой папке проекта (англ. project root level), затем создайте класс **OAuthController** в файле класса с тем же названием (`OAuthController.cs`) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -77,12 +77,12 @@ namespace forgeSample.Controllers
 }
 ```
 
-The **Get2LeggedTokenAsync** method connects to Autodesk Forge and get the access token. As we need a public (read-only) and an internal (write-enabled) token, **GetPublicAsync** exposes an endpoint for public access while **GetInternalAsync** is to be called within the application only.
+Метод **Get2LeggedTokenAsync** подключается к Autodesk Forge и получает токен доступа. Поскольку нам нужны открытые (только для read) и внутренние (с возможностью write) токены, **GetPublicAsync** предоставляется как конечная точка, а **GetInternalAsync** вызывается только в веб-приложении.
 
-To avoid getting a new access token for each end-user request causing unnecessary latency, let's cache them in a couple of `static` variables. Note we still need to refresh it after the time given in `expires_in` (in seconds).
+Чтобы избежать получения нового токена доступа на каждый запрос конечного пользователя (т.к. это создает ненужную задержку работы), давайте кэшируем их в переменных `static`. Обратите внимание, что нам все еще нужно обновлять его после времени окончания действия (`expires_in` seconds).
 
-!> Sharing access token between users is only valid in this case, where all users are accessing the same information (2-legged). If your app requires user specific data (3-legged), **DOT NOT** use this approach.
+!> Обмен токенами доступа между пользователями возможен только в том случае, когда все пользователи получают доступ к одним и тем же данным (2-legged токены). Если ваше приложение использует данные для каждого пользователя (3-legged токены), **НЕ** используйте этот подход.
 
-As per comments in the code above, the **GetAppSetting** simply gets the ID & Secret from the **Web.Config** file.
+Комментарий: **GetAppSetting** просто получает ID & Secret из файла **Web.Config**.
 
-Next: [Upload file to OSS](/datamanagement/oss/)
+Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
