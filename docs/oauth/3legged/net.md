@@ -1,10 +1,10 @@
-# Authorize (.NET Framework)
+# Аутентификация (.NET Framework)
 
-For a basic *OAuth* implementation we need 1 file.
+Для настройки базового *процесса аутентификации (OAuth)* нам понадобится один файл.
 
 ### OAuthController.cs
 
-Create a .NET WebAPI Controller named **OAuthController** (see [how to create a controller](environment/setup/net_controller)) and add the following content:
+Создайте .NET WebAPI Controller с названием **OAuthController** (см. [как создать контроллер](environment/setup/net_controller)) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -176,6 +176,6 @@ namespace forgeSample.Controllers
 }
 ```
 
-This code will store both **access tokens** on the session with the **refresh token** and **expiration time**. When it expires, it will use the refresh token to request 2 new access tokens (internal & public). Note how it contains 2 classes: `OAuthController` and `Credentials`, where the first exposes the endpoints and the second handles the access tokens (including refresh).
+Этот код будет хранить оба **токена доступа** вместе с **refresh token** и **expiration time**. Когда срок токена истечет, он будет использовать refresh token для запроса 2 новых токенов доступа (внутреннего и открытого). Обратите внимание, что он содержит 2 класса: `OAuthController` и `Credentials`, где первый предоставляет конечные точки, а второй обрабатывает токены доступа (включая обновление).
 
-Next: [List hubs & projects](/datamanagement/hubs/readme)
+Далее: [Репозитории данных (англ. hubs) и проекты](/datamanagement/hubs/readme)
