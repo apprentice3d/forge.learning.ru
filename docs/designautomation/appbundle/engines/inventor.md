@@ -6,7 +6,7 @@
 
 ## Требования
 
-- **Design Automation for Inventor** template: go to the Visual Studio Market Place, download and open it from [this link](https://marketplace.visualstudio.com/items?itemName=Autodesk.DesignAutomation), then follow the steps to install.
+- Шаблон **Design Automation for Inventor**: перейдите на Visual Studio Market Place, скачайте и откройте его [по ссылке](https://marketplace.visualstudio.com/items?itemName=Autodesk.DesignAutomation), потом следуйте инструкциям для загрузки.
 
 ![](_media/designautomation/inventor/da4inventor_template.png)
 
