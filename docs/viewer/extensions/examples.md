@@ -7,16 +7,16 @@
 
 Вот еще несколько примеров расширений, основанных на каркасном подходе:
 
-- [Change color](https://forge.autodesk.com/blog/happy-easter-setthemingcolor-model-material): добавляет 3 кнопки на панель инструментов для изменения цвета выбранных элементов модели.
+- [Изменение цвета]https://forge.autodesk.com/blog/happy-easter-setthemingcolor-model-material): добавляет 3 кнопки на панель инструментов для изменения цвета выбранных элементов модели.
 Расширение может взаимодействовать с сервером для реализации более сложных функций, как и любой другой код JavaScript. Примеры ниже демонстрируют это:
 
 **Node.js**
 
-- [Share Viewer state](https://forge.autodesk.com/blog/share-viewer-state-websockets): использует websocket для обмена состоянием между 2+ экземплярами Viewer.
+- [Синхронизация положения модели в пространстве в Viewer](https://forge.autodesk.com/blog/share-viewer-state-websockets): использует websocket для обмена состоянием между 2+ экземплярами Viewer.
 
 **.NET**
 
-- [Custom properties](https://forge.autodesk.com/blog/custom-properties-viewer-net-lambda-dynamodb): хранит настраиваемые свойства в базе данных (AWS DynamoDB) и использует код .NET WebAPI для обслуживания через конечные точки REST.
+- [Настраиваемые свойства](https://forge.autodesk.com/blog/custom-properties-viewer-net-lambda-dynamodb): хранит настраиваемые свойства в базе данных (AWS DynamoDB) и использует код .NET WebAPI для обслуживания через конечные точки REST.
 
 Далее: [Развертывание](deployment/)
 
