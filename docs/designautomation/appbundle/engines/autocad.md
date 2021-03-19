@@ -6,7 +6,7 @@
 
 ## Создание нового проекта
 
-Щелкните правой кнопкой мыши на решение, затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateDWGParam`. Затем щелкните проект правой кнопкой мыши, выберите **Manage NuGet Packages...**, в разделе **Browser** вы можете выполнить поиск  **AutoCAD.NET** и установить `AutoCAD.NET.Core`  (который также устанавливает `AutoCAD.NET.Model`). Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
+Щелкните правой кнопкой мыши на решение (англ. solution), затем выберите **Add** >> **New Project**. Выберите  **Windows Desktop**, затем **Class Library** и, наконец, назовите его `UpdateDWGParam`. Затем щелкните проект правой кнопкой мыши, выберите **Manage NuGet Packages...**, в разделе **Browser** вы можете выполнить поиск  **AutoCAD.NET** и установить `AutoCAD.NET.Core`  (который также устанавливает `AutoCAD.NET.Model`). Затем найдите и установите `Newtonsoft.Json` (который используется для анализа входных данных в формате JSON).
 
 > Пожалуйста, выберите .NET Framework 4.7. Если его нет в списке, [загрузите Dev Pack](https://dotnet.microsoft.com/download/dotnet-framework/net47).
 
