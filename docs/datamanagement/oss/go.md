@@ -1,16 +1,16 @@
-# Upload file to OSS (Go)
+# Загрузка файлов в OSS (Go)
 
-At this section we actually need 3 features:
+В этом разделе нам нужны 3 функции:
 
-1. Create buckets
-2. List buckets & objects (files)
-3. Upload objects (files)
+1. Создание бакетов
+2. Указание репозиториев данных и объектов (файлов)
+3. Загрузка объектов (файлов)
 
-We will structure this in 2 files:
+Мы структурируем это в 2 файлах:
 
 ## oss.go
 
-Create a `/server/oss.go` file, which will take care of first 2 features and should have the following content:
+Создайте файл `/server/oss.go`, который отвечает за реализацию 1  и 2 пунтка, и добавьте следующий код:
 
 ```go
 package server
@@ -139,12 +139,12 @@ func (service ForgeServices) manageBuckets(writer http.ResponseWriter, request *
 
 ```
 
-As we plan to suppor the [jsTree](https://www.jstree.com/) on the frontend. Thus, our **GET oss/buckets** need to return handle the `id` querystring parameter and return buckets when `id=#` and objects for a given bucketKey passed as `id=bucketKey`.
+Мы планируем поддерживать [jsTree](https://www.jstree.com/) со стороны frontend, поэтому наши **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и возвращать бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`.
 
 
 ## uploader.go
 
-Create a `/server/uploader.go` file with the following content:
+Создайте файл `/server/uploader.go` со следующим кодом:
 
 ```go
 package server
@@ -194,6 +194,6 @@ func (service ForgeServices) manageObjects(writer http.ResponseWriter, request *
 }
 ```
 
-!> Upload a file from the client (browser) directly to Autodesk Forge is possible, but requires giving the client a **write-enabled** access token, which is **NOT SECURE**.
+!> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
-Next: [Translate the file](modelderivative/translate/)
+далееanslate the file](modelderivative/translate/)
