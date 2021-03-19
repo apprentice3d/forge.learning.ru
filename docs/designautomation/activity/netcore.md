@@ -108,4 +108,6 @@ public async Task<List<string>> GetDefinedActivities()
 
 ![](_media/designautomation/define_activity.gif)
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/activity/netcore).
+
 Далее: [Запуск workitem](designautomation/workitem/)
