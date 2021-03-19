@@ -22,7 +22,7 @@ private dynamic EngineAttributes(string engine)
 
 **2. CreateActivity**
 
-Определите новую activity с исходным файлом (input file), входными параметрами (JSON) [input data] и результатом на выходе (output file).
+Определите новую activity с исходным файлом (input file), входными параметрами [input data (JSON)] и результатом на выходе (output file).
 
 ```csharp
 /// <summary>
