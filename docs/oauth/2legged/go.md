@@ -62,3 +62,5 @@ func (service ForgeServices) getAccessToken(writer http.ResponseWriter, request 
 ```
 
 Далее: [Загрузка файла в OSS (Object Storage Service)](/datamanagement/oss/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/2legged/go).
