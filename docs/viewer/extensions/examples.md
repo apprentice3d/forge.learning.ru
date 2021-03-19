@@ -12,7 +12,7 @@
 
 **Node.js**
 
-- [Синхронизация положения модели в пространстве в Viewer](https://forge.autodesk.com/blog/share-viewer-state-websockets): использует websocket для обмена состоянием между 2+ экземплярами Viewer.
+- [Синхронизация пространственного отображения модели в Viewer](https://forge.autodesk.com/blog/share-viewer-state-websockets): использует websocket для обмена состоянием между 2+ экземплярами Viewer.
 
 **.NET**
 
