@@ -48,7 +48,7 @@ go get -u github.com/derekparker/delve/cmd/dlv
 
 Здесь не нужно ничего менять, так что просто сохраните его.
 
-Установите точки останова (англ. breakpoints), и в `Code debug viewlet` (F5) нажмите зеленую кнопку `Start Debugging`, чтобы начать отладку.
+Установите брейкпоинты (англ. breakpoints), и в `Code debug viewlet` (F5) нажмите зеленую кнопку `Start Debugging`, чтобы начать отладку.
 
 Перейдите в меню **Debug** и выберите **Start debugging**. Вкладка "Debug Console" должна появиться внизу, как показано ниже:
 
@@ -74,7 +74,7 @@ go get -u github.com/derekparker/delve/cmd/dlv
 
 ## Расширенные настройки
 
-If you are interested in a terminal only debugging (hardcore debugging), have a look at following tutorials: Если вас интересует только отладка терминала (хардкорная отладка), ознакомьтесь с этими руководствами:
+Если вас интересует только отладка терминала (хардкорная отладка), ознакомьтесь с этими руководствами:
 
 - [Way of GDB](https://golang.org/doc/gdb) - для отладки приложений golang с использованием GDB;
 - [Way of LLDB](http://blog.ralch.com/tutorial/golang-debug-with-lldb/) - для отладки приложений golang с использованием LLDB;
