@@ -1,6 +1,6 @@
 # Приложения Forge на .NET с Azure App Service
 
-This is to walk you through the steps to deploy a .NET sample Forge App to Azure App Service as a Web App with Этот раздел поможет вам развернуть приложения .NET в Azure App Service как веб-приложение с [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
+Этот раздел поможет вам развернуть приложения .NET в Azure App Service как веб-приложение с [Visual Studio 2017](https://visualstudio.microsoft.com/vs/).
 
 В этом руководстве мы будем использовать пример ViewHubModels из [предыдущего раздела](tutorials/viewhubmodels). Полный пример вы найдете по ссылке [Github repo](https://github.com/Autodesk-Forge/learn.forge.viewhubmodels/tree/net). Те же инструкции должны работать и для примера **View Models**.
 
@@ -46,7 +46,7 @@ This is to walk you through the steps to deploy a .NET sample Forge App to Azure
 
 # Демо-ролик
 
-Посмотрите это видео, демонстрирующе развертывание нашего примера .NET в [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (те же инструкции подойдут для вашего приложения Node.js с Visual Studio)
+Посмотрите это видео, демонстрирующее развертывание нашего примера .NET в [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (те же инструкции подойдут для вашего приложения Node.js с Visual Studio)
 
 [Демо .NET](https://www.youtube.com/embed/dDg-fQ7SHAQ ':include :type=iframe width=100% height=400px')
 
