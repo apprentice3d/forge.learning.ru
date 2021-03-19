@@ -22,7 +22,7 @@
   - [Запуск Workitem](designautomation/workitem/)
 - [Запуск и проверка кода](environment/rundebug/readme.md)
 - [Расширения для Viewer](tutorials/extensions.md)  
-  - [Структура расширения](viewer/extensions/skeleton)
+  - [Базовая структура расширения](viewer/extensions/skeleton)
   - [Выделение элементов](viewer/extensions/selection)
   - [Панель свойств в интерфейсе](viewer/extensions/panel)
   - [Примеры](viewer/extensions/examples)
