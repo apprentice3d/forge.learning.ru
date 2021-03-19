@@ -1,10 +1,10 @@
-# User information (.NET Framework)
+# Обработка информации профиля пользователя (.NET Framework)
 
-This endpoint will request the end-user information and return the **name** and **picture** (40px).
+Эта конечная точка запросит данные конечного пользователя и вернет **имя** и **фотографию профиля** (40px).
 
 ## UserController.cs
 
-Create a .NET WebAPI Controller named **UserController** (see [how to create a controller](environment/setup/net_controller)) and add the following content:
+Создайте .NET WebAPI Controller с именем **UserController** (см. [как создать контроллер](environment/setup/net_controller)) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -44,4 +44,4 @@ namespace forgeSample.Controllers
 }
 ```
 
-Next: [Show on Viewer](viewer/3legged/readme)
+Далее: [Отображение файлов в Viewer](viewer/3legged/readme)
