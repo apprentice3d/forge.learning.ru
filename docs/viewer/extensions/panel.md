@@ -189,3 +189,5 @@ this.getAllLeafComponents((dbIds) => {
 - **.forEach()** для перебора коллекции, это функция JavaScript, [узнайте больше](https://www.w3schools.com/jsref/jsref_forEach.asp)
 
 Далее: [Примеры](viewer/extensions/examples)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/extensions/panel).
