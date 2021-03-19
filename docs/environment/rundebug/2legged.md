@@ -22,3 +22,5 @@
 Готовы? Давайте запускать!
 
 Выберите язык: [Node.js](environment/rundebug/nodejs) | [.NET Framework](environment/rundebug/net) | [.NET Core](environment/rundebug/netcore) | [Go](environment/rundebug/go) | [PHP](environment/rundebug/php) | [Java](environment/rundebug/java)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/2legged).
