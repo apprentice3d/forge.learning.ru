@@ -12,7 +12,7 @@
 
 **Node.js**
 
-- [Share Viewer state](https://forge.autodesk.com/blog/share-viewer-state-websockets): uses websocket to share state between 2+ instances of the Viewer. использует websocket для обмена состоянием между 2+ экземплярами Viewer.
+- [Share Viewer state](https://forge.autodesk.com/blog/share-viewer-state-websockets): использует websocket для обмена состоянием между 2+ экземплярами Viewer.
 
 **.NET**
 
