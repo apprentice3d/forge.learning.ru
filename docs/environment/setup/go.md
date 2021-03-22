@@ -1,28 +1,27 @@
-# Create a new project (Go)
+# Создание нового проекта (Go)
 
-Inside `$GOPATH` create a `/src` folder for source code, do not use spaces and avoid special chars. Then a subfolder for this this tutorial: **forgesample**. The final result should be **$GOPATH/src/forgesample**.
+Внутри `$GOPATH` создайте папку `/src` для исходного кода, не сипользуйте пробелы и избегайте специальных символов. Подпапка для этого руководства: **forgesample**. Финальный результат должен быть в **$GOPATH/src/forgesample**.
 
-Open **Visual Code**, then go to menu **File** and select **Open** (MacOS) or **Open Folder** (Windows) and select the newly created folder. 
+Откройте **Visual Code**, потом перейдите в меню **File** --> **Open** (MacOS) или **Open Folder** (Windows) и выберите только что созданную папку.
 
+## Файлы и папки
 
-## Files and Folders
+Чтобы создать новую папку или файл, щелкните правой кнопкой мыши на область "Explorer" слева и выберите **New Folder** или **New File**.
 
-To create a new folder or file, right-click on the "Explorer" area on the left and select **New Folder** or **New File**.
+Для постоянства, создайте папку **/server/** для всех файлов на стороне сервера и **/www/** для файлов со стороны клиента. 
 
-For consitency with other Forge samples, create a **/server/** folder for all server-side files and a **/www/** for all client-side files.
-
-At the root folder, create `./main.go` in our main directory, as this will be the entry point of our app.
+В корневой папке создайте `./main.go` в нашей основной директории, т.к. это будет тчокой входа нашего приложения. 
 	
-At this point, you project should be something like:
+На этом этапе проект должен выглядеть примерно так:
 
 ![](_media/go/vs_code_explorer.png) 
 
 
 ## Setup credentials
 
-It's important to define ID & Secret as environment variables so our project can use it for authorized requests.
+Важно определить ID & Secret как переменные среды, чтобы наш проект мог использовать их для авторизованных запросов. 
 
-To setup the environment variables, follow these steps, depending on your operationg system.    
+Чтобы настроить переменные среды, выполните следующие действия (в зависимости от вашей операционной системы).    
 ***Mac OSX/Linux (Terminal)***
 
 ```bash
@@ -39,7 +38,7 @@ set FORGE_CLIENT_SECRET=<<YOUR CLIENT SECRET>>
 
 ## main.go
 
-Write the following into `main.go`, previously created in the rood folder:
+Добавьте код ниже в `main.go`, ранее созданный в корневой папке:
 
 ```go
 package main
@@ -68,13 +67,13 @@ func main() {
 	server.StartServer(PORT, clientID, clientSecret)
 }
 ```
-The purpose of this file is to setup Forge credentials and start the server.    
-Note the import `forgesample/server`, in your case it should match your folder, as you will make use of server files from your project.  
-Note also how we get the ID & Secret to setup our server, or failing if one of them is not found.
+Цель этого файла - настроить учетные данные Forge и запустить сервер.   
+Обратите внимание на импорт `forgesample/server`, в вашем случае он должен соответствовать вашей папке, т.к. вы будете использовать файлы сервера из вашего проекта.
+Обратите внимание также на то, как мы получаем ID & Secret для настройки нашего сервера или сбой, если один из них (ID & Secret) не найден.
 
 ## server.go
 
-Now, under **/server/** folder, create a file named `server.go` with:
+В папке **/server/** создайте файл с названием `server.go` и кодом ниже:
 
 ```go
 package server
@@ -119,20 +118,18 @@ func StartServer(port, clientID, clientSecret string) {
 
 }
 ```
-This file prepares the server and serves the static files (e.g. `html`, `js`) and routes the API requests.
+This file prepares the server and serves the static files (e.g. `html`, `js`) and routes the API requests. Этот файл подготавливает сервер, обрабатывает статические файлы (например, `html`, `js`) и направляет запросы API.
 
-Note that the Go approach is relying on [forge-api-go-client](https://github.com/apprentice3d/forge-api-go-client), and
-to use that library you should get it by calling in terminal:
+Обратите внимание, что подход Go основан на [forge-api-go-client](https://github.com/apprentice3d/forge-api-go-client), чтобы использовать эту библиотеку, направьте запрос в терминале:
 
 ```bash
 	go get -u github.com/apprentice3d/forge-api-go-client
 ```
 
-Go will copy it into `$GOPATH/src/github.com/apprentice3d/forge-api-go-client`, 
-thus making available to this and all your future projects written in Go.
+Go скопирует это в `$GOPATH/src/github.com/apprentice3d/forge-api-go-client`, тем самым делая доступными этот и все ваши будущие проекты, написанные на Go.
 
-That library was designed to take care of requesting tokens with appropriate scope for their tasks.
-This is why we have the `ForgeService` struct:
+Эта библиотека разработана для того, чтобы запрашивать токены с соответствующей областью действия для их задач.
+Вот почему у нас есть структура `ForgeService`:
 
 ```go
 // ForgeServices holds reference to all services required in this server
@@ -143,7 +140,7 @@ type ForgeServices struct {
 }
 
 ```
-that contains all Forge API clients we will be using and each of them was initialized with forge credentials within the same file:
+она содержит все Forge API, которые мы будем использовать, и каждый из API был запущен с данными учетной записи Forge внутри одного файла: 
 
 ```go
 ...
@@ -159,9 +156,10 @@ func StartServer(port, clientID, clientSecret string) {
 
 
 
-Project is ready! At this point your project should have:
-
+Проект готов! На этом этапе он должен иметь:
 ![](_media/go/vs_code_project.png) 
 
 
-Next: [Authenticate](oauth/2legged/)
+Далее: [Аутентификация](oauth/2legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/go).
