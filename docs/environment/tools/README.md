@@ -4,3 +4,4 @@
 
 Выберите язык программирования: [Node.js](environment/tools/nodejs) | [.NET Framework](environment/tools/net) | [.NET Core](environment/tools/netcore) | [Go](environment/tools/go) | [PHP](environment/tools/php) | [Java](environment/tools/java)
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/tools/).
