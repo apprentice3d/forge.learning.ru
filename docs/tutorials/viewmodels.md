@@ -25,3 +25,5 @@
 Готовы писать программный код?
 
 Далее: [Создание сервера](environment/setup/2legged)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/tutorials/viewmodels).
