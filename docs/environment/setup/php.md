@@ -1,26 +1,26 @@
-# Create a new project (PHP)
+# Создание нового проекта (PHP)
 
-Create a folder on your machine, do not use spaces and avoid special chars. For this tutorial, let's use **forgesample**.
+Создайте папку на вашем ПК, не используйте пробелы или специальные символы в названии. Для этого руководства давайте использовать **forgesample**.
 
-Open **Visual Code**, then go to menu **File** and select **Open** (MacOS) or **Open Folder** (Windows) and select the newly created folder.
+Откройте **Visual Code**, перейдите в меню **File** --> **Open** (MacOS) или **Open Folder** (Windows) и выберите только что созданную папку.
 
-Now we need the terminal, go to menu **View** >> **Integrated Terminal**. A window should appear on the bottom. Type the following command and follow the steps.
+Сейчас нам нужен терминал, перейдите в меню **View** >> **Integrated Terminal**. Внизу должно появиться окно. Введите следующую команду и следуйте инструкциям. 
 
 ```
 composer init
 ```
 
-This creates the **composer.json** file, which defines which packages our project will be using. [Learn more](https://getcomposer.org/doc/04-schema.md).
+Это создает файл **composer.json**, который определяет, какие пакеты будет использовать наш проект. [Узнайте больше](https://getcomposer.org/doc/04-schema.md).
 
-## Install packages
+## Загрузка пакетов
 
-By default, a PHP project is empty, so we need to install a few packages with **composer require**. Let's start with a basic **PHP** server, **klein** for router handling, **phpdotenv** to load environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically, of course, **Autodesk Forge**.
-* Check [klein](https://packagist.org/packages/klein/klein) if you want to know more about usage of klein.
-* Check [phpdotenv](https://packagist.org/packages/vlucas/phpdotenv) if you want to know more about usage of phpdotenv.
-* Check [Autodesk Forge](https://packagist.org/packages/autodesk/forge-client) if you want to know more about usage of Forge PHP SDK.
+По умолчанию проект PHP пустой, поэтому нам нужно установить несколько пакетов с **composer require**. Давайте начнем с базового сервера **PHP**, **klein** для маршрутизации, **phpdotenv** для загрузки переменных среды из `.env` в `getenv()`, `$_ENV` и `$_SERVER` автоматически,и, конечно, **Autodesk Forge**.
+* [klein](https://packagist.org/packages/klein/klein) если вы хотите узнать больше про использование klein.
+* [phpdotenv](https://packagist.org/packages/vlucas/phpdotenv) если вы хотите узнать больше про использование phpdotenv.
+* [Autodesk Forge](https://packagist.org/packages/autodesk/forge-client) если вы хотите узнать больше про использование Forge PHP SDK.
 
 
-!> Run one **composer require** at a time.
+!> Запускайте одну **npm install** за раз.
 
 ```
 composer require autodesk/forge-client
@@ -28,9 +28,9 @@ composer require klein/klein
 composer require vlucas/phpdotenv
 ```
 
-> The libary would be also saved on the **composer.json** file.
+> Библиотека будут сохранена как файл **composer.json**.
 
-Now your folder should have a **vendor** folder and your **composer.json** should look like:
+Сейчас ваша папка должна содержать папку **vendor**, а **composer.json** должен выглядеть вот так:
 
 ```json
 {
@@ -52,25 +52,26 @@ Now your folder should have a **vendor** folder and your **composer.json** shoul
 }
 ```
 
-> The version number (e.g. forge-client 1.0) may vary, this was the latest version when tutorial was created.
+> Номер версии (например, forge-apis 0.4.1) может отличаться, Эта было последней версией на момент создания этого руководства.
 
-## Files and Folders
+## Файлы и папки
 
 To create a new folder or file, right-click on the "Exporer" area on the left and select **New Folder** or **New File**.
+тобы создать новую папку или файл, щелкните правой кнопкой мыши на область "Explorer" слева и выберите **New Folder** или **New File**.
 
-For consitency with other Forge samples, create a **/server/** folder for all server-side files and a **/www/** for all client-side files.
+Создайте папку **/server/** для файлов на стороне сервера and **/www/** для файлов со стороны клиента.
 
-At this point, you project should be something like:
+На этом этапе ваш проект должен быть примерно таким:
 
 ![](_media/php/vs_code_explorer.png)
 
 
 ## index.php
 
-Now, under **root** folder, create a file named `index.php`.
+В **корневой** папке создайте файл `index.php`.
 
-!> Note: when you are developing the app, you need to create the endpoint implementation like AccessToken/DataManagement/ModelDerivative first, and then create the routes by this file, but as an introduction, to make it clear, we will introduce this file first:
-
+!> Примечание: когда вы разрабатываете приложение, вам необходимо сначала создать реализацию конечной точки, такую как AccessToken/DataManagement/ModelDerivative, а затем создать маршруты с помощью этого файла. Тем не менее, чтобы вам было проще, мы начнем с этого файла:
+ 
 ```php
 <?php
 session_start();
@@ -125,12 +126,12 @@ This file routes the API requests.
 
 
 ## .htaccess
-This file is used to do URL Rewrite for Apache, we will direct the following URL:
-1. Redirect home page to **/www/index.html**
-2. Redirect js & css files to folder **www**
-3. Redirect any API call to be prefixed with **index.php**
+Этот файл используется для перезаписи URL-адреса для Apache, мы направим следующий URL-адрес:
+1. Перенаправить домашную страницу на **/www/index.html**
+2. Перенаправить файлы js & css files в папку **www**
+3. Перенаправить вызов API с префиксом **index.php**
 
-please check [.htaccess](https://httpd.apache.org/docs/2.4/howto/htaccess.html) for more details.
+Подробнее здесь [.htaccess](https://httpd.apache.org/docs/2.4/howto/htaccess.html).
 
 ```json
 <IfModule mod_rewrite.c>
@@ -155,18 +156,18 @@ please check [.htaccess](https://httpd.apache.org/docs/2.4/howto/htaccess.html) 
 
 ## .env
 
-!> It's important to define **ID & Secret** as environment variables so our project can use it for authorized requests..
+!> Важно определить **ID & Secret** как переменные среды, чтобы наш проект мог использовать авторизованные запросы. 
 
-To setup the environment variables, create a file named **.env** under **/server/** folder, and add your forge client id and client secret to the .env as follow:
+Чтобы настроить переменные среды, создайте файл с именем **.env ** в папке **/server/** и добавьте сlient id и client secretв в файл .env следующим образом:
 
     FORGE_CLIENT_ID="<<YOUR CLIENT ID FROM DEVELOPER PORTAL>>"
     FORGE_CLIENT_SECRET="<<YOUR CLIENT SECRET FROM DEVELOPER PORTAL>>"
 
-We will talk about how to load the environment variables in next section.
+О том, как загрузить переменные среды, мы поговорим в следующем разделе.
 
 ## Config.php
 
-Under **/server/** create a file named `config.php` with the following content:
+В **/server/** создайте файл с названием `config.php` и следующим кодом:
 
 ```php
 <?php
@@ -213,7 +214,7 @@ class ForgeConfig{
 }
 ```
 
-We are getting our ENV variables here by loading the .env file with the code like:
+Здесь мы получаем наши переменные ENV, загружая файл .env с кодом ниже:
 
 ```php
 <?php
@@ -223,16 +224,18 @@ We are getting our ENV variables here by loading the .env file with the code lik
     $forge_secret = getenv('FORGE_CLIENT_SECRET');
 ```
 
-At the time of running our PHP server the values on these variables will be used to connect to the different Autodesk Forge services we will need.
+Во время запуска нашего PHP-сервера значения этих переменных будут использоваться для подключения к различным веб-сервисам Autodesk Forge, которые нам понадобятся.
 
-Last we see there are 2 definitions about scopes. These scopes give our Token the right permission for the use of the different services of the Forge We Services. This tutorial is dedicated to the use of the Viewer only, we will only need the "viewables:read" scope.
+Мы видим, что у области действия есть два определения. Эти области дают нашему токену право на использование различных веб-сервисов Forge (со стороны сервера). Это руководство посвящено использованию Forge Viewer, поэтому нам понадобится только область действия "viewables:read".
 
 
 
-Project is ready! At this point your project should have:
+Проект готов! На этом этапе он должен иметь:
 
 ![](_media/php/vs_code_project.png)
 
-> The **composer.lock** was created by Composer install, don't worry
+> **composer.lock** был создан Composer install, не волнуйтесь
 
-Next: [Authenticate](oauth/2legged/)
+Далее: [Аутентификация](oauth/2legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/php).
