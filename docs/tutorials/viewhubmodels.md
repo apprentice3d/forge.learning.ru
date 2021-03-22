@@ -22,3 +22,5 @@
 Готовы писать программный код?
 
 Далее: [Настройка сервера](environment/setup/3legged)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/tutorials/viewhubmodels).
