@@ -1,10 +1,10 @@
-# Translate Model (Go)
+# Конвертация файлов (Go)
 
-To translate a file we just need one endpoint.
+Для конверации файлов нам нужна только одна конечная точка.
 
 ## modelderivative.go
 
-Create a `/server/modelderivative.go` file with the following content:
+Создайте файл `/server/modelderivative.go` с кодом ниже:
 
 ```go
 package server
@@ -60,10 +60,12 @@ func (service ForgeServices) translateObject(writer http.ResponseWriter, request
 }
 ```
 
-The **jobs** endpoint receives the **bucketKey** and **objectName** and post the [translation job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to extract 2D & 3D views of the model. 
+Конечная точка **jobs** получает **bucketKey** и **objectName** и публикует [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-To summarize, at this point your **Go** project should be like:
+Подводя итог, на этом этапе ваш проект **Go** должен выглядеть так:
 
 ![](_media/go/vs_code_allfiles.png)
 
-Next: [Show on Viewer](viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
+
+[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/go).
