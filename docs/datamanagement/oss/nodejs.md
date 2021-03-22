@@ -1,14 +1,14 @@
-# Upload file to OSS (Node.js)
+# Загрузка файлов в OSS (Node.js)
 
-In this section we need 3 features:
+В этом разделе нам нужны 3 функции:
 
-1. Creating buckets
-2. Listing buckets & objects (files)
-3. Uploading objects (files)
+1. Создание бакетов
+2. Указание репозиториев данных и объектов (файлов)
+3. Загрузка объектов (файлов)
 
 ## routes/oss.js
 
-Create a `routes/oss.js` file with the following content:
+Создайте файл `routes/oss.js` со следующим кодом:
 
 ```javascript
 const fs = require('fs');
@@ -103,10 +103,12 @@ router.post('/objects', multer({ dest: 'uploads/' }).single('fileToUpload'), asy
 module.exports = router;
 ```
 
-Since we plan to support [jsTree](https://www.jstree.com/), our **GET /api/forge/oss/buckets** endpoint needs to handle the `id` querystring parameter, returning all buckets when `id` is set to `#`, or returning all objects in a given bucketKey passed as `id=bucketKey`. The upload endpoint uses the [multer](https://github.com/expressjs/multer) module to handle file upload. It saves the file on our server (e.g. in **/uploads/** folder) so we can later upload it to Forge.
+Т.к. мы планируем поддерживать [jsTree](https://www.jstree.com/), наш **GET /api/forge/oss/buckets** должен обрабатывать параметр строки запроса `id` (англ. querystring parameter) и возвращать все бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`. Загружаемая конечная точка использует модуль [multer](https://github.com/expressjs/multer) для обработки загрузки. Это сохраняет файл на сервере (например, в папке **/uploads/**), поэтому мы можем впоследствии загрузить его в Forge.
 
-Note how we reuse the authentication helpers from `routes/common/oauth.js` as a middleware of this router.
+Обратите внимание, что мы повторно используем authentication helpers из `routes/common/oauth.js` как промежуточный слой (англ. middleware) этого маршрутизатора.
 
-!> Uploading a file from the client (browser) directly to Autodesk Forge is possible, but requires giving the client a **write-enabled** access token, which is **NOT SECURE**.
+!> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
-Next: [Translate the file](modelderivative/translate/)
+Далее: [Конвертация файлов](modelderivative/translate/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/oss/nodejs).
