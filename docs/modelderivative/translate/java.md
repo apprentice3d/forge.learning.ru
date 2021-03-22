@@ -112,7 +112,7 @@ public class modelderivative extends HttpServlet {
 </servlet-mapping>
 ```
 
-Конечная точка **jobs** получает **bucketKey** и **objectName** и публикует [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
+Конечная точка **jobs** получает **bucketKey** и **objectName** и размещает [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
 В конце ваш файл `/web/WEB-INF/web.xml` должен выглядеть вот так:
 
