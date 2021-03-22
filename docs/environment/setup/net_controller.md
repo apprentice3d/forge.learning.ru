@@ -1,15 +1,15 @@
-# Create .NET WebAPI Controller
+# Создание .NET WebAPI Controller
 
-On your project, right-click on **Controllers** folder and go to **Add** >> **Controller**.
+В вашем проекте кликните правой кнопкой мыши на папку **Controllers** и перейдите на **Add** >> **Controller**.
 
 ![](_media/net/new_controller.png)
 
-Next, select **Web API 2 Controller - Empty**. 
+Выберите **Web API 2 Controller - Empty**. 
 
 ![](_media/net/new_controller_type.png) 
 
-Finally, enter the name of your controller.
+Веедите название вашего контроллера.
 
-!> Controllers **MUST** have **Controller** suffix.
+!> Контроллеры **ДОЛЖНЫ** иметь суффикс **Controller**.
 
-:arrow_backward: Click **Back** on your browser 
+:arrow_backward: Нажмите **Back** в вашем браузере 
