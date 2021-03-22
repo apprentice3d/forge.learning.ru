@@ -7,3 +7,5 @@
 Пользователь должен подтвердить доступ к своим данным, для этого требуется **3-legged** токен. 
 
 Выберите язык: [Node.js](oauth/3legged/nodejs) | [.NET Framework](oauth/3legged/net) | [.NET Core](oauth/3legged/netcore)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/3legged/).
