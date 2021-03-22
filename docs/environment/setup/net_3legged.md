@@ -2,7 +2,7 @@
 
 ## Global.asax
 
-One extra step: in general a REST API should be state-less, meaning it doesn't maintain control of users on a session. As this app will show data per user we need to identify who is making the calls, let's enable session for `/api/` endpoints only. The following code should copied to the the existing `Global.asax` code file:
+Один дополнительный шаг: REST API должен быть без состояния (англ. state-less), т.е. он не поддерживает контроль над пользователями во время работы. Поскольку это приложение будет отображать данные для каждого пользователя, нам необходимо определить, кто отправляет запросы. Давайте подключим это только для конечных точек `/api/`. Следующий код следует скопировать в существующий файл `Global.asax`:
 
 ```csharp
 using System.Web;
@@ -33,6 +33,6 @@ namespace forgeSample
 }
 ```
 
-Project is ready!
+Проект готов!
 
-Next: [Authorize](oauth/3legged/)
+Далее: [Аутентификация](oauth/3legged/)
