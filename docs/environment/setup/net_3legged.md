@@ -36,3 +36,5 @@ namespace forgeSample
 Проект готов!
 
 Далее: [Аутентификация](oauth/3legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/net_3legged).
