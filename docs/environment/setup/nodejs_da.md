@@ -1,22 +1,22 @@
-# Create a new project (Node.js)
+# Создание нового проекта (Node.js)
 
-Create a folder on your machine, do not use spaces and avoid special chars. For this tutorial, let's use **forgesample**.
+Создайте папку на вашем ПК, не используйте пробелы или специальные символы в названии. Для этого руководства давайте использовать **forgesample**.
 
-Open [Visual Code](https://code.visualstudio.com/download), then go to menu **File** and select **Open** (MacOS) or **Open Folder** (Windows) and select the newly created folder. 
+Откройте [Visual Code](https://code.visualstudio.com/download), перейдите в меню **File** --> **Open** (MacOS) или **Open Folder** (Windows) и выберите только что созданную папку.
 
-Now we need the terminal, go to menu **View** >> **Terminal**. A window should appear on the bottom. Type the following command and follow the steps, you can safely accept the default suggestion, except **entry point:**, use **start.js** (which is used on most of Forge samples).
+Сейчас нам нужен терминал, перейдите в меню **View** >> **Integrated Terminal**. Внизу должно появиться окно. Введите следующую команду и следуйте инструкциям. Для постоянства, при запросе **entry point:** используйте **start.js** (используется почти для всех примеров Forge).
 
 ```
 npm init
 ```
 
-This creates the **package.json** file, which defines which packages our project will be using. [Learn more](https://docs.npmjs.com/files/package.json).
+Это создает файл **package.json**, который определяет, какие пакеты будет использовать наш проект. [Узнайте больше](https://docs.npmjs.com/files/package.json).
 
-## Install packages
+## Загрузка пакетов
 
-By default, a Node.js project is empty, so we need to install a few packages with **npm install**. Let's start with a basic **express** server, **body-parser** for JSON handling, **multer** for file upload and, of course, **Autodesk Forge**.
+По умолчанию пакет Node.js пустой, поэтому нам нужно установить несколько пакетов с **npm install**. Давайте начнем с базового сервера **express**, **body-parser** для обработки данных JSON, **multer** для загрузки файлов и, конечно, **Autodesk Forge**.
 
-!> Run one **npm install** at a time.
+!> Запускайте одну **npm install** за раз.
 
 ```
 npm install express --save
@@ -29,9 +29,9 @@ npm install form-data --save
 npm install socket.io --save
 ```
 
-> The `--save` parameter indicates that the module should be included in the **package.json** file as a dependency.
+> Параметр `--save` указывает, что модуль должен быть включен в файл **package.json** в качестве зависимости.
 
-Finally open the **package.json** and, inside `"scripts"`, add `"start": "node start.js",` line. Now your folder should have a **node_modules** folder and your **package.json** should look like this:
+Откройте **package.json** и внутри `"scripts"`добавьте строчку `"start": "node start.js",`. Сейчас в вашей паке должна быть папка **node_modules**, а ваш **package.json** должен выглядеть вот так:
 
 ```json
 {
@@ -59,23 +59,23 @@ Finally open the **package.json** and, inside `"scripts"`, add `"start": "node s
 
 ```
 
-> The version number (e.g. forge-apis 0.4.8) may vary, it was the latest version when this tutorial was created.
+> Номер версии (например, forge-apis 0.4.1) может отличаться, Эта было последней версией на момент создания этого руководства. 
 
-## Files and Folders
+## Файлы и папки
 
-To create a new folder or file, right-click on the "Explorer" area on the left and select **New Folder** or **New File**.
+Чтобы создать новую папку или файл, щелкните правой кнопкой мыши на область "Explorer" слева и выберите **New Folder** или **New File**.
 
-Create a **/routes/** folder for all server-side files and a **/public/** folder for all client-side files.
+Создайте папку **/routes/** для файлов на стороне сервера и папку **/public/** для файлов со стороны клиента.
 
-At this point, you project should have the following structure:
+На этом этапе ваш проект должен иметь следующую структуру:
 
 ![](_media/nodejs/vs_code_explorer_da.png) 
 
 ## launch.json
 
-This file indicates to Visual Studio Code how we should run our project. Go to menu **Run** >> **Add Configuration...** and, in the **Select Environment** window that appears on the top, choose **Node.js**. In the **/.vscode/launch.json** file that is created, enter the following:
+Этот файл указывает Visual Studio Code, как мы должны запускать наш проект. Перейдите в меню **Run** >> **Add Configuration...** и в окне **Select Environment** выберите **Node.js**. В созданном файле **/.vscode/launch.json** введите:
 
-!> Note you need to enter your **Forge Client ID & Secret** at the indicated space.
+!> Примечание: вам нужно ввести **Forge Client ID & Secret** в указанном поле.
 
 ```json
 {
@@ -99,13 +99,13 @@ This file indicates to Visual Studio Code how we should run our project. Go to m
 }
 ```
 
-> It's important to define **ID & Secret** as environment variables so our project can later be deployed online. More on this later, in **Deployment**.
+> Важно определить **ID & Secret** как переменные среды, чтобы наш проект смог запуститься в вебе. Подробнее об этом в разделе **Развертывание**. 
 
 ## start.js
 
-This file starts an **express** server. In the root folder, create a `start.js` file with:
+В корневой папке создайте файл `start.js` с:
 
-!> File names are case-sensitive for some deployments, like **Heroku**. For this tutorial, let's use lower-case.
+!> Следите за размером букв (заглавные/строчные) для некоторых способов развертывания, например, **Heroku** - там это имеет большое значение. В этом уроке мы будем использовать строчные буквы.
 
 ```javascript
 const app = require('./server');
@@ -125,7 +125,7 @@ server.on('error', (err) => {
 
 ## server.js
 
-This file serves static files (e.g. `html`), and routes API requests. In the root folder, create a file named `server.js` with the following content:
+Этот файл обрабатывает статические файлы (например, `html`) и направляет запросы API. В корневой папке создайте файл с названиемм `server.js` и кодом ниже:
 
 ```javascript
 const _path = require('path');
@@ -154,7 +154,7 @@ module.exports = app;
 
 ## socket.io.js
 
-In the root folder, create a file named `socket.io.js` with the following content:
+В корневой папке создайте файл `socket.io.js` с кодом ниже:
 
 ```javascript
 module.exports =(app) => {
@@ -184,7 +184,7 @@ module.exports =(app) => {
 
 ## config.js
 
-In the root folder, create a file named `config.js` with the following content:
+В корневой папке создайте `config.js` со следующим кодом:
 
 ```javascript
 // Autodesk Forge configuration
@@ -216,13 +216,12 @@ module.exports = {
 };
 ```
 
-We are using the environment variables here. At the time of running our Express server, the values of these variables will be used to connect to Autodesk Forge.
-com
+Здесь мы используем переменные среды. Во время запуска нашего сервера Express значения этих переменных будут использоваться для подключения к различным веб-сервисам Autodesk Forge.
+
 ## routes/common/oauth.js
 
-Now create a `common` subfolder in the `routes` folder, and prepare a `routes/common/oauth.js` file that will actually request
-the access token from Forge. This will be reused in other parts of this tutorial.
-
+Теперь создайте подпапку `common` в папке `routes` и подготовьте файл `routes/common/oauth.js`, который будет запрашивать токен доступа у Forge. Это будет повторно использовано в других частях этого руководства.
+ 
 ```javascript
 const { AuthClientTwoLegged } = require('forge-apis');
 const config = require('../../config');
@@ -262,10 +261,12 @@ module.exports = {
 };
 ```
 
-The project is ready! At this point your project should look like this:
+Проект готов! На этом этапе он должен выглядеть вот так:
 
 ![](_media/nodejs/vs_code_project_da.PNG) 
 
-> The **package-lock.json** was created by **npm**, don't worry
+> **package-lock.json** был создан **npm**, не волнуйтесь
 
-Next: [Basic app UI](designautomation/html/README.md)
+Далее: [Базовый пользовательский интерфейс](designautomation/html/README.md)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/nodejs_da).
