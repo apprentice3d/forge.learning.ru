@@ -19,3 +19,5 @@
 !> **Предупреждение**: `ngrok` предоставляет доступ к вашему серверу localhost в Интернете. Обязательно выключите его, когда закончите тестирование, не используйте эту внешнюю среду разработки!
 
 Настройка проекта, выберитe язык: [Node.js](environment/setup/nodejs_da) | [.NET Core](environment/setup/netcore_da)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/2legged_da).
