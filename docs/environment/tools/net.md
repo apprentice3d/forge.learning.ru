@@ -22,3 +22,5 @@
 > Обязательно установите [.NET Framework 4.7.2 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 
 Далее: [Authentication](oauth/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/tools/net).
