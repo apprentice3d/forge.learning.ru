@@ -60,7 +60,7 @@ func (service ForgeServices) translateObject(writer http.ResponseWriter, request
 }
 ```
 
-Конечная точка **jobs** получает **bucketKey** и **objectName** и публикует [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
+Конечная точка **jobs** получает **bucketKey** и **objectName** и размещает [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
 Подводя итог, на этом этапе ваш проект **Go** должен выглядеть так:
 
