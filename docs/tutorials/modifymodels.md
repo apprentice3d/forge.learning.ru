@@ -22,3 +22,5 @@
 Готовы писать программный код?
 
 Далее: [Настройка сервера](environment/setup/2legged_da)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/tutorials/modifymodels).
