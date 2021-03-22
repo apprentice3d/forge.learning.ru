@@ -45,3 +45,5 @@ namespace forgeSample.Controllers
 ```
 
 Далее: [Отображение файлов в Viewer](viewer/3legged/readme)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/oauth/user/netcore).
