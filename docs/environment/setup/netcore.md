@@ -1,35 +1,35 @@
-# Create a new project (.NET Core)
+# Создание нового проекта (.NET Core)
 
-> .NET Core also runs on non-Windows and non-Visual Studio environment, please check [this other tutorial for MacOS](https://github.com/augustogoncalves/dotnetcoreheroku). Windows OS still required to compile the plugin.
+> .NET Core также работает в среде, отличной от Windows и Visual Studio, см. [другое руководство для MacOS] (https://github.com/augustogoncalves/dotnetcoreheroku). Для компиляции плагина все еще требуется ОС Windows.
 
-Go to menu **File** >> **New** >> **Project**. Select **C#** language and **Web** project type, finally select **ASP.NET Core Web Application**. Next, let's name it **forgeSample**. On the next dialog, select **Empty**. Please ensure **ASP.NET Core 3.0** is selected.
+Перейдите в меню **File** >> **New** >> **Project**. Выберите язык **C#** и тип проекта **Web**, а затем **ASP.NET Core Web Application**. Давайте наховем наш файл **forgeSample**. В следующем диалоговом окне выберите **Empty**. Обязательно проверьте, что выбрано **ASP.NET Core 3.0**.
 
-!> If the project type or .NET Core 3.0 are not available, please review [Tools](environment/tools/netcore) section.
+!> Если тип проекта или .NET Core 3.0 недоступны, перейдите в раздел [Веб-технологии](environment/tools/netcore).
 
-Install the Autodesk Forge NuGet package: right-click on the project (**Solution Explorer**), select **Manage NuGet Package**, then on **Browse** search for **Autodesk.Forge** and install `Autodesk.Forge`.
+Установите пакет Autodesk Forge NuGet: правой кнопкой мыши щелкните на проект (**Solution Explorer**) --> **Manage NuGet Package** --> **Browse**, найдите **Autodesk.Forge** и установите `Autodesk.Forge`.
 
-Repeat the last step at **Manage NuGet Packages**: search and install `Microsoft.AspNetCore.Mvc.NewtonsoftJson` to handle JSON data. 
+Повторите последний шаг в **Manage NuGet Packages**: найдите и загрузите `Microsoft.AspNetCore.Mvc.NewtonsoftJson`, чтобы обработать данные JSON. 
 
 ![](_media/netcore/create_project.gif)
 
-Right-click on the project, go to **Properties**, then under **Debug** tab see the **Environment Variables** section. `ASPNETCORE_ENVIRONMENT` should be already defined, so add:
+Правой кнопкой мыши нажмите на проект, перейдите в **Properties**, во вкладке **Debug** найдите раздел **Environment Variables**. `ASPNETCORE_ENVIRONMENT` уже должна быть определена, поэтому добавьте:
 
-- `ASPNETCORE_URLS`: use `http://localhost:3000`
-- `FORGE_CLIENT_ID`: use your id here
-- `FORGE_CLIENT_SECRET`: use your secret here
-- `FORGE_CALLBACK_URL`: for this sample, use `http://localhost:3000/api/forge/callback/oauth`
+- `ASPNETCORE_URLS`: используйте `http://localhost:3000`
+- `FORGE_CLIENT_ID`: используйте ваш Client ID
+- `FORGE_CLIENT_SECRET`: используйте ваш Client Secret
+- `FORGE_CALLBACK_URL`: для этого примера используйте `http://localhost:3000/api/forge/callback/oauth`
 
-You may also check **Launch browser** and specify the **App URL** if you would to launch the app in your browser automatically when debugging. Adjust the **App URL** field to `http://localhost:3000`. Finally, as we are running the app locally without setting up a trusted certificate, uncheck **Enable SSL** option. Your settings should look as shown below.
+Вы также можете поставить галочку напротив **Launch browser** и указать **URL-адрес приложения**, если вы хотите, чтобы приложение запускалось в браузере автоматически при отладке. В поле **URL приложения** укажите `http://localhost:3000`. Наконец, поскольку мы запускаем приложение локально без приобретения надежного сертификата, уберите галочку с **Enable SSL**. Ваши настройки должны выглядеть вот так:
 
 ![](_media/netcore/env_vars.png)
 
-Now open the **Startup.cs** and add the following namespace:
+Откройте **Startup.cs** и добавьте пространство имен (англ. namespace):
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
 ```
 
-Then replace the contents of the `Startup` class with the following code to initialize our static file server for HTML & JavaScript files. 
+Затем замените содержимое класса `Startup` следующим кодом для запуска нашего сервера (англ. static file server) для файлов HTML и JavaScript.
 
 ```csharp
 // This method gets called by the runtime. Use this method to add services to the container.
@@ -54,6 +54,8 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-Finally, create a **Controllers** folder and in there we will define our WebAPI Controllers later.
+Наконец, создайте папку **Controllers**. Там вы впоследствии определим WebAPI Controllers.
 
-So much for setting up our project!
+Столько всего для настройки нашего проекта!
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/netcore_2legged).
