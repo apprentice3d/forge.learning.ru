@@ -1,37 +1,37 @@
 # Create a new project (.NET Core)
 
-> .NET Core also runs on non-Windows and non-Visual Studio environment, please check [this other tutorial for MacOS](https://github.com/augustogoncalves/dotnetcoreheroku). Windows OS still required to compile the plugin.
+> .NET Core также работает в среде, отличной от Windows и Visual Studio, см. [другое руководство для MacOS] (https://github.com/augustogoncalves/dotnetcoreheroku). Для компиляции плагина все еще требуется ОС Windows.
 
-Go to menu **File** >> **New** >> **Project**. Select **C#** language and **Web** project type, finally select **ASP.NET Core Web Application**. Next, let's name it **forgeSample**. On the next dialog, select **Empty**. Please ensure **ASP.NET Core 3.0** is selected.
+Перейдите в меню **File** >> **New** >> **Project**. Выберите язык **C#** и тип проекта **Web**, а затем **ASP.NET Core Web Application**. Давайте назовем наш файл **forgeSample**. В следующем диалоговом окне выберите **Empty**. Обязательно проверьте, что выбрано **ASP.NET Core 3.0**.
 
-!> If the project type or .NET Core 3.0 are not available, please review [Tools](environment/tools/netcore) section.
+!> Если тип проекта или .NET Core 3.0 недоступны, перейдите в раздел [Веб-технологии](environment/tools/netcore).
 
-Install the Autodesk Forge NuGet package: right-click on the project (**Solution Explorer**), select **Manage NuGet Package**, then on **Browse** search for **Autodesk.Forge** and install `Autodesk.Forge`. This will be used to upload input and output results to [OSS buckets](https://forge.autodesk.com/en/docs/data/v2/developers_guide/basics/).
+Установите пакет Autodesk Forge NuGet: правой кнопкой мыши щелкните на проект (**Solution Explorer**) --> **Manage NuGet Package** --> **Browse**, найдите **Autodesk.Forge** и установите `Autodesk.Forge`. Это будет использовано для загрузки исходных и финальных данных в [бакеты OSS](https://forge.autodesk.com/en/docs/data/v2/developers_guide/basics/).
 
-Repeat the last step at **Manage NuGet Packages**: search and install `Autodesk.Forge.DesignAutomation` and `Microsoft.AspNetCore.Mvc.NewtonsoftJson` to handle JSON data. 
+Повторите последний шаг в **Manage NuGet Packages**: найдите и загрузите `Autodesk.Forge.DesignAutomation` и `Microsoft.AspNetCore.Mvc.NewtonsoftJson`, чтобы обработать данные JSON. 
 
 ![](_media/netcore/create_project.gif) 
 
-Right-click on the project, go to **Properties**, then under **Debug** tab see the **Environment Variables** section. `ASPNETCORE_ENVIRONMENT` should be already defined, so add:
+Правой кнопкой мыши нажмите на проект, перейдите в **Properties**, во вкладке **Debug** найдите раздел **Environment Variables**. `ASPNETCORE_ENVIRONMENT` уже должна быть определена, поэтому добавьте:
 
 - `ASPNETCORE_URLS`: use `http://localhost:3000`
 - `FORGE_CLIENT_ID`: use your id here
 - `FORGE_CLIENT_SECRET`: use your secret here
 - `FORGE_WEBHOOK_URL`: use the **ngrok** forwarding URL from previous step
 
-You may also check **Launch browser** and specify the **App URL**. Finally, as this is running locally, uncheck **Enable SSL** option. It should look like as shown below.
+Вы также можете поставить галочку напротив **Launch browser** и указать **URL-адрес приложения**. Т.к. приложение запускается локально, уберите галочку с**Enable SSL**. Должно получиться вот так: 
 
 ![](_media/netcore/env_vars_da.png) 
 
 
-Now open the **Program.cs** and add the following namespaces:
+Откройте **Program.cs** и добавьте пространство имен (англ. namespace):
 
 ```csharp
 using Autodesk.Forge.Core;
 using Autodesk.Forge.DesignAutomation;
 ```
 
-Then replace the **Program.cs** `Main()` method content with the following. This tells our application to load Forge Client ID & Secret from the environment variables defined above.
+Замените код метода **Program.cs** `Main()` на код ниже - это направит запрос нашему приложению загрузить Forge Client ID&Secret из переменных среды, определенных выше.
 
 ```csharp
 CreateHostBuilder(args).ConfigureAppConfiguration(builder =>
@@ -43,13 +43,13 @@ CreateHostBuilder(args).ConfigureAppConfiguration(builder =>
 }).Build().Run();
 ```
 
-Now open the **Startup.cs** and add the following namespace:
+Откройте **Startup.cs** и добавьте пространство имен (англ. namespace):
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
 ```
 
-Then replace the content of the `Startup` class with the following code, which enables static file server (HTML & JS) and [SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-2.2), used to push notifications to the client.
+Затем замените содержимое класса `Startup` следующим кодом для запуска нашего сервера (англ. static file server) для файлов HTML и JavaScript и [SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-2.2) для подключения уведомлений.
 
 ```csharp
 // This method gets called by the runtime. Use this method to add services to the container.
@@ -70,9 +70,9 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## OAuthController.cs
 
-Create a **Controllers** folder, which will host the WebAPI Controllers.
+Наконец, создайте папку **Controllers**, там вы впоследствии разместим WebAPI Controllers.
 
-We'll need an `access token` to read & write input & output files to OSS Buckets. Under **Controllers** folder, create a `OAuthController.cs` file with the following content:
+Нам понадобится `токен доступа`, чтобы читать и изменять (доступ read & write) исходные и фнинальные файлы в бакетах OSS. В папке **Controllers** создайте файл `OAuthController.cs` с кодом ниже:
 
 ```csharp
 using System;
@@ -133,8 +133,10 @@ namespace forgeSample.Controllers
 }
 ```
 
-Project is ready! At this point it should look like:
+Проект готов! На этом этапе он должен выглядеть вот так: 
 
 ![](_media/designautomation/netcore/basefiles_step1.png) 
 
-Next: [Basic app UI](designautomation/html/)
+Далее: [Базовый пользовательский интерфейс](designautomation/html/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/netcore_da).
