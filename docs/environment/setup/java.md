@@ -8,7 +8,7 @@
 
 ![](_media/java/eclipse_create_project.gif)
 
-!> If you see error “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp` add Apache Tomcat to your Targeted Runtimes. You get there by going to the project properties and then Targeted Runtimes, check the box as indicated below. Если вы видите ошибку “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp`, добавьте Apache Tomcat в вашу целевую среду выполнения (англ. Targeted Runtimes). Вы попадаете туда, перейдя в project properties --> Targeted Runtimes, установите флажок, как показано ниже.
+!> Если вы видите ошибку “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp`, добавьте Apache Tomcat в вашу целевую среду выполнения (англ. Targeted Runtimes). Вы попадаете туда, перейдя в project properties --> Targeted Runtimes, установите флажок, как показано ниже.
 
 Теперь настройте **Targeted Runtime** на **Apache Tomcat**, определите сервер, выберите нахождение папки и проект, который нужно запустить. И, наконец, нажмите на **Run as** >> **Run as Server**.
 
@@ -309,7 +309,7 @@ public class config {
 
 > Важно определить ID & Secret как переменные среды, чтобы наш проект мог быть запущен в вебе. Подробнее об этом в разделе **Развертывание**. 
 
-Last we see there are 2 definitions about scopes. These scopes give our Token the right permission for the use of the different services of the Forge We Services. This tutorial is dedicated to the use of the Viewer only, we will only need the "viewables:read" scope. И, наконец, мы видим, что у области действия есть два определения. Эти области дают нашему токену право на использование различных веб-сервисов Forge. Это руководство посвящено использованию Forge Viewer, поэтому нам понадобится только область действия "viewables:read".
+И, наконец, мы видим, что у области действия есть два определения. Эти области дают нашему токену право на использование различных веб-сервисов Forge. Это руководство посвящено использованию Forge Viewer, поэтому нам понадобится только область действия "viewables:read".
 
 Проект готов! На этом этапе он должен иметь: 
 
