@@ -1,14 +1,14 @@
-# Upload file to OSS (PHP)
+# Загрузка файлов в OSS (PHP)
 
-At this section we actually need 3 features:
+В этом разделе нам нужны 3 функции:
 
-1. Create buckets - Note: Technically your bucket name is required to be globally unique across the entire platform - to keep things simple with this tutorial your client ID will be prepended by default to your bucket name and in turn masked by the UI so you only have to make sure your bucket name is unique within your current Forge app.
-2. List buckets & objects (files)
-3. Upload objects (files)
+1. Создание бакетов - Примечание: Технически название вашего бакета должно быть уникальным для всей платформы Forge - чтобы упростить работу с этим руководством, ваш client ID по умолчанию будет добавлен к имени вашего бакета и, безусловно, скрыт в пользовательском интерфейсе. Вам нужно убедиться только в том, что имя бакета уникально в пределах вашего текущего веб-приложения Forge.
+2. Указание репозиториев данных и объектов (файлов)
+3. Загрузка объектов (файлов)
 
 ## OSS.php
 
-Create a `/server/oss.php` file with the following content:
+Создайте файл `/server/oss.php` со следующим кодом:
 
 ```php
 <?php
@@ -125,9 +125,10 @@ class DataManagement{
 }
 ```
 
-As we plan to support the [jsTree](https://www.jstree.com/), our **GET oss/buckets** needs to return handle the `id` querystring parameter and return buckets when `id=#` and objects for a given bucketKey passed as `id=bucketKey`. The upload endpoint still have problem to upload, will check that later.
+Т.к. мы планируем поддерживать [jsTree](https://www.jstree.com/), наш **GET oss/buckets** должен возвращать параметр строки запроса (англ. querystring parameter) `id` и бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`. У конечной точки загрузки все еще есть проблемы с загрузкой, мы вернемся к этому позже. 
 
-Note how we reuse the `/server/oauth.php` file to call `.getTokenInternal()` on all functions.
+Обратите внимание, что мы повторно используем файл `/server/oauth.php` для вызова `.getTokenInternal()` у всех функций.
 
+Далее: [Конвертация файлов](modelderivative/translate/)
 
-Next: [Translate the file](modelderivative/translate/)
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/oss/php).
