@@ -36,3 +36,5 @@ set GOPATH=C:\GOPROJECTS
 -`github.com/tpng/gopkgs` - поможет вам отслеживать установленные пакеты.
 
 Далее: [Аутентификация](oauth/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/tools/go).
