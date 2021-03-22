@@ -1,10 +1,10 @@
 # Translate the model (.NET Framework)
 
-To translate a file we just need one endpoint.
+Для конверации файлов нам нужна только одна конечная точка.
 
 ## ModelDerivativeController.cs
 
-Create a .NET WebAPI Controller named **ModelDerivativeController** (see [how to create a controller](environment/setup/net_controller)) and add the following content:
+Создайте .NET WebAPI Controller с названием **ModelDerivativeController** (см. [как создать контроллер](environment/setup/net_controller)) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -61,6 +61,8 @@ namespace forgeSample.Controllers
 }
 ```
 
-The **TranslateObject** receives the **bucketKey** and **objectName** and post the [translation job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to extract 2D & 3D views of the model. 
+**TranslateObject** получает **bucketKey** и **objectName** и размещает [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-Next: [Show on Viewer](viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/net).
