@@ -1,5 +1,5 @@
 [net setup](environment/setup/net.md ':include :type=markdown')
 
-Project is ready!
+Проект готов!
 
-Next: [Authenticate](oauth/2legged/)
+Далее: [Аутентификация](oauth/2legged/)
