@@ -103,7 +103,7 @@ router.post('/objects', multer({ dest: 'uploads/' }).single('fileToUpload'), asy
 module.exports = router;
 ```
 
-Т.к. мы планируем поддерживать [jsTree](https://www.jstree.com/), наш **GET /api/forge/oss/buckets** должен обрабатывать параметр строки запроса `id` (англ. querystring parameter) и возвращать все бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`. Загружаемая конечная точка использует модуль [multer](https://github.com/expressjs/multer) для обработки загрузки. Это сохраняет файл на сервере (например, в папке **/uploads/**), поэтому мы можем впоследствии загрузить его в Forge.
+Т.к. мы планируем поддерживать [jsTree](https://www.jstree.com/), наш **GET /api/forge/oss/buckets** должен обрабатывать параметр строки запроса `id` (англ. querystring parameter) и возвращать все бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`. Конечная точка загрузки использует модуль [multer](https://github.com/expressjs/multer) для обработки загрузки. Это сохраняет файл на сервере (например, в папке **/uploads/**), поэтому мы можем впоследствии загрузить его в Forge.
 
 Обратите внимание, что мы повторно используем authentication helpers из `routes/common/oauth.js` как промежуточный слой (англ. middleware) этого маршрутизатора.
 
