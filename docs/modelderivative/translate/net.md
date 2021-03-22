@@ -1,4 +1,4 @@
-# Translate the model (.NET Framework)
+# Конвертация файлов (.NET Framework)
 
 Для конверации файлов нам нужна только одна конечная точка.
 
