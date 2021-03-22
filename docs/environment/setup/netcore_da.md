@@ -1,4 +1,4 @@
-# Create a new project (.NET Core)
+# Создание нового проекта (.NET Core)
 
 > .NET Core также работает в среде, отличной от Windows и Visual Studio, см. [другое руководство для MacOS] (https://github.com/augustogoncalves/dotnetcoreheroku). Для компиляции плагина все еще требуется ОС Windows.
 
