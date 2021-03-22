@@ -1,10 +1,10 @@
-# Translate Model (JAVA)
+# Конвертация файлов (JAVA)
 
-To translate a file we just need one endpoint.
+Для конверации файлов нам нужна только одна конечная точка.
 
 ## modelderivative.java
 
-Create a new Java Class named `/src/main/java/modelderivative.java` with the following content. 
+Создайте новый класс Java с названием `/src/main/java/modelderivative.java` и кодом ниже. 
 
 ```java
 package forgesample;
@@ -98,7 +98,8 @@ public class modelderivative extends HttpServlet {
 }
 ```
 
-Explictly expose the endpoint in `/web/WEB-INF/web.xml`, add the following content before `</web-app>`:
+Выставьте (англ. expose) конечную точку в `/web/WEB-INF/web.xml`, добавьте следующий код перед `</web-app>`:
+
 ```xml
 <servlet>
     <servlet-name>modelderivative</servlet-name>
@@ -111,9 +112,9 @@ Explictly expose the endpoint in `/web/WEB-INF/web.xml`, add the following conte
 </servlet-mapping>
 ```
 
-The **jobs** endpoint receives the **bucketKey** and **objectName** and post the [translation job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to extract 2D & 3D views of the model. 
+Конечная точка **jobs** получает **bucketKey** и **objectName** и публикует [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-At the end your `/web/WEB-INF/web.xml` should look like this:
+В конце ваш файл `/web/WEB-INF/web.xml` должен выглядеть вот так:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -160,8 +161,10 @@ At the end your `/web/WEB-INF/web.xml` should look like this:
 </web-app>
 ```
 
-To summarize, at this point your **JAVA** project should be like:
+Подводя итог, на этом этапе ваш проект **JAVA** должен выглядеть так:
 
 ![](_media/java/Eclipse_server_side.png)
 
-Next: [Show on Viewer](viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
+
+[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/java).
