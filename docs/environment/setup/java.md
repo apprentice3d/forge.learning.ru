@@ -1,34 +1,34 @@
-# Create a new project (JAVA EE)
+# Создание нового проекта (JAVA EE)
 
-Open [Eclipse Java EE IDE for Web Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3), create a simple Maven project and select default Workspace location. Click on **Next**.
+Откройте [Eclipse Java EE IDE for Web Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen3), создайте простой проект Maven и выберите Workspace location по умолчанию. Нажмите на **Next**.
 
-Select the maven archetype. On the list, filter **Artifact Id** as **maven-archetype-webapp** and click on **Next**.
+Выберите архетип Maven (т.е. шаблон нового проекта). Примените фильтр к **Artifact Id**, выбрав **maven-archetype-webapp**, и нажмите на **Next**.
 
-Fill out below details: for this tutorial, we will name **Group Id** as **com.yourcompany** and **Artifact Id** as **forgesample**. Click Finish. Check the creation progress on the bottom right. This step creates Maven Project in your Eclipse Environment. 
+Заполните следующие данные: для этого руководтсва мы дадим **Group Id** название **com.yourcompany**, а **Artifact Id** - **forgesample**. Нажмите "Finish". На этом этапе создается проект Maven в вашей среде Eclipse, прогресс создания проекта доступен в правом нижнем углу
 
 ![](_media/java/eclipse_create_project.gif)
 
-!> If you see error “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp` add Apache Tomcat to your Targeted Runtimes. You get there by going to the project properties and then Targeted Runtimes, check the box as indicated below.
+!> If you see error “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp` add Apache Tomcat to your Targeted Runtimes. You get there by going to the project properties and then Targeted Runtimes, check the box as indicated below. Если вы видите ошибку “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp`, добавьте Apache Tomcat в вашу целевую среду выполнения (англ. Targeted Runtimes). Вы попадаете туда, перейдя в project properties --> Targeted Runtimes, установите флажок, как показано ниже.
 
-Now set **Targeted Runtime** to **Apache Tomcat**, then define server, select folder location and project to run. Finally **Run as** >> **Run as Server**.
+Теперь настройте **Targeted Runtime** на **Apache Tomcat**, определите сервер, выберите нахождение папки и проект, который нужно запустить. И, наконец, нажмите на **Run as** >> **Run as Server**.
 
 ![](_media/java/eclipse_run_tomcat.gif)
 
-!> If a Maven error is display in the Markers, run the following **Run As - Maven Clean**
+!> Если в Markers отображается ошибка Maven, запустите следующую команду **Run As - Maven Clean**
 
-Before we continue, we will switch the PORT of the server to maintain similarity with future tutorials. 
+Прежде чем мы продолжим, мы переключим PORT сервера, чтобы сохранить постоянство в работе с руководствами этого курса.
 
 ![](_media/java/eclipse_change_server_port.gif)
 
-Eclipse will run a local page in your IDE showing you Hello World! or you can always visit http://localhost:3000/forgesample/index.jsp to see your result.
+Eclipse запустит локальную страницу в интегрированной среде разработки с "Hello World!" (или же вы можете перейти по ссылке http://localhost:3000/forgesample/index.jsp, чтобы посмотреть на полученный результат).
 
-To make sure it is your index.jsp the one running, go to **src/main/webapp/index.jsp** and change the text from Hello World! to Hello Forge!
+Чтобы убедиться, что запущен именно ваш index.jsp, перейдите в **src/main/webapp/index.jsp** и измените текст с Hello World! на Hello Forge!
 
-You are all set, your Server is running succesfully now. :)
+Все готово, теперь ваш сервер работает успешно. :)
 
 ## Setup Pom.xml
 
-Open the `pom.xml` file (via **Project Explorer**), copy & paste the content below. Change [groupId] to the string that indicates your role such as **com.mycompany**.
+Откройте файл `pom.xml`(через **Project Explorer**), скопируйте и вставьте код ниже. Поменяйте [groupId] на строку, которая отображает вашу роль (например, **com.mycompany**).
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -257,25 +257,25 @@ Open the `pom.xml` file (via **Project Explorer**), copy & paste the content bel
 </project>
 ```
 
-A new Error will pop up in your Markers, we will need to update the Maven project to address all the new dependencies we have previously added. Right-click on the project, then **Maven** >> **Update Project**.
+В ваших Markers появится новая ошибка - нам нужно будет обновить проект Maven, чтобы устранить все новые зависимости, которые мы добавили ранее. Щелкните на проект правой кнопкой мыши, затем нажмите **Maven** >> **Update Project**.
 
 ![](_media/java/Eclipse_maven_error.png) 
 
 ![](_media/java/Eclipse_maven_update_project.png)
 
-## Files and Folders
+## Файлы и папки
 
-Right-click **src/main** folder, then **New** >> **Folder**, name it **java**.
+Щелкните правой кнопкой мыши  на папку **src/main**, затем **New** >> **Folder**, назовите ее **java**.
 
 ![](_media/java/Eclipse_tree_structure_java_folder.png)
 
-To create a new class file, right-click on the project and select **New** >> **Class**. Let's create the **config.java** file firstly.
+Чтобы создать новый файл класса, щелкните на проект правой кнопкой мыши и выберите **New** >> **Class**. Сначала создадим файл **config.java**.
 
-!> Make sure the **Source Folder** is set to **ForgeSample/src/main/java** and the package is set to `forgesample` (our project name).
+!> Убедитесь, что для **Source Folder** установлено значение **ForgeSample/src/main/java**, а для пакета установлено значение `forgesample` (название нашего проекта).
 
 ![](_media/java/Eclipse_maven_java_class.png)
 
-Copy & paste the following content to the `config.java` file.
+Скопируйте и вставьте следующий код в файл `config.java`.
 
 ```java
 package forgesample;
@@ -307,12 +307,14 @@ public class config {
 }
 ```
 
-> It's important to define **ID & Secret** as environment variables so our project can, later, be deployed online. More on this later, on **Deployment**.
+> Важно определить ID & Secret как переменные среды, чтобы наш проект мог быть запущен в вебе. Подробнее об этом в разделе **Развертывание**. 
 
-Last we see there are 2 definitions about scopes. These scopes give our Token the right permission for the use of the different services of the Forge We Services. This tutorial is dedicated to the use of the Viewer only, we will only need the "viewables:read" scope.
+Last we see there are 2 definitions about scopes. These scopes give our Token the right permission for the use of the different services of the Forge We Services. This tutorial is dedicated to the use of the Viewer only, we will only need the "viewables:read" scope. И, наконец, мы видим, что у области действия есть два определения. Эти области дают нашему токену право на использование различных веб-сервисов Forge. Это руководство посвящено использованию Forge Viewer, поэтому нам понадобится только область действия "viewables:read".
 
-Project is ready! At this point your project should have:
+Проект готов! На этом этапе он должен иметь: 
 
  ![](_media/java/Eclipse_config_class.png)
 
-Next: [Authenticate](oauth/2legged/)
+Далее: [Аутентификация](oauth/2legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/java).
