@@ -1,14 +1,14 @@
-# Upload file to OSS (.NET Core)
+# Загрузка файлов в OSS (.NET Core)
 
-For this section we actually need 3 features:
+В этом разделе нам нужны 3 функции:
 
-1. Create buckets
-2. List buckets & objects (files)
-3. Upload objects (files)
+1. Создание бакетов
+2. Указание репозиториев данных и объектов (файлов)
+3. Загрузка объектов (файлов)
 
 ## OSSController.cs
 
-Under **Controllers** folder, create a class named **OSSController** in a class file with the same name (`OSSController.cs`) and add the following content:
+В папке **Controllers** создайте класс с названием **OSSController** в папке классов с тем же именем (`OSSController.cs`) и добавьте следующий код:
 
 ```csharp
 using Autodesk.Forge;
@@ -161,8 +161,10 @@ namespace forgeSample.Controllers
 }
 ```
 
-As we plan to support the [jsTree](https://www.jstree.com/), our **GetOSSAsync** needs a `id` as querystring parameter and returns buckets when `id=#` and objects for a given bucketKey passed in as `id=bucketKey` in the querystring. The **CreateBucket** expects a **bucketKey** parameter to create the bucket. Last but not least, the **UploadObject** receives the files from your browser, saves it under **/App_Data/** temporarily, then uploads to the respective bucket.
+Т.к. мы планируем поддерживать [jsTree](https://www.jstree.com/), нашему **GetOSSAsync** необходим `id` в качестве параметра строки запроса (англ. querystring parameter), он возвращает бакеты, если `id=#` и объекты для данного bucketKey переданы как `id=bucketKey`. **CreateBucket** нужен параметр **bucketKey**, чтобы создать бакет. Последнее, но не менее важно, **UploadObject** получает файлы из браузера, временно сохраняет их в **/App_Data/**, а затем загружает в соответствующий бакет. 
 
-!> Upload a file from the client (browser) directly to Autodesk Forge is possible, but requires giving the client a **write-enabled** access token, which is **NOT SECURE**.
+!> Загрузка файла из браузера напрямую в Atodesk Forge возможна, но требует предоставления токена доступа **write-enabled**, что **НЕ БЕЗОПАСНО**. 
 
-Next: [Translate the file](modelderivative/translate/)
+Далее: [Конвертация файлов](modelderivative/translate/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/oss/netcore).
