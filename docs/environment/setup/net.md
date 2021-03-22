@@ -1,16 +1,16 @@
-# Create a new project (.NET Framework)
+# Создание нового проекта (.NET Framework)
 
-Go to menu **File** >> **New** >> **Project**. Select **C#** language and **Web** project type, finally select **ASP.NET Web Application (.NET Framework)**. Next, let's name it **forgeSample**, and please ensure **.NET Framework 4.7.2** is selected. On the next dialog, select **Empty** and check **Web API**.
+Перейдите в меню **File** >> **New** >> **Project**. Выберите язык **C#** и тип проекта **Web**, а затем выберите **ASP.NET Web Application (.NET Framework)**. Давайте назовем его **forgeSample**. Обязательно проверьте, что выбрано **.NET Framework 4.7.2**. В следующем диалоговом окне выберите **Empty** и поставьте галочку напротив **Web API**.
 
-!> If the project type or .NET Framework 4.7.2 are not available, please review [Tools](environment/tools/net) section.
+!> Если тип проекта или .NET Framework 4.7.2 недоступны, перейдите в раздел [Веб-технологии](environment/tools/net).
 
-Install the Autodesk Forge NuGet package: right-click on the project (**Solution Explorer**), select **Manage NuGet Package**, then on **Browse** search for **Autodesk Forge** and install it our **forgeSample**. 
+Install the Autodesk Forge NuGet package: right-click on the project (**Solution Explorer**), select **Manage NuGet Package**, then on **Browse** search for **Autodesk Forge** and install it our **forgeSample**. Установите пакет Autodesk Forge NuGet: щелкните правой кнопкой мыши на проект (**Solution Explorer**) --> **Manage NuGet Package** --> **Browse**, найдите **Autodesk Forge**  и установите **forgeSample**.
 
 ![](_media/net/create_project_webapi.gif) 
 
 ## Web.Config
 
-On the **Web.Config** file, add the Forge Client ID & Secret entries (obtained when you created your app). By default, it should already have a `<appSettings></appSettings>` after `<configuration>` and before `<system.web>`, adjust as shown below:
+В файл **Web.Config** добавьте Forge Client ID & Secret (доступны в вашем аккаунте Forge при создании нового приложения). По умолчанию он уже должен иметь `<appSettings></appSettings>` после `<configuration>` и перед `<system.web>`. Настройте, как показано ниже:
 
 ```xml
 ....
@@ -24,14 +24,14 @@ On the **Web.Config** file, add the Forge Client ID & Secret entries (obtained w
 ....
 ```
 
-The ASP.NET engine limits the maximum request size to 4Mb and upload file size to 30Mb. We can change this limit to the maximum (or you can adjust to your needs). On the `web.config` file, search for `httpRuntime` and add the `maxRequestLength` to it, as shown below:
+Движок ASP.NET ограничивает максимальный размер запроса до 4 МБ, а размер загружаемого файла - до 30 МБ. Мы можем изменить это ограничение на максимум (или вы можете изменить его в соответствии с вашими потребностями). В файле `web.config` найдите `httpRuntime` и добавьте к нему `maxRequestLength`, как показано ниже:
 
 ```xml
 <!-- httpRuntime targetFramework is already on your file, just add the maxRequestLength -->
 <httpRuntime targetFramework="4.7.2" maxRequestLength="2097151" />
 ```
 
-And add the **security** >> **requestFiltering** limit:
+Добавьте лимит **security** >> **requestFiltering**:
 
 ```xml
   </handlers> <!-- this line is already on your file -->
@@ -43,15 +43,15 @@ And add the **security** >> **requestFiltering** limit:
 </system.webServer> <!-- this line is already on your file -->
 ```
 
-Learn more about [maxRequestLength](https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx) and [maxAllowedContentLength](https://msdn.microsoft.com/en-us/library/ms689462.aspx). 
+Узнайте больше о [maxRequestLength](https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx) и [maxAllowedContentLength](https://msdn.microsoft.com/en-us/library/ms689462.aspx). 
 
 ## Port
 
-Last, to make your app consistent with all other **Autodesk Forge** samples, let's change the port to **3000**: go to project **Properties** (right-click on project name), under **Web** tab, then change the **Project URL** to `http://localhost:3000`.
+Наконец, чтобы ваше приложение соответствовало всем другим примерам кода **Autodesk Forge**, давайте изменим порт на **3000**: во вкладке **Web** перейдите в **Properties** (щелкнув правой кнопкой мыши на название проекта), затем измените **URL-адрес проекта** на `http://localhost:3000`.
 
 ![](_media/net/port.png)
 
-!> In case you have just changed the port number, please make sure the protocol is **http** and not **https**
+!> Если вы только что изменили номер порта, убедитесь, что используется протокол **http**, а не **https**.
 
- 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/net_2legged).
 
