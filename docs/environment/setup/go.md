@@ -118,7 +118,7 @@ func StartServer(port, clientID, clientSecret string) {
 
 }
 ```
-This file prepares the server and serves the static files (e.g. `html`, `js`) and routes the API requests. Этот файл подготавливает сервер, обрабатывает статические файлы (например, `html`, `js`) и направляет запросы API.
+Этот файл подготавливает сервер, обрабатывает статические файлы (например, `html`, `js`) и направляет запросы API.
 
 Обратите внимание, что подход Go основан на [forge-api-go-client](https://github.com/apprentice3d/forge-api-go-client), чтобы использовать эту библиотеку, направьте запрос в терминале:
 
