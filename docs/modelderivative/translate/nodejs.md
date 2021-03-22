@@ -1,10 +1,10 @@
-# Translate Model (Node.js)
+# Конвертация файлов (Node.js)
 
-To translate a file we just need one endpoint.
+Для конверации файлов нам нужна только одна конечная точка.
 
 ## routes/modelderivative.js
 
-Create a `routes/modelderivative.js` file with the following content:
+Создайте файл `routes/modelderivative.js` с кодом ниже:
 
 ```javascript
 const express = require('express');
@@ -51,10 +51,12 @@ router.post('/jobs', async (req, res, next) => {
 module.exports = router;
 ```
 
-The **jobs** endpoint receives the **objectName** and posts the [translation job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to extract 2D & 3D views of the model. 
+Конечная точка **jobs** получает **bucketKey** и **objectName** и размещает [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-To summarize, at this point your **NodeJS** project should look like this:
+Подводя итог, на этом этапе ваш проект **NodeJS** должен выглядеть так:
 
 ![](_media/nodejs/vs_code_allfiles.png)
 
-Next: [Show on Viewer](viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/nodejs).
