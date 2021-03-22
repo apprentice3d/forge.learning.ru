@@ -53,5 +53,3 @@ Install the Autodesk Forge NuGet package: right-click on the project (**Solution
 
 !> Если вы только что изменили номер порта, убедитесь, что используется протокол **http**, а не **https**.
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/net_2legged).
-
