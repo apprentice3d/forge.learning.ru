@@ -1,10 +1,10 @@
-# Translate Model (PHP)
+# Конвертация файлов (PHP)
 
-To translate a file we just need one endpoint.
+Для конверации файлов нам нужна только одна конечная точка.
 
 ## ModelDerivative.php
 
-Create a `/server/modelderivative.php` file with the following content:
+Создайте файл `/server/modelderivative.php` с кодом ниже:
 
 ```php
 <?php
@@ -56,10 +56,12 @@ class ModelDerivative{
 }
 ```
 
-The **jobs** endpoint receives the **bucketKey** and **objectName** and post the [translation job](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) to extract 2D & 3D views of the model. 
+Конечная точка **jobs** получает **bucketKey** и **objectName** и размещает [задание на конвертацию] (https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-To summarize, at this point your **PHP** project should be like:
+Подводя итог, на этом этапе ваш проект **PHP** должен выглядеть так:
 
 ![](_media/php/vs_code_allfiles.png)
 
-Next: [Show on Viewer](viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
+
+[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/php).
