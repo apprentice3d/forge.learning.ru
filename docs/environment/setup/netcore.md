@@ -57,5 +57,3 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 Наконец, создайте папку **Controllers**. Там вы впоследствии определим WebAPI Controllers.
 
 Столько всего для настройки нашего проекта!
-
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/netcore_2legged).
