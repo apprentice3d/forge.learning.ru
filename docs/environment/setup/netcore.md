@@ -56,4 +56,4 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 Наконец, создайте папку **Controllers**. Там вы впоследствии определим WebAPI Controllers.
 
-Столько всего для настройки нашего проекта!
+Двигаемся дальше!
