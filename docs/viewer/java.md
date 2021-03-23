@@ -1,15 +1,17 @@
-# Client-side files (Java)
+# Файлы со стороны клиента (Java)
 
-Our Java server is configured to serve files from `/forgesample` but we want to change it to serve from `/` folder. Let's fix by setting the path to nothing in the Eclipse web modules, which enables access the project without any path component in the URL (i.e. ROOT). You can reach the web modules edit dialog by double clicking on it.
+Наш Java-сервер настроен на обработку файлов из папки `/forgesample`, но мы хотим изменить его так, чтобы он обрабатывал файлы из папки `/`. Давайте это исправим, установив нулевой путь в веб-модулях Eclipse, что позволит получить доступ к проекту без какого-либо компонента пути (англ. path component) в URL-адресе (например, ROOT). Вы можете открыть диалоговое окно редактирования веб-модулей, дважды щелкнув по нему.
 
 ![](_media/java/eclipse_webmodules_path.gif)
 
-Java EE web app usually generates an entry file `.jsp` instead `.html`, but for this tutorial let's just use `.html` for simplicity.
+Веб-приложение Java EE обычно генерирует файл входа `.jsp` вместо `.html`, но в этом руководстве для простоты давайте использовать просто `.html`.
 
-- `/`: `.html` (or `.jsp` for other projects)
+- `/`: `.html` (или `.jsp` для других проектов)
 - `/js`: `.js`
 - `/css`: `.css`
 
-Create these folders under `webapp` folder, the image below show it (after creating files on the next section)
+Создайте эти папки в папке `webapp`, картинка ниже отображает эту структуру (после создания файлов в следующем разделе)
 
 ![](_media/java/Eclipse_client_side.png)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/java).
