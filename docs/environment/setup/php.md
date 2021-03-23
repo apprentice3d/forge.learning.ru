@@ -1,6 +1,6 @@
 # Создание нового проекта (PHP)
 
-Создайте папку на вашем ПК, не используйте пробелы или специальные символы в названии. Для этого руководства давайте использовать **forgesample**.
+Создайте папку на вашем ПК, не используйте пробелы или специальные символы в названии. Для этого руководства давайте использовать название **forgesample**.
 
 Откройте **Visual Code**, перейдите в меню **File** --> **Open** (MacOS) или **Open Folder** (Windows) и выберите только что созданную папку.
 
@@ -14,7 +14,7 @@ composer init
 
 ## Загрузка пакетов
 
-По умолчанию проект PHP пустой, поэтому нам нужно установить несколько пакетов с **composer require**. Давайте начнем с базового сервера **PHP**, **klein** для маршрутизации, **phpdotenv** для загрузки переменных среды из `.env` в `getenv()`, `$_ENV` и `$_SERVER` автоматически,и, конечно, **Autodesk Forge**.
+По умолчанию проект PHP пустой, поэтому нам нужно установить несколько пакетов с **composer require**. Давайте начнем с базового сервера **PHP**, **klein** для маршрутизации, **phpdotenv** для загрузки переменных среды из `.env` в `getenv()`, `$_ENV` и `$_SERVER` автоматически, и, конечно, **Autodesk Forge**.
 * [klein](https://packagist.org/packages/klein/klein) если вы хотите узнать больше про использование klein.
 * [phpdotenv](https://packagist.org/packages/vlucas/phpdotenv) если вы хотите узнать больше про использование phpdotenv.
 * [Autodesk Forge](https://packagist.org/packages/autodesk/forge-client) если вы хотите узнать больше про использование Forge PHP SDK.
@@ -28,7 +28,7 @@ composer require klein/klein
 composer require vlucas/phpdotenv
 ```
 
-> Библиотека будут сохранена как файл **composer.json**.
+> Библиотека будет сохранена как файл **composer.json**.
 
 Сейчас ваша папка должна содержать папку **vendor**, а **composer.json** должен выглядеть вот так:
 
@@ -56,8 +56,7 @@ composer require vlucas/phpdotenv
 
 ## Файлы и папки
 
-To create a new folder or file, right-click on the "Exporer" area on the left and select **New Folder** or **New File**.
-тобы создать новую папку или файл, щелкните правой кнопкой мыши на область "Explorer" слева и выберите **New Folder** или **New File**.
+Чтобы создать новую папку или файл, щелкните правой кнопкой мыши на область "Explorer" слева и выберите **New Folder** или **New File**.
 
 Создайте папку **/server/** для файлов на стороне сервера and **/www/** для файлов со стороны клиента.
 
@@ -122,7 +121,7 @@ $klein->respond('POST', '/api/forge/modelderivative/jobs', function () {
 $klein->dispatch();
 ```
 
-This file routes the API requests.
+Этот файл направляет запросы API.
 
 
 ## .htaccess
