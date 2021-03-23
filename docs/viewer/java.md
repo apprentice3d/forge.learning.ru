@@ -13,5 +13,3 @@
 Создайте эти папки в папке `webapp`, картинка ниже отображает эту структуру (после создания файлов в следующем разделе)
 
 ![](_media/java/Eclipse_client_side.png)
-
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/java).
