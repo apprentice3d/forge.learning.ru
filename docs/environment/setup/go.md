@@ -157,6 +157,7 @@ func StartServer(port, clientID, clientSecret string) {
 
 
 Проект готов! На этом этапе он должен иметь:
+
 ![](_media/go/vs_code_project.png) 
 
 
