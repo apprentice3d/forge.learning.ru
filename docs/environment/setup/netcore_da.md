@@ -14,10 +14,10 @@
 
 Правой кнопкой мыши нажмите на проект, перейдите в **Properties**, во вкладке **Debug** найдите раздел **Environment Variables**. `ASPNETCORE_ENVIRONMENT` уже должна быть определена, поэтому добавьте:
 
-- `ASPNETCORE_URLS`: use `http://localhost:3000`
-- `FORGE_CLIENT_ID`: use your id here
-- `FORGE_CLIENT_SECRET`: use your secret here
-- `FORGE_WEBHOOK_URL`: use the **ngrok** forwarding URL from previous step
+- `ASPNETCORE_URLS`: используйте `http://localhost:3000`
+- `FORGE_CLIENT_ID`:  используйте ваш Client ID
+- `FORGE_CLIENT_SECRET`: используйте ваш Client Secret
+- `FORGE_WEBHOOK_URL`: используйте **ngrok** forwarding URL-адрес из предыдущего шага
 
 Вы также можете поставить галочку напротив **Launch browser** и указать **URL-адрес приложения**. Т.к. приложение запускается локально, уберите галочку с**Enable SSL**. Должно получиться вот так: 
 
