@@ -1,11 +1,13 @@
-# Client-side files (PHP)
+# Файлы со стороны клиента (PHP)
 
-Our PHP server is configured to serve files from `/www/` folder. Let's organize like this:
+Наш сервер PHP настроен на обработку файлов из папки `/www/`. Давайте организуем ее вот так:
 
 - `/www/`: `.html` 
 - `/www/js`: `.js`
 - `/www/css`: `.css`
 
-The image below show it (after creating files on the next section)
+Картинка ниже отображает эту структуру (после создания файлов в следующем разделе)
 
 ![](_media/php/vs_code_allfiles_ui.png)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/php).
