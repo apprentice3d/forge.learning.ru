@@ -1,6 +1,6 @@
 # Создание нового проекта (.NET Core)
 
-> .NET Core также работает в среде, отличной от Windows и Visual Studio, см. [другое руководство для MacOS] (https://github.com/augustogoncalves/dotnetcoreheroku). Для компиляции плагина все еще требуется ОС Windows.
+> .NET Core также работает в среде, отличной от Windows и Visual Studio, см. [другое руководство для MacOS](https://github.com/augustogoncalves/dotnetcoreheroku). Для компиляции плагина все еще требуется ОС Windows.
 
 Перейдите в меню **File** >> **New** >> **Project**. Выберите язык **C#** и тип проекта **Web**, а затем **ASP.NET Core Web Application**. Давайте назовем наш файл **forgeSample**. В следующем диалоговом окне выберите **Empty**. Обязательно проверьте, что выбрано **ASP.NET Core 3.0**.
 
