@@ -1,11 +1,13 @@
-# Client-side files (Node.js)
+# Файлы со стороны клиента (Node.js)
 
-Our Node.js server is configured to serve files from `public` folder. Let's organize its content like this:
+Наш сервер Node.js настроен на обработку файлов из папки `public`. Давайте организуем ее вот так:
 
 - `public/`: `.html` 
 - `public/js`: `.js`
 - `public/css`: `.css`
 
-The image below shows the expected structure (after creating files in the next section):
+Картинка ниже отображает эту структуру (после создания файлов в следующем разделе):
 
 ![](_media/nodejs/vs_code_allfiles_ui.png)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/nodejs).
