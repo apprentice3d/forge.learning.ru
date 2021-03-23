@@ -1,14 +1,14 @@
-# Viewer (client-side)
+# Viewer (со стороны клиента)
 
-Let's create the 4 files we need on the client-side:
+Давайте создадим 4 файла, которые нам нужны с клиентской стороны (англ. client-side):
 
 ## Index.html
 
-This is the entry point of your app. For this sample we'll use [jQuery](https://jquery.com) for [DOM](https://www.w3schools.com/js/js_htmldom.asp) manipulation, [Bootstrap](https://getbootstrap.com/) for styling and [jsTree](https://www.jstree.com) to list buckets & objects. All those libraries are coming from [CDN](https://cdnjs.com/) ([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)).
+Это точка входа в ваше приложение. В этом примере мы будем использовать [jQuery](https://jquery.com) для работы с [DOM] (https://www.w3schools.com/js/js_htmldom.asp), [Bootstrap](https://getbootstrap.com/) для стилизации и [jsTree](https://www.jstree.com) для указания бакетов и объектов. Все эти библиотеки поступают с [CDN](https://cdnjs.com/) ([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)).
 
-And, of course, the Autodesk Forge Viewer libraries: viewer3d.min.js, three.min.js and style.min.css.
+И, конечно, библиотеки Autodesk Forge Viewer libraries: viewer3d.min.js, three.min.js and style.min.css.
 
-Create an **index.html** file with:
+Создайте файл **index.html** с:
 
 <!-- tabs:start -->
 
@@ -188,14 +188,14 @@ Create an **index.html** file with:
 
 #### ** Migration Guide **
 
-Please visit the [Forge website](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) for a complete guide for developers who have been using v6 (or older) and are upgrading to v7.
+Перейдите на [сайт Autodesk Forge](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) для получения полного руководства для разработчиков, которые использовали v6 (или более позднюю версию) и обновляются до v7.
 
 <!-- tabs:end -->
 
 
 ## Main.css
 
-CSS is a language that describes the style of HTML documents. Learn more at [W3Schools](https://www.w3schools.com/css/). For this tutorial, create a **main.css** under the `css` folder with the following content:
+CSS - это язык, описывающий стиль HTML-документов. Узнайте больше по ссылке [W3Schools](https://www.w3schools.com/css/). Для этого руководства создайте **main.css** в папке `css` со следующим кодом:
 
 ```css
 html, body {
@@ -225,7 +225,7 @@ body {
 
 ## ForgeTree.js
 
-This file will handle the tree view that lists all your buckets. Under the `js` folder, create a **ForgeTree.js** file with the following content:
+Этот файл будет обрабатывать дерево (англ. tree view), в котором перечислены все ваши бакеты. В папке `js` создайте файл **ForgeTree.js** со следующим кодом:
 
 ```javascript
 $(document).ready(function () {
@@ -396,13 +396,13 @@ function translateObject(node) {
 
 ## ForgeViewer.js
 
-Now this file will handle the Viewer initialization. In the `js` folder, create a **ForgeViewer.js** file with:
+Теперь этот файл будет обрабатывать запуск Viewer. В папке `js` создайте файл **ForgeViewer.js** с:
 
 <!-- tabs:start -->
 
 #### ** Viewer v7 **
 
-The following code is based on the Autodesk Forge Viewer [Basic](https://forge.autodesk.com/en/docs/viewer/v7/developers_guide/viewer_basics/initialization/) tutorial.
+Следующий код основан на [базовом руководстве](https://forge.autodesk.com/en/docs/viewer/v7/developers_guide/viewer_basics/initialization/) по Autodesk Forge Viewer.
 
 ```javascript
 var viewer;
@@ -443,7 +443,7 @@ function getForgeToken(callback) {
 
 #### ** Viewer v6 **
 
-The following code is based on the Autodesk Forge Viewer [Basic Application](https://forge.autodesk.com/en/docs/viewer/v6/tutorials/basic-application/) tutorial.
+Следующий код основан на [базовом приложении](https://forge.autodesk.com/en/docs/viewer/v6/tutorials/basic-application/) Autodesk Forge Viewer.
 
 ```javascript
 var viewerApp;
@@ -509,16 +509,18 @@ function getForgeToken(callback) {
 
 #### ** Migration Guide **
 
-Please visit the [Forge Migration Guide ](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) for a complete documentation for developers who have been using v6 (or older) and are upgrading to v7.
+Перейдите на [Forge Migration Guide ](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) для получения полного руководства для разработчиков, которые использовали v6 (или более позднюю версию) и обновляются до v7.
 
 <!-- tabs:end -->
 
-To summarize, on the UI side your app should have 4 files:
+Подводя итог, на стороне пользовательского интерфейса ваше приложение должно иметь 4 файла:
 - Index.html
 - Main.css
 - ForgeTree.js
 - ForgeViewer.js
 
-All set? Now it's time to run the app!
+Всё готово? Настало время запускать приложение!
 
-Next: [Running your app](environment/rundebug/2legged)
+Далее: [Запуск вашего приложения](environment/rundebug/2legged)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/ui).
