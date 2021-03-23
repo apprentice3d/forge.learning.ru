@@ -1,15 +1,17 @@
-# Client-side files (.NET Framework)
+# Файлы со стороны клиента (.NET Framework)
 
-ASP.NET apps usually uses `.aspx` instead of `.html`, but for this tutorial let's just use `.html` for simplicity.
+Приложения ASP.NET обычно использует `.aspx` вместо `.html`, но в этом руководстве для простоты давайте использовать просто `.html`.
 
-Our .NET server is configured to serve files from root `/` folder. Let's organize like this:
+Наш сервер .NET настроен на обработку файлов из корневой папки `/`. Давайте организуем ее вот так:
 
 - `/`: `.html` (or `.aspx` for other projects)
 - `/js`: `.js`
 - `/css`: `.css`
 
-The image below show it (after creating files on the next section)
+Картинка ниже отображает эту структуру (после создания файлов в следующем разделе) 
 
 ![](_media/net/project_all_files.png)
 
-> `Global.asax` & `packages.config` files, `App_Data`, `App_Start` & `Model` folders are created by default.
+> Файлы `Global.asax` & `packages.config`, папки `App_Data`, `App_Start` & `Model` создаются по умолчанию.
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/net).
