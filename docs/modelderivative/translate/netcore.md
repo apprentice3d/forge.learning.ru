@@ -64,6 +64,6 @@ namespace forgeSample.Controllers
 
 **TranslateObject** получает **bucketKey** и **objectName** и размещает [задание на конвертацию](https://forge.autodesk.com/en/docs/model-derivative/v2/reference/http/job-POST/) для извлечения 2D и 3D-видов модели.
 
-Далее: [Отображение файлов в Viewer(viewer/2legged/)
+Далее: [Отображение файлов в Viewer](viewer/2legged/)
 
 [Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/netcore).
