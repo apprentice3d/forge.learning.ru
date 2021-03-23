@@ -70,7 +70,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## OAuthController.cs
 
-Наконец, создайте папку **Controllers**, там вы впоследствии разместим WebAPI Controllers.
+Наконец, создайте папку **Controllers**, там мы впоследствии разместим WebAPI Controllers.
 
 Нам понадобится `токен доступа`, чтобы читать и изменять (доступ read & write) исходные и фнинальные файлы в бакетах OSS. В папке **Controllers** создайте файл `OAuthController.cs` с кодом ниже:
 
