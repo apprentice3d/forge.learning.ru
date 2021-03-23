@@ -26,7 +26,7 @@ npm install forge-apis --save
 
 > Параметр `--save` указывает, что модуль должен быть включен в файл **package.json** в качестве зависимости.
 
-Откройте **package.json** и внутри `"scripts"`добавьте строчку `"start": "node start.js",`. Сейчас в вашей паке должна быть папка **node_modules**, а ваш **package.json** должен выглядеть вот так:
+Откройте **package.json** и внутри `"scripts"`добавьте строчку `"start": "node start.js",`. Сейчас в вашей папке должна быть папка **node_modules**, а ваш **package.json** должен выглядеть вот так:
 
 ```json
 {
