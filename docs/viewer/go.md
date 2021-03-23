@@ -10,4 +10,3 @@
 
 ![](_media/go/vs_code_allfiles_ui.png)
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/go).
