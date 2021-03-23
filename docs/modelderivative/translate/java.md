@@ -167,4 +167,4 @@ public class modelderivative extends HttpServlet {
 
 Далее: [Отображение файлов в Viewer](viewer/2legged/)
 
-[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/java).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/java).
