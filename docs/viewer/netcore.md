@@ -1,9 +1,11 @@
-# Client-side files (.NET Core)
+# Файлы со стороны клиента (.NET Core)
 
-Typically, ASP.NET Core app serves files from `/wwwroot/` folder, create it if not there yet. Under that folder, let's organize like this:
+Обычно приложение ASP.NET Core обрабатывает файлы из папки `/wwwroot/`, создайте ее, если еще этого не сделали. Давайте организуем эту папку вот так:
 
 - `wwwroot/`: `.html`
 - `wwwroot/js`: `.js`
 - `wwwroot/css`: `.css`
 
-The image below illustrates our file and folder structure after creating them in the next section:
+На изображении ниже показана структура наших файлов и папок после их создания в следующем разделе:
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/netcore).
