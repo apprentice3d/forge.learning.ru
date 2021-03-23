@@ -4,7 +4,7 @@
 
 !> Если тип проекта или .NET Framework 4.7.2 недоступны, перейдите в раздел [Веб-технологии](environment/tools/net).
 
-Install the Autodesk Forge NuGet package: right-click on the project (**Solution Explorer**), select **Manage NuGet Package**, then on **Browse** search for **Autodesk Forge** and install it our **forgeSample**. Установите пакет Autodesk Forge NuGet: щелкните правой кнопкой мыши на проект (**Solution Explorer**) --> **Manage NuGet Package** --> **Browse**, найдите **Autodesk Forge**  и установите **forgeSample**.
+Установите пакет Autodesk Forge NuGet: щелкните правой кнопкой мыши на проект (**Solution Explorer**) --> **Manage NuGet Package** --> **Browse**, найдите **Autodesk Forge**  и установите **forgeSample**.
 
 ![](_media/net/create_project_webapi.gif) 
 
