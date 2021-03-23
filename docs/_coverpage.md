@@ -4,9 +4,9 @@
 
 > Powering the Future of Making Things.
 
-- View 2D & 3D models on the browser
-- Extract metada & translate files
-- Interact with models
+- Просмотр 2D и 3D-моделей в браузере
+- Конвертация проектных файлов и выгрузка ценных данных
+- Обновление моделей в облаке
 
-[Developer Portal](http://developer.autodesk.com)
-[Get Started](#learn-autodesk-forge)
+[Сайт платформы Autodesk Forge](http://developer.autodesk.com)
+[Первые шаги](#learn-autodesk-forge)
