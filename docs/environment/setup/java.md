@@ -4,11 +4,11 @@
 
 Выберите архетип Maven (т.е. шаблон нового проекта). Примените фильтр к **Artifact Id**, выбрав **maven-archetype-webapp**, и нажмите на **Next**.
 
-Заполните следующие данные: для этого руководтсва мы дадим **Group Id** название **com.yourcompany**, а **Artifact Id** - **forgesample**. Нажмите "Finish". На этом этапе создается проект Maven в вашей среде Eclipse, прогресс создания проекта доступен в правом нижнем углу
+Заполните следующие данные: для этого руководства мы дадим **Group Id** название **com.yourcompany**, а **Artifact Id** - **forgesample**. Нажмите "Finish". На этом этапе создается проект Maven в вашей среде Eclipse, прогресс создания проекта доступен в правом нижнем углу
 
 ![](_media/java/eclipse_create_project.gif)
 
-!> Если вы видите ошибку “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp`, добавьте Apache Tomcat в вашу целевую среду выполнения (англ. Targeted Runtimes). Вы попадаете туда, перейдя в project properties --> Targeted Runtimes, установите флажок, как показано ниже.
+!> Если вы видите ошибку “The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path index.jsp `/forgesample/src/main/webapp`, добавьте Apache Tomcat в вашу целевую среду выполнения (англ. Targeted Runtimes). Вы попадаете туда, перейдя в project properties --> Targeted Runtimes, поставьте галочку, как показано ниже.
 
 Теперь настройте **Targeted Runtime** на **Apache Tomcat**, определите сервер, выберите нахождение папки и проект, который нужно запустить. И, наконец, нажмите на **Run as** >> **Run as Server**.
 
