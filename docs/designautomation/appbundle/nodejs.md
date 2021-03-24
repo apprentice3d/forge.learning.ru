@@ -340,3 +340,5 @@ module.exports = router;
 ![](_media/designautomation/list_engines.png)
 
 Далее: [Определение Activity](designautomation/activity/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/nodejs).
