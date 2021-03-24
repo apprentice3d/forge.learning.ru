@@ -1,4 +1,4 @@
-# Репозитории данных и проекты
+# Репозитории данных и проекты (.NET Core)
 
 ## DataManagementController.cs
 
