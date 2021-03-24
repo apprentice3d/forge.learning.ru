@@ -14,4 +14,3 @@
 
 > Файлы `Global.asax` & `packages.config`, папки `App_Data`, `App_Start` & `Model` создаются по умолчанию.
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/viewer/2legged/net).
