@@ -10,3 +10,4 @@ Model Derivative API позволяет пользователям отобра�
 
 Выберите язык: [Node.js](modelderivative/translate/nodejs) | [.NET Framework](modelderivative/translate/net) | [.NET Core](modelderivative/translate/netcore) | [Go](modelderivative/translate/go) | [PHP](modelderivative/translate/php) | [Java](modelderivative/translate/java)
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/).
