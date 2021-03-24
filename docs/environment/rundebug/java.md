@@ -18,4 +18,4 @@
 
 Далее: [Расширения для Viewer](tutorials/extensions)
 
-[Эта страница на английском языке](https://learnforgeru.netlify.app/#/environment/rundebug/java).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/java).
