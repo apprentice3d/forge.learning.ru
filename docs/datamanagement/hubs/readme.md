@@ -21,3 +21,5 @@
 В этом разделе мы создадим конечную точку для возврата списка с **Hubs**, **Projects**, **Folders**, **Items** (файлов) и соответствующих **Versions** (которые можно отобразить в Viewer).
  
 Выберите ваш язык: [Node.js](datamanagement/hubs/nodejs) | [.NET Framework](datamanagement/hubs/net) | [.NET Core](datamanagement/hubs/netcore)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/hubs/readme).
