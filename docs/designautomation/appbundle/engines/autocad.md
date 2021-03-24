@@ -181,6 +181,6 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateDWGParam.zip"
 
 ![](_media/designautomation/autocad/build_output.png)
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/autocad).
-
 Далее: [Загрузка плагина](designautomation/appbundle/common)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/autocad).
