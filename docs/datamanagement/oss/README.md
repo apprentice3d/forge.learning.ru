@@ -16,3 +16,4 @@
  
 Выберите язык: [Node.js](datamanagement/oss/nodejs) | [.NET Framework](datamanagement/oss/net) | [.NET Core](datamanagement/oss/netcore) | [Go](datamanagement/oss/go) | [PHP](datamanagement/oss/php) | [Java](datamanagement/oss/java)
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/oss/).
