@@ -7,3 +7,5 @@
 Откройте браузер и перейдите по адресу [http://localhost:3000](http://localhost:3000).
 
 Далее: [Развертывание](deployment/)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/nodejs_da).
