@@ -43,3 +43,5 @@ LogTrace("DLL {0} compiled on {1}",
 Готовы? Давайте запускать!
 
 Выберите язык: [Node.js](environment/rundebug/nodejs_da) | [.NET Core](environment/rundebug/netcore)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/rundebug/2legged_da).
