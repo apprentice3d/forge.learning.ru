@@ -68,4 +68,4 @@ func (service ForgeServices) translateObject(writer http.ResponseWriter, request
 
 Далее: [Отображение файлов в Viewer](viewer/2legged/)
 
-[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/go).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/go).
