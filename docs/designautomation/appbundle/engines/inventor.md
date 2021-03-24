@@ -134,6 +134,6 @@ del /F "$(ProjectDir)..\forgesample\wwwroot\bundles\UpdateIPTParam.zip"
 
 ![](_media/designautomation/inventor/build_output.png)
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/inventor).
-
 Далее: [Загрузка плагина](designautomation/appbundle/common)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/inventor).
