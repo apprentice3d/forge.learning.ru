@@ -264,6 +264,6 @@ UpdateParam()
 ```
 Позже в этом руководстве вы увидите, как эти же инструкции отправляются в движок 3ds Max Design Automation.
 
-[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/max).
-
 Далее: [Загрузка плагина](designautomation/appbundle/common)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/designautomation/appbundle/engines/max).
