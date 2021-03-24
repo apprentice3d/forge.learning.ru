@@ -64,4 +64,4 @@ class ModelDerivative{
 
 Далее: [Отображение файлов в Viewer](viewer/2legged/)
 
-[Эта страница на английском языке](https://learnforgeru.netlify.app/#/modelderivative/translate/php).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/modelderivative/translate/php).
