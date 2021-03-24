@@ -170,3 +170,5 @@ module.exports = router;
 Обратите внимание, что здесь мы повторно используем auth helpers из `routes/common/oauth.js`.
 
 Далее: [Обработка информации профиля пользователя](oauth/user/readme)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/hubs/nodejs).
