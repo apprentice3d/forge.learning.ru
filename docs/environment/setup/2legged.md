@@ -4,3 +4,6 @@
 
 Выберите язык: [Node.js](environment/setup/nodejs_2legged) | [.NET Framework](environment/setup/net_2legged) | [.NET Core](environment/setup/netcore_2legged) | [Go](environment/setup/go) | [PHP](environment/setup/php) | [Java](environment/setup/java) 
 
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/environment/setup/2legged).
+
+
