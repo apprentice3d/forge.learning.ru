@@ -34,4 +34,4 @@ _AppHarbor - это платформа, построенная на .NET. AppHar
 
 Выберите язык программирования:  [.NET Framework](https://forge.autodesk.com/blog/deploying-forge-aspnet-samples-appharbor)
 
-[Страница на английском языке](https://learnforge.autodesk.io/#/deployment/).
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/deployment/).
