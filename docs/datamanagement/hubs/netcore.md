@@ -299,3 +299,5 @@ public class jsTreeNode
 Обратите внимание, что мы повторно используем `Credentials`, представленные через свойство.
 
 Далее: [Обработка информации профиля пользователя](oauth/user/readme)
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/datamanagement/hubs/netcore).
