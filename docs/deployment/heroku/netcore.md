@@ -14,3 +14,5 @@ heroku git:remote -a forgesample
 ```
 
 [Шаг 3](/deployment/heroku/heroku_step3.md ':include :type=markdown')
+
+[Эта страница на английском языке](https://learnforge.autodesk.io/#/deployment/heroku/netcore).
