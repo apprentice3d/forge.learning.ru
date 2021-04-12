@@ -6,7 +6,7 @@
 
 Это точка входа в ваше приложение. В этом примере мы будем использовать [jQuery](https://jquery.com) для работы с [DOM](https://www.w3schools.com/js/js_htmldom.asp), [Bootstrap](https://getbootstrap.com/) для стилизации и [jsTree](https://www.jstree.com) для указания бакетов и объектов. Все эти библиотеки поступают с [CDN](https://cdnjs.com/) ([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)).
 
-И, конечно, библиотеки Autodesk Forge Viewer libraries: viewer3d.min.js, three.min.js and style.min.css.
+И, конечно, библиотеки Autodesk Forge Viewer: viewer3d.min.js, three.min.js and style.min.css.
 
 Создайте файл **index.html** с:
 
