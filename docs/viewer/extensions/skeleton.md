@@ -78,7 +78,7 @@ Autodesk.Viewing.theExtensionManager.registerExtension('MyAwesomeExtension', MyA
 <script src="/js/myawesomeextension.js"></script>
 ```
 
-Важно:   Убедитесь, что при загрузке кода расширений <scripts>, вы загружаете его под ForgeViewer.js
+Важно:   Убедитесь, что при загрузке кода расширений <scripts>, вы загружаете его после ForgeViewer.js
 
 ![](_media/forge/extension_example.png)
 
