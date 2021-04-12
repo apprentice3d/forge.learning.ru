@@ -188,7 +188,7 @@
 
 #### ** Migration Guide **
 
-Перейдите на [сайт Autodesk Forge](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) для получения полного руководства для разработчиков, которые использовали v6 (или более позднюю версию) и обновляются до v7.
+Перейдите на [сайт Autodesk Forge](https://forge.autodesk.com/en/docs/viewer/v7/change_history/changelog_v7/migration_guide_v6_to_v7/) для получения полного руководства для разработчиков, которые использовали v6 (или более старую версию) и обновляются до v7.
 
 <!-- tabs:end -->
 
