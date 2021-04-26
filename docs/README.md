@@ -4,7 +4,7 @@
 
 **ВАЖНО**: Этот курс является переведённой версией англоязычного руководства Learn Autodesk Forge https://learnforge.autodesk.io, там вы всегда найдете самую актуальную информацию. Тем не менее, мы тщательно отслеживаем обновления и стараемся оперативно перевести и добавить их в русскоязычное руководство. 
 
-Если вы найдете ошибки/неточности в переводе, пожалуйста, направьте запрос нашим специалистам www.autodesk.ru/adn_contacts(https://www.autodesk.ru/autodesk-developer-network/contacts). 
+Если вы найдете ошибки/неточности в переводе, пожалуйста, направьте запрос нашим специалистам [www.autodesk.ru/adn_contacts](https://www.autodesk.ru/autodesk-developer-network/contacts). 
 
 ## Что такое Autodesk Forge?
 
